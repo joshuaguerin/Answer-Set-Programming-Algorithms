@@ -8,12 +8,13 @@
  *%
 
 
-% Define
+% DEFINE
 % Values are candidates to be included in the sum.
 {sum(X) : value(X)}.
 
-%% Test
+%% TEST
 % Values in sum/1 must sum to n.
 :- #sum {X : sum(X)} != n.
 
+% DISPLAY
 #show sum/1.
