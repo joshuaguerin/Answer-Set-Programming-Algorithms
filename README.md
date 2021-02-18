@@ -12,6 +12,12 @@ First, I've been influenced greatly over the course of my own studies by the edu
 
 Second, ASP solutions to problems are typically much shorter than solutions in other conventional programming languages. One can come up with decent solutions to NP-Hard problems in <10 lines (sometimes <5) of actual code. We are most likely encoding similar ideas to solve the same problem. Variations on ordering of statements, choices of identifiers, and ways ideas are expressed are likely to exist, but otherwise outcomes may be strikingly similar.
 
+## Bugs and other issues
+Oh, yea, there will be bugs. It's going to be a while before I'm comforatble enough to label anything as being "done." Proceed with caution if you are using these for learning purposes.
+
+I don't know if anyone will discover this repo, but if you do and you find a bug feel free to hit me up!
+
 ## Future updates
 I'm mainly pushing this out for fun at the moment, but life is hectic. I have no idea how frequently I'll be able to update, or whether I'll forget about it entirely!
+
 
