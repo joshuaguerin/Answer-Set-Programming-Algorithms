@@ -3,8 +3,8 @@
  * Author: Joshua T. Guerin
  *
  * Description: Implementation of the Numerical 3 Dimensional Matching problem.
- * Use: clingo numerical_3_dimensional_matching.lp problem.lp -c n=<val>
- *      where problem.lp contains predicates enumerating x, y, and z.
+ * Use: clingo numerical_3_dimensional_matching.lp instance.lp -c n=<val>
+ *      where instance.lp contains predicates enumerating x, y, and z.
  *%
 
 % DEFINE

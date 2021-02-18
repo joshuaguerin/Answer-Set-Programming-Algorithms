@@ -3,8 +3,8 @@
  * Author: Joshua T. Guerin
  *
  * Description: Implementation of the subset-sum problem.
- * Use: clingo subset_sum.lp values.lp -c n=<val>
- *      where values.lp contains domain predicates.
+ * Use: clingo subset_sum.lp instance.lp -c n=<val>
+ *      where instance.lp contains domain predicates.
  *%
 
 
