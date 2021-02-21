@@ -3,7 +3,10 @@
  * Author: Joshua T. Guerin
  *
  * Description: Given a graph and an integer, n, find an n-clique in the graph.
- * Use: clingo clique.lp instance.lp -c n=<val>
+ * Use: For k-Clique:
+ *	clingo clique.lp instance.lp -c n=<val>
+ *	For max-Clique:
+ *      clingo clique.lp instance.lp
  *      where instance.lp contains node and edge predicates.
  *%
 
@@ -26,9 +29,15 @@ clique(Y) :- clique(X, Y).
 % Everything in the clique must have been an edge in the graph.
 :- clique(X, Y), not edge(X, Y).
 
+% For k-clique.
 % There must be k nodes in the clique.
 :- #count{X : clique(X)} != n.
+
+% For Max Clique
+% count(C) :- C = #count{X : clique(X)}.
+% #maximize{C : count(C)}.
 
 % Display (either vertices or edges).
 #show clique/1.
 #show clique/2.
+#show count/1.
