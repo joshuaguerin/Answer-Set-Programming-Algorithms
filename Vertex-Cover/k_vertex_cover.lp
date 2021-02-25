@@ -1,10 +1,10 @@
 %*
- * File: cover.lp
+ * File: k_vertex_cover.lp
  * Author: Joshua T. Guerin
  *
  * Description: Given a graph and an integer, n, find all vertex covers
  *              of size n.
- * Use: clingo cover.lp instance.lp -c n=<val>
+ * Use: clingo k_vertex_cover.lp instance.lp -c n=<val>
  *      where instance.lp contains node and edge predicates.
  *%
 
@@ -17,11 +17,5 @@
 % For a vertex cover of size n:
 % The vertex cover must be of size n.
 :- #count{X : cover(X)} != n.
-
-% For a minimal vertex cover:
-% Count the elements in the vertex cover.
-% count(C) :- C = #count{X : cover(X)}.
-% Minimize
-% #minimize{C : count(C)}.
 
 #show cover/1.
