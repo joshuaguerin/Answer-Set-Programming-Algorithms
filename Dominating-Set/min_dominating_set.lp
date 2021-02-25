@@ -1,10 +1,10 @@
 %*
- * File: set.lp
+ * File: dominating_set.lp
  * Author: Joshua T. Guerin
  *
  * Description: Given a graph and an integer, n, find all dominating sets
  *              of size n.
- * Use: clingo dominating_set.lp instance.lp -c n=<val>
+ * Use: clingo dominating_set.lp instance.lp
  *      where instance.lp contains node and edge predicates.
  *%
 
@@ -19,14 +19,9 @@ set_adjacent(Y) :- edge(X, Y), set(X).
 % to a member of the dominating set.
 :- node(X), not set(X), not set_adjacent(X).
 
-% For a dominating set of size n:
-% Dominating set must be of size n.
-:- #count{X : set(X)} != n.
-
-% For a minimal dominating set:
 % Count the elements in the dominating set.
-% count(C) :- C = #count{X : set(X)}.
+count(C) :- C = #count{X : set(X)}.
 % Minimize
-% #minimize{C : count(C)}.
+#minimize{C : count(C)}.
 
 #show set/1.
