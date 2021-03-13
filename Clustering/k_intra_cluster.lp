@@ -16,10 +16,7 @@ cluster(1..k).
 
 % Manhattan distance between data vectors
 distance((X, Y), (X', Y'), |X-X'| + |Y-Y'|) :-
- 	     vector(X, Y), vector(X', Y'), X!=X'.
-
-distance((X, Y), (X', Y'), |X-X'| + |Y-Y'|) :-
- 	     vector(X, Y), vector(X', Y'), Y!=Y'.
+ 	     vector(X, Y), vector(X', Y').
 
 % Cluster weight: Sum intra-cluster distances
 weight(C, S) :- S = #sum{D, V, V' : distance(V, V', D),
