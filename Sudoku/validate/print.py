@@ -29,7 +29,7 @@ for i in range(9):
 
 for t in toks:
     (fst, snd, thd) = t.split(',')
-    fst = int(fst[6:])
+    fst = int(fst[7:])
     snd = int(snd)
     thd = int(thd[:-1])
     #print(fst, snd, thd)
