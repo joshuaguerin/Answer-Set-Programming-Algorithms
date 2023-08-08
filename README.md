@@ -14,7 +14,9 @@ My goal for this repo is to produce a set of original solutions to common/classi
 ## Bugs and other issues
 Oh, yea, there will be bugs. It's going to be a while before I'm comforatble enough to label anything as being "done." Assume that everything here is experimental--prone to incorrectness or breakage. Having said that, I'm trying to upload mostly correct code even before I get to thorough testing ;) With that in mind, I would be thrilled if anyone found benefit in reading the examples I've produced here.
 
-I don't know if anyone will discover this repo, but if you do and you find a bug or want to chat feel free to hit me up!
+I will be using the [Issues](https://github.com/joshuaguerin/Answer-Set-Programming-Algorithms/issues) page to keep organized in terms of progress, bugs, and future ideas for the page.
+
+I don't know if anyone will discover this repo, but if you do and you find a bug or want to chat feel free to hit me up! If you discover any untracked bugs, discussion points, or want to request a solution to a problem please feel free to add or comment on an [Issue](https://github.com/joshuaguerin/Answer-Set-Programming-Algorithms/issues).
 
 ## Future updates
 I'm mainly pushing this out for fun at the moment, but life is hectic. I have no idea how frequently I'll be able to update, or whether I'll forget about it entirely!
