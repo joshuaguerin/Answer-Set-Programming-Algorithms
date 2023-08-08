@@ -14,10 +14,10 @@ value(1..9).
 1 { sudoku(R, C, V) : value(V) } 1 :- value(R), value(C).
 
 % Each row has exactly one assignment per value
-:- sudoku(R, C, V), sudoku(R, D, V), value(R), value(V), C!=D.
+1 { sudoku(R, C, V) : value(C) } 1 :- value(R), value(V).
 
 % Each column has exactly one assignment per value
-:- sudoku(R, C, V), sudoku(S, C, V), value(C), value(V), R!=S.
+1 { sudoku(R, C, V) : value(R) } 1 :- value(C), value(V).
 
 % Each 3x3 grid has exactly one assignment per value
 
