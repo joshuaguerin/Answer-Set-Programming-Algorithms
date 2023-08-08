@@ -24,20 +24,6 @@ boundary(7, 9).
 1 { sudoku(R, C, V) : value(R) } 1 :- value(C), value(V).
 
 % Each 3x3 grid has exactly one assignment per value
-
-% Simplest abstraction: These two cells cannot have the same value
-%:- sudoku(1, 2, V), sudoku(2, 3, V).
-
-% Next abstraction: specific grids
-% grid 1 cannot have a repeat
-R=S :- sudoku(R, C, V), sudoku(S, D, V), R=1..3, C=1..3, S=1..3, D=1..3.
-C=D :- sudoku(R, C, V), sudoku(S, D, V), R=1..3, C=1..3, S=1..3, D=1..3.
-
-% grid 2 cannot have a repeat
-R=S :- sudoku(R, C, V), sudoku(S, D, V), R=1..3, C=4..6, S=1..3, D=4..6.
-C=D :- sudoku(R, C, V), sudoku(S, D, V), R=1..3, C=4..6, S=1..3, D=4..6.
-
-% Each element can only occur once per grid.
 R=S :- sudoku(R, C, V), sudoku(S, D, V), boundary(B1, B2), boundary(B3, B4),
     R=B1..B2, C=B3..B3, S=B1..B2, D=B3..B4.
 
