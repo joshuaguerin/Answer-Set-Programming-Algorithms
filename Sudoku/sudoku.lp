@@ -10,6 +10,10 @@
 % Possible values range from 0..9
 value(1..9).
 
+subgrid(1, 2, 3).
+%subgrid(4, 5, 6).
+%subgrid(7, 8, 9).
+
 % Each cell has a value assigned:
 1 { sudoku(R, C, V) : value(V) } 1 :- value(R), value(C).
 
@@ -20,6 +24,15 @@ value(1..9).
 1 { sudoku(R, C, V) : value(R) } 1 :- value(C), value(V).
 
 % Each 3x3 grid has exactly one assignment per value
+
+% Simplest abstraction: These two cells cannot have the same value
+%:- sudoku(1, 2, V), sudoku(2, 3, V).
+
+% Next abstraction: grid 1 cannot have a repeat
+R=S :- sudoku(R, C, V), sudoku(S, D, V), R<4, C<4, S<4, D<4. 
+C=D :- sudoku(R, C, V), sudoku(S, D, V), R<4, C<4, S<4, D<4.
+
+
 
 % Show only solution predicates
 #show sudoku/3.
