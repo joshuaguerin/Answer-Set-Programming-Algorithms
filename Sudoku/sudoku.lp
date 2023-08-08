@@ -10,10 +10,6 @@
 % Possible values range from 0..9
 value(1..9).
 
-boundary(1, 3).
-boundary(4, 6).
-boundary(7, 9).
-
 % Each cell has a value assigned:
 1 { sudoku(R, C, V) : value(V) } 1 :- value(R), value(C).
 
@@ -24,11 +20,11 @@ boundary(7, 9).
 1 { sudoku(R, C, V) : value(R) } 1 :- value(C), value(V).
 
 % Each 3x3 grid has exactly one assignment per value
-R=S :- sudoku(R, C, V), sudoku(S, D, V), boundary(B1, B2), boundary(B3, B4),
-    R=B1..B2, C=B3..B3, S=B1..B2, D=B3..B4.
+R=S :- sudoku(R, C, V), sudoku(S, D, V),
+    (R-1)/3==(S-1)/3, (C-1)/3==(D-1)/3.
 
-C=D :- sudoku(R, C, V), sudoku(S, D, V), boundary(B1, B2), boundary(B3, B4),
-    R=B1..B2, C=B3..B3, S=B1..B2, D=B3..B4.
+C=D :- sudoku(R, C, V), sudoku(S, D, V),
+    (R-1)/3==(S-1)/3, (C-1)/3==(D-1)/3.
 
 % Show only solution predicates
 #show sudoku/3.
