@@ -3,8 +3,8 @@
  * Author: Joshua T. Guerin
  *
  * Description: Given a graph and an integer, n, find an n-clique in the graph.
- * Use: clingo n_queens.lp -c N=size
- *      where size is the size of an NxN board.
+ * Use: clingo n_queens.lp -c n=size
+ *      where size is the size of an nxn board.
  *%
 
 values(1..n).
