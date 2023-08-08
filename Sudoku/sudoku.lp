@@ -29,8 +29,8 @@ subgrid(1, 2, 3).
 %:- sudoku(1, 2, V), sudoku(2, 3, V).
 
 % Next abstraction: grid 1 cannot have a repeat
-R=S :- sudoku(R, C, V), sudoku(S, D, V), R<4, C<4, S<4, D<4. 
-C=D :- sudoku(R, C, V), sudoku(S, D, V), R<4, C<4, S<4, D<4.
+R=S :- sudoku(R, C, V), sudoku(S, D, V), R=1..3, C=1..3, S=1..3, D=1..3.
+C=D :- sudoku(R, C, V), sudoku(S, D, V), R=1..3, C=1..3, S=1..3, D=1..3.
 
 
 
