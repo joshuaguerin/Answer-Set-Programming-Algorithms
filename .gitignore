@@ -1,2 +1,3 @@
 # Ignore Emacs backups
 *~
+.DS_Store
