@@ -20,7 +20,7 @@
 bin(B) :- bin(B, N).
 
 % Compute how much is stored in each bin.
-weight(B, T) :- T = #sum{C : bin(B, I), item(I, C)}, bin(B).
+weight(B, T) :- T = #sum{C, I : bin(B, I), item(I, C)}, bin(B).
 
 % Bins can pack items with a max cost of n.
 :- bin(B), weight(B, W), n < W.
