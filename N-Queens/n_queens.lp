@@ -20,6 +20,9 @@ n { queens(R, C) : values(R), values(C) } n.
 % No two queens in the same column.
 :- queens(R, C), queens(S, C), R!=S.
 
-% No two queens in the same diagonal.
+% No two queens on the same diagonal.
+:- queens(R, C), queens(S, D), R!=S, C!=D, R+C==S+D.
+:- queens(R, C), queens(S, D), R!=S, C!=D, R-C==S-D.
+
 
 #show queens/2.
