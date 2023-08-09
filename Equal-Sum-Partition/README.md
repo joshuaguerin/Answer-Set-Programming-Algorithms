@@ -8,4 +8,5 @@ E.g.,
 If *S* = {1, 4, 5, 6, 8}, then the set can be partitioned into two subsets:
 * *A* = {1, 5, 6} and
 * *B* = {4, 8}
+
 where both *A* and *B* sum to 12.
