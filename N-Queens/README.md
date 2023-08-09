@@ -10,6 +10,7 @@ Since a **queen** may attack any number of positions in any direction, we can in
 
 E.g.,
 
+
 | Content Cell  | :crown:  | Content Cell  | Content Cell  |
 | Content Cell  | Content Cell  | Content Cell  | :crown:  |
 | :crown:  | Content Cell  | Content Cell  | Content Cell  |
