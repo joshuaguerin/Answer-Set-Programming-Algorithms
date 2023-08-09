@@ -3,7 +3,7 @@
  * Author: Joshua T. Guerin
  *
  * Description: Partition a set of values into two sets with equal sum.
- * Use: clingo subset_sum.lp instance.lp
+ * Use: clingo equal_sum_partition.lp instance.lp
  *      where instance.lp contains a predicate defining values.
  *%
 
