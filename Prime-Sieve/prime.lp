@@ -3,7 +3,7 @@
  * Author: Joshua T. Guerin
  *
  * Description: Given an integer n, compute primes from 2..n
- * Use: clingo prime.lp composite.lp -c n=max
+ * Use: clingo prime.lp -c n=max
  *      where composites between 2..max are to be generated.
  *%
 
