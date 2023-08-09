@@ -2,9 +2,9 @@
  * File: bin_packing.lp
  * Author: Joshua T. Guerin
  *
- * Description: Given a set of (value, weight) pairs, and parameter n,
- *              select the maximize the value of included items while
- *              not exceeding a weight of n.
+ * Description: Given a set of (item, cost) pairs, and parameter n,
+ *              compute the assignment of items to bins that doesn't exceed
+ *              n and minimizes the total number of bins.
  * Use: clingo bin_packing.lp instance.lp -c n=<val>
  *      where instance.lp contains item predicates.
  *%
@@ -26,6 +26,7 @@ weight(B, T) :- T = #sum{C, I : bin(B, I), item(I, C)}, bin(B).
 :- bin(B), weight(B, W), n < W.
 
 % More sensible numbering (rather than arbitrary bin numbers).
+% Have not tested to determine whether it affects complexity.
 %#minimize{B : bin(B)}.
 
 % Count the total number of bins
