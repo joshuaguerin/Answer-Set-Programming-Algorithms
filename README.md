@@ -9,7 +9,7 @@ My goal for this repo is to bring together solutions/algorithms to classical pro
 You are absolutely correct! The term really doesn't apply based on the definition of an algorithm in Computer Science. "Patterns" or "implementations" may be better, but don't really have a solid sound to them. I needed *something* to call the repo, and I'm modeling the idea off the myriad of books out there with titles like "Algorithms in C++" or "Algorithms in Python." What I'm going for is essentially similar to the purposes of those books--just in a language that isn't inherently algorithmic.
 
 ## Organization
-While I am opting for a flat directory organization at the moment for ease of navigation, one possible organization of the problems would be by problem/solution type:
+While I am opting for a flat directory organization at the moment for ease of navigation, one possible organization of the problems for the reader could be:
 
 | First Header  | Second Header |
 | ------------- | ------------- |
@@ -29,6 +29,8 @@ While I am opting for a flat directory organization at the moment for ease of na
 |    | [Vertex Cover](https://github.com/joshuaguerin/Answer-Set-Programming-Algorithms/tree/master/Vertex-Cover) |
 |    | [Max-Flow](https://github.com/joshuaguerin/Answer-Set-Programming-Algorithms/tree/master/Max-Flow) |
 |  Data Mining  | [Clustering](https://github.com/joshuaguerin/Answer-Set-Programming-Algorithms/tree/master/Clustering) |
+
+The organization of this table is design to roughly correspond with relative difficulty level of each problem/implementation.
 
 ## Note about content
 My goal for this repo is to produce a set of original solutions to common/classical problems in Computer Science, however natural similarities are likely to exist between my own sources and those written by others. I've been influenced greatly over the course of my own studies by the educational resources provided by the good folks over at [Potassco](https://potassco.org/). Many of the conventions in my coding carry over from theirs, and similar authors. Additionally, ASP solutions tend to be much smaller than other conventional programming languages. Many NP-Complete or NP-Hard problems can be solved in <10 lines (often <5) of actual code. Variations are likely to exist, however it is entirely likely to have two authors describe the same basic ideas/constraints in their code.
