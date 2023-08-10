@@ -15,9 +15,12 @@ While I am opting for a flat directory organization at the moment for ease of na
 | ------------- | ------------- |
 | Number Theory   | [Prime Sieve](https://github.com/joshuaguerin/Answer-Set-Programming-Algorithms/tree/master/Prime-Sieve)  |
 |    | [Perfect Numbers](https://github.com/joshuaguerin/Answer-Set-Programming-Algorithms/tree/master/Perfect-Numbers)  |
-| Set/Partitioning Problems  | [Subset Sum](https://github.com/joshuaguerin/Answer-Set-Programming-Algorithms/tree/master/Subset-Sum) |
+| Numerical Set/Partitioning Problems  | [Subset Sum](https://github.com/joshuaguerin/Answer-Set-Programming-Algorithms/tree/master/Subset-Sum) |
 |  | [Equal Sum Partition](https://github.com/joshuaguerin/Answer-Set-Programming-Algorithms/tree/master/Equal-Sum-Partition) |
 |  | [Numerical 3-Dimensional Matching](https://github.com/joshuaguerin/Answer-Set-Programming-Algorithms/tree/master/Numerical-3-Dimensional-Matching) |
+|  Combinatorial Optimization Problems  |  [Knapsack](https://github.com/joshuaguerin/Answer-Set-Programming-Algorithms/tree/master/Knapsack)  |
+|  | [Bin-Packing](https://github.com/joshuaguerin/Answer-Set-Programming-Algorithms/tree/master/Bin-Packing) |
+
 
 ## Note about content
 My goal for this repo is to produce a set of original solutions to common/classical problems in Computer Science, however natural similarities are likely to exist between my own sources and those written by others. I've been influenced greatly over the course of my own studies by the educational resources provided by the good folks over at [Potassco](https://potassco.org/). Many of the conventions in my coding carry over from theirs, and similar authors. Additionally, ASP solutions tend to be much smaller than other conventional programming languages. Many NP-Complete or NP-Hard problems can be solved in <10 lines (often <5) of actual code. Variations are likely to exist, however it is entirely likely to have two authors describe the same basic ideas/constraints in their code.
