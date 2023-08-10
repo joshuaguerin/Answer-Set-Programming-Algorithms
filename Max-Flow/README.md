@@ -2,7 +2,7 @@
 
 ## Description
 
-Let *G=(V, E)* be a directed graph. **Network  flow** problems annotate edges with maximum capacities: *e = (s, e, c)*, where the capacity, *c*, defines the maximum amount of "flow" over *e*. (Think: moving water or electricity, packages in transit, railways, etc.)
+Let *G=(V, E)* be a directed graph. **Network  flow** problems annotate edges with maximum capacities: *e = (a, b, c)*, where the capacity, *c*, defines the maximum amount of "flow" over *e* from *a* to *b*. (Think: moving water or electricity, packages in transit, railways, etc.)
 
 The **Max Flow* problem is a network flow optimization problem where the following restrictions must be met:
 * there are dedicated start and terminal nodes,
