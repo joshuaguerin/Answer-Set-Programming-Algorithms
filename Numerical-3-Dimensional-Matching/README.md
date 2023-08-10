@@ -7,7 +7,7 @@ Assume three sets of integers of equal size: *X*, *Y*, and *Z*, and a parameter 
 * each member of *X*, *Y*, and *Z* occurs *exactly once* in a triplet,
 * each triplet must sum to *n*.
 
-E.g.,
+## Example
 Let *X* = {7, 1, 5, 4}, *Y*={0, 2, 1, 3}, and *Z*={5, 8, 0, 4}, with *n*=10. We can compute a solution of 4 triples:
 * T = {(5,0,5), (1,1,8), (7,3,0), (4,2,4)}.
 

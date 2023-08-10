@@ -8,7 +8,8 @@ Given a graph, *G=(V, E)* a *dominating set* of the graph is a set of vertices, 
 
 Particular questions of interest my be about a specific sized dominating set (a **K-Dominating Set** as a generalization) or the **Minimum** Dominating Set.
 
-E.g., Consider:
+## Example
+Consider:
 
 ![Dominating Set Examples](images/dominating_set.png)
 

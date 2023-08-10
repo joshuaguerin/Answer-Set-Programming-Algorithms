@@ -7,7 +7,7 @@ A **path** is **Hamiltonian** if all vertices *V* occur *exactly once* in the pa
 
 A **Hamiltonian Path** is a solution to the **Travelling Salesman** Problem if it is the *smallest* such path.
 
-E.g.,
+## Example
 
 ![Example Graph](images/graph.png)
 

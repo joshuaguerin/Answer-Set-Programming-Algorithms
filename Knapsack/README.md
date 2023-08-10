@@ -6,7 +6,7 @@ The **knapsack** problem  is an optimization problem. Given a set of items *I*, 
 
 The problem is also known as the **0-1 knapsack problem** due to the inclusion/exclusion of items.
 
-E.g.,
+## Example
 If we have items *I* = {(1, 2), (2, 1), (3, 3), (5, 5)}, and a capacity *c*=6, we can pack the knapsack with items:
 * {(2, 1), (5, 5)}
 

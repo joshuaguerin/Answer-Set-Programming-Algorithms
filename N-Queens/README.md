@@ -8,7 +8,7 @@ Since a **queen** may attack any number of positions in any direction, we can in
 * No two queens may occupy the same *column*.
 * No two queens may occupy the same *diagonal*.
 
-E.g.,
+## Example
 
 The following is a solution to the 8-Queens problem:
 

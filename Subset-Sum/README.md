@@ -3,7 +3,7 @@
 ## Description
 The [Subset Sum](https://en.wikipedia.org/wiki/Subset_sum_problem) problem is a standard NP-Hard problem in computing and number theory. Given a set of integers, *S*, and a target value *n*, is there a subset of *S* that sums to exactly *S*.
 
-E.g.,
+## Example
 Let *S* = {1, 2, 3, 4, 10, 11, 12, 14, 18, 20}, and a query of *n*=26.
 * This would be satisfied by the subset: {2, 3, 10, 11}, as 2+3+10+11=26.
 

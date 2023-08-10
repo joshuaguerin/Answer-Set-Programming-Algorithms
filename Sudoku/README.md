@@ -8,6 +8,7 @@ A standard Sudoku puzzle is a 9x9 grid, further divided into 9 3x3 subgrids. The
 3. Each column holds exactly one of each number.
 4. Each of the subgrids holds exactly one of each number.
 
+## Example
 The starting puzzle configuration has a portion of the cells blank, with others holding starting values:
 
 ![Sudoku Puzzle](images/Sudoku_Puzzle_by_L2G-20050714_standardized_layout.svg.png)
