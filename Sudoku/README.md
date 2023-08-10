@@ -19,3 +19,6 @@ The goal is to fill each cell with numbers that adhere to the Sudoku rules, ther
 ![Sudoku Puzzle](images/Sudoku_Puzzle_by_L2G-20050714_solution_standardized_layout.svg.png)
 
 Source: [Wikipdedia](https://en.wikipedia.org/wiki/Sudoku)
+
+## Generalization
+While this implementation is for the most common, 9x9 variant, sudoku can be generalized to multiple grid sizes that would share the similar properties. E.g., 4x4, 9x9, 16x16, 25x25, etc.
