@@ -17,4 +17,4 @@ Intuitively, the additive constraint is only *one* such possibile constraint. Ad
 ## Related
 See also:
 * [subset sum](https://github.com/joshuaguerin/Answer-Set-Programming-Algorithms/tree/master/Subset-Sum) and
-* [equal sum partitionng]{https://github.com/joshuaguerin/Answer-Set-Programming-Algorithms/tree/master/Equal-Sum-Partition}.
+* [equal sum partitioning](https://github.com/joshuaguerin/Answer-Set-Programming-Algorithms/tree/master/Equal-Sum-Partition).
