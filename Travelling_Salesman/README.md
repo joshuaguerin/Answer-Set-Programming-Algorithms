@@ -10,6 +10,7 @@ A **Hamiltonian Path** is a solution to the **Travelling Salesman** Problem if i
 E.g.,
 
 ![Example Graph](images/graph.png)
+
 From: [Wikipedia](https://en.wikipedia.org/wiki/Travelling_salesman_problem#Description)
 
 In the above graph, one of many Hamiltonian paths from *a* to *d* is:
