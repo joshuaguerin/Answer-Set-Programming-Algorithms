@@ -16,3 +16,6 @@ See the following example for a *3-clique* in a graph of 6 vertices:
 ![Graph with a 3-clique](images/6n-graf-clique.svg.png)
 
 From [Wikipedia](https://en.wikipedia.org/wiki/Clique_problem#Definitions)
+
+## Related
+See also the [vertex cover](https://github.com/joshuaguerin/Answer-Set-Programming-Algorithms/tree/master/Vertex-Cover) problem.
