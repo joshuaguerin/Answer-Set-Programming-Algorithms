@@ -14,3 +14,5 @@ Let *X* = {7, 1, 5, 4}, *Y*={0, 2, 1, 3}, and *Z*={5, 8, 0, 4}, with *n*=10. We 
 ## Problem Variants
 Intuitively, the additive constraint is only *one* such possibile constraint. Additional variants could be constructed over non-numeric domains (e.g., assigning doctors x patients x rooms for scheduling purposes). The problem could also be phrased as a graph problem where *X*, *Y*, and *Z* contain nodes of a graph, with edges between elements *X* and *Y*, *Y* and *Z*. In this case the problem could be viewed as a selection of edges in the graph that will connect and match distinct elements of *X*, *Y*, and *Z* such that the edges denote the triples.
 
+## Related
+See also the [subset sum](https://github.com/joshuaguerin/Answer-Set-Programming-Algorithms/tree/master/Subset-Sum) problem.
