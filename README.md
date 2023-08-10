@@ -35,7 +35,7 @@ While I am opting for a flat directory organization at the moment for ease of na
 
 The organization of this table is design to roughly correspond with relative difficulty level of each problem/implementation.
 
-## Note about content
+## Note about implementations
 My goal for this repo is to produce a set of original solutions to common/classical problems in Computer Science, however natural similarities are likely to exist between my own sources and those written by others. I've been influenced greatly over the course of my own studies by the educational resources provided by the good folks over at [Potassco](https://potassco.org/). Many of the conventions in my coding carry over from theirs, and similar authors. Additionally, ASP solutions tend to be much smaller than other conventional programming languages. Many NP-Complete or NP-Hard problems can be solved in <10 lines (often <5) of actual code. Variations are likely to exist, however it is entirely likely to have two authors describe the same basic ideas/constraints in their code.
 
 ## Bugs and other issues
