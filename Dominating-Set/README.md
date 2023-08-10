@@ -15,3 +15,7 @@ E.g., Consider:
 From [Wikipedia](https://en.wikipedia.org/wiki/Dominating_set).
 
 The above example shows an example graph with a 3-dominating set, and two 2-dominating set. The latter examples are minimal, as there is no 1-dominating set for the graph.
+
+## Related
+See also the [vertex cover](https://github.com/joshuaguerin/Answer-Set-Programming-Algorithms/tree/master/Vertex-Cover) problem.
+
