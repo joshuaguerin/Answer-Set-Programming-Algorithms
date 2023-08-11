@@ -47,10 +47,7 @@ at(P, S, T+1) :- passenger(P), not boat(P, T), at(P, S, T), P!=x, T<n.
 :- boat(P, T), boat(Q, T), P!=Q.
 
 % Describe goal state
-at(f, r, n).
-at(w, r, n).
-at(g, r, n).
-at(c, r, n).
+at((f ; w ; g ; c), r, n).
 
 #show at/3.
 #show boat/2.
