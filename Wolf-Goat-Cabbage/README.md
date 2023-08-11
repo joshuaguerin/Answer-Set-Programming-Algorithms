@@ -11,6 +11,10 @@ The farmer must plan a series of trips back and forth across the river to ensure
 
 This is an example of a puzzle that requires some implicit/explicit notion of *time*--proper sequencing of actions is required, as each action affets the *state* of the puzzle.
 
+![Wolf, Goat, and Cabbage Manuscript](Illuminated_illustration_of_the_wolf,_goat_and_cabbage_problem_in_the_Ormesby_Psalter.jpg)
+
+Illustration from [Wikipedia](https://en.wikipedia.org/wiki/Wolf,_goat_and_cabbage_problem).
+
 ## Example
 
 |  Time  | Left Bank  | Boat | Right Bank |
