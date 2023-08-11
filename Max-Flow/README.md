@@ -19,7 +19,7 @@ Consider the simple flow network:
 From [Wikipedia](https://en.wikipedia.org/wiki/Maximum_flow_problem#Definition).
 
 We wish to maximize flow from *s* to *t*, while adhering to the above rules. This can be accomplished in the following manner:
-* *(s, t)* and *(s, v)* receive full capacity of 10 and 5, respectively.
+* *(s, u)* and *(s, v)* receive full capacity of 10 and 5, respectively.
 * *(u, v)* has its flow reduced below capacity to 5.
 * *(u, t)* and *(v, t)* now can operate at capacities of 5 and 10, respectively.
 
