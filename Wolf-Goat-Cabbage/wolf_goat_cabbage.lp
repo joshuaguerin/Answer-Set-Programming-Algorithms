@@ -18,8 +18,6 @@ time(1..n).
 at(x, l, T) :- time(T).
 at(x, r, T) :- time(T).
 
-max(n).
-
 % If the farmer is on same side as a passenger they may enter the boat.
 { boat(P, T) } :- at(f, S, T), at(P, S, T), passenger(P).
 
