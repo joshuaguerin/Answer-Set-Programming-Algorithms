@@ -11,8 +11,8 @@ The farmer must plan a series of trips back and forth across the river to ensure
 
 ## Example
 
-| First Header  | Second Header | Second Header |
-| ------------- | ------------- | ------------- |
-| Content Cell  | Content Cell  | Content Cell  |
-| Content Cell  | Content Cell  | Content Cell  |
+|  Time  | Left Bank  | Boat | Right Bank |
+|  | ------------- | ------------- | ------------- |
+|  | Content Cell  | Content Cell  | Content Cell  |
+|  | Content Cell  | Content Cell  | Content Cell  |
 
