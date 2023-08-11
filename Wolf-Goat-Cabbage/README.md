@@ -11,9 +11,7 @@ The farmer must plan a series of trips back and forth across the river to ensure
 
 ## Example
 
-Time:  0 ['f', 'w', 'g', 'c']   > []
-Time:  1 ['c', 'g', 'w', 'f'] g > []
-Time:  2 ['c', 'w'] <   ['g', 'f']
+Time:  
 Time:  3 ['c', 'w', 'f'] c > ['g']
 Time:  4 ['w'] < g ['c', 'g', 'f']
 Time:  5 ['g', 'w', 'f'] w > ['c']
@@ -26,4 +24,4 @@ Time:  8 [] <   ['f', 'w', 'g', 'c']
 | ------------- | ------------- | ------------- | ------------- |
 | 0 | ['f', 'w', 'g', 'c']  | Empty  | []  |
 | 1 | ['c', 'g', 'w', 'f']  | g ->  | []  |
-
+| 2 | ['c', 'w'] | <- no passenger |  ['g', 'f'] |
