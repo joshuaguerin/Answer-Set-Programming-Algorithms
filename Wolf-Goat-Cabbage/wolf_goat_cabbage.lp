@@ -10,17 +10,12 @@
 side(l ; r).
 time(1..n).
 
+% Note that x is only for empty (farmer-only) trips.
+% It is an exception carved out for many of the rules below to simplify things.
 at(x, l, T) :- time(T).
 at(x, r, T) :- time(T).
 
 max(n).
-
-% Enforce same-side rules:
-% Wolf will eat goat if unattended.
-:- at(w, S, T), at(g, S, T), not at(f, S, T).
-
-% Goat eats cabbage if unattended.
-:- at(g, S, T), at(c, S, T), not at(f, S, T).
 
 % If the farmer is on same side as a passenger they may enter the boat.
 { boat(P, T) } :- at(f, S, T), at(P, S, T), passenger(P).
@@ -30,9 +25,6 @@ max(n).
 
 % The farmer may only be on one side at a time.
 1 { at(f, l, T) ; at(f, r, T) } 1 :- time(T).
-
-% There cannot be two passengers in the boat at the same timestep.
-:- boat(P, T), boat(Q, T), P!=Q.
 
 % The boat moves a passenger at each timestep
 at(P, r, T+1) :- boat(P, T), at(P, l, T), P!=x, T<n.
@@ -44,6 +36,16 @@ at(f, l, T+1) :- boat(_, T), at(f, r, T), T<n.
 
 % Nothing else is moved by the boat.
 at(P, S, T+1) :- passenger(P), not boat(P, T), at(P, S, T), P!=x, T<n.
+
+% Enforce same-side rules:
+% Wolf will eat goat if unattended.
+:- at(w, S, T), at(g, S, T), not at(f, S, T).
+
+% Goat eats cabbage if unattended.
+:- at(g, S, T), at(c, S, T), not at(f, S, T).
+
+% There cannot be two passengers in the boat at the same timestep.
+:- boat(P, T), boat(Q, T), P!=Q.
 
 % Describe goal state
 at(f, r, n).
