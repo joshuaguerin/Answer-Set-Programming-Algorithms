@@ -8,6 +8,9 @@
  *%
 
 side(l ; r).
+
+% Time is already discrete.
+% We need some way to quantify time explicitly for grounding.
 time(1..n).
 
 % Note that x is only for empty (farmer-only) trips.
