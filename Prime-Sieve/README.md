@@ -11,3 +11,7 @@ A number, *n*, is **composite** if *n* has integer divisors other than 1 and its
 These categories are clearly mutually exclusive, and one can be defined by the other.
 
 A **sieve** is an algorithm or program that computes **primes**, typically in a range given as input.
+
+![Rhind Papyrus](images/Rhind_Mathematical_Papyrus.jpg)
+
+Rhind Papyrus image from [Wikipedia](https://en.wikipedia.org/wiki/Rhind_Mathematical_Papyrus) expressin different forms of primes/composites.
