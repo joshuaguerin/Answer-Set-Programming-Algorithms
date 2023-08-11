@@ -18,6 +18,10 @@ def printGrid(coords, n):
 toks = input().split()
 
 while not toks[0].startswith("Answer:"):
+    if toks[0] == "UNSATISFIABLE":
+        print("UNSATISFIABLE")
+        exit()
+        
     toks = input().split()
 
 toks = input().split()
