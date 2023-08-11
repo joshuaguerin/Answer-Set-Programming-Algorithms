@@ -9,6 +9,8 @@ Neither the goat nor the cabbage are in danger if the farmer is there to supervi
 
 The farmer must plan a series of trips back and forth across the river to ensure that all three passengers (eventually) arrive safely on the right bank of the river with the farmer. When needed the farmer can take a trip without a passenger. In *any instance* the farmer is required to move the boat.
 
+This is an example of a puzzle that requires some implicit/explicit notion of *time*--proper sequencing of actions is required, as each action affets the *state* of the puzzle.
+
 ## Example
 
 |  Time  | Left Bank  | Boat | Right Bank |
