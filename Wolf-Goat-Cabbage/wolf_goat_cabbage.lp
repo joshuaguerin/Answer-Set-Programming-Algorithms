@@ -1,3 +1,11 @@
+%*
+ * File: wolf_goat_cabbage.lp
+ * Author: Joshua T. Guerin
+ *
+ * Description: Implementation the Wolf/Goat/Cabbage boat puzzle.
+ * Use: clingo instance.lp wolf_goat_cabbage.lp -c n=<val>
+ *      where n is the number of steps allowed by the puzzle.
+ *%
 
 side(l ; r).
 time(1..n).
@@ -37,9 +45,7 @@ at(f, l, T+1) :- boat(_, T), at(f, r, T), T<n.
 % Nothing else is moved by the boat.
 at(P, S, T+1) :- passenger(P), not boat(P, T), at(P, S, T), P!=x, T<n.
 
-%#count{}
-
-% % Describe goal state
+% Describe goal state
 at(f, r, n).
 at(w, r, n).
 at(g, r, n).
@@ -49,7 +55,3 @@ at(c, r, n).
 #show at/3.
 #show boat/2.
 
-% Place a maximum bound on boating
-%:- boat(P, T), 50<T.
-
-%{at(P, S, T+1)} :- boat(P, T), at(P, S, T).

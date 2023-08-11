@@ -1,9 +1,6 @@
 # Use:
-# clingo instance.lp | python3 ./validate/print.py
+# clingo instance.lp wolf_goat_cabbage.lp -c n=7 | python3 ./validate/print.py
 # to be ran in previous directory where instance.lp is
-
-
-
 
 toks = input().split()
 
@@ -16,7 +13,9 @@ left = []
 right = []
 boat = []
 
+# Process predicates
 for t in toks:
+    # put elements left and right
     if t[0:2] == "at":
         (fst, snd, thd) = t.split(',')
         fst = fst[3:]
@@ -34,40 +33,20 @@ for t in toks:
             right[thd].append(fst)
             
         #print(fst, snd, thd)
+    # store bot information
     elif t[0:2] == "bo":
         (fst, snd) = t.split(',')
         fst = fst[5:]
         snd = int(snd[:-1])
         boat[snd] = fst
         
-    #(fst, snd, thd) = t.split(',')
-    
-    # fst = int(fst[7:])
-    # snd = int(snd)
-    # thd = int(thd[:-1])
-    #print(fst, snd, thd)
 
-    #print(solution)
-
-#printGrid(solution)
-
-# for i in range(len(left)):
-#     if 'x' in left[i]:
-#         left[i].pop('x')
-#     if 'x' in right[i]:
-#         right[i].pop('x')
-
+# Print state at each timestep
 for i in range(len(left)):
     print("Time: ", i, left[i], end=' ')
-    # print("Time: ", i, " left:", left[i], end=' ')
     
     if 'f' in right[i]:
         print("<", boat[i], right[i])
     else:
         print(boat[i], ">", right[i])
 
-        
-    # if 'f' in right[i]:
-    #     print("<", boat[i], "right:", right[i])
-    # else:
-    #     print(boat[i], ">", "right:", right[i])
