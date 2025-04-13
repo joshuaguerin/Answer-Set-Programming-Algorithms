@@ -1,4 +1,4 @@
-# Answer Set Programming "Algorithms"
+# &#8704;: Answer Set Programming "Algorithms"
 
 ## Background
 I have been a logic programming enthusiast for some time. My first experiences were during my undergrad years with Prolog in the early 2000's at Transylvania University. My interest in the subject really began to grow during graduate school at the University of Kentucky where I received formal training in Answer Set Programming and other related topics in formal logic.
