@@ -1,9 +1,9 @@
 # ASP&#8704;: Answer Set Programming "Algorithms"
 
 ## What is ASP&#8704;
-Pronounced "ASP for all," this repository is designed to serve as a sort of online textbook or Open Educational Repository (OER) for Answer Set Programming, in particular in the [Clingo](https://potassco.org/clingo/) dialect. The universal quantifier, &#8704;, is an important symbol in logic programming, ascribing properties to **everything** of a particular type of atom in logic programming. The upside-down 'A' also serves to reinforce the sort of misnomer of the term "algorithms," as it may or may not apply to languages like Clingo.
+Pronounced "ASP for all," this repository is designed to serve as a sort of online textbook or Open Educational Repository (OER) for Answer Set Programming, in particular in the [Clingo](https://potassco.org/clingo/) dialect. The universal quantifier, &#8704;, is an important symbol in logic programming, ascribing properties to *everything* of a particular type of atom in logic programming. The upside-down 'A' also serves to reinforce the sort of misnomer of the term "algorithms," as it may or may not apply to languages like Clingo.
 
-## "Algorithms"
+### "Algorithms"
 You are absolutely correct! The term really doesn't apply based on the definition of an algorithm in Computer Science. "Patterns" or "implementations" may be better, but don't really have a solid sound to them. I needed *something* to call the repo, and I'm modeling the idea off the myriad of books out there with titles like "Algorithms in C++" or "Algorithms in Python." What I'm going for is essentially similar to the purposes of those books--just in a language that isn't inherently algorithmic.
 
 ## Organization
@@ -48,5 +48,5 @@ I don't know if anyone will discover this repo, but if you do and you find a bug
 I'm mainly pushing this out for fun at the moment, but life is hectic. I have no idea how frequently I'll be able to update, or whether I'll forget about it entirely!
 
 ## How to Cite
-For now, please cite the website by the name **ASP&#8704;: Answer Set Programming "Algorithms"** by "Guerin, Joshua" with the full URL. You may use whatever citation conventions are most reasonable for the publication.
+For now, please cite the website by the name *ASP&#8704;: Answer Set Programming "Algorithms"* by "Guerin, Joshua" with the full URL. You may use whatever citation conventions are most reasonable for the publication.
 
