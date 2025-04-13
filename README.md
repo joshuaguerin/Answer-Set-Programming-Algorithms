@@ -47,4 +47,6 @@ I don't know if anyone will discover this repo, but if you do and you find a bug
 ## Future updates
 I'm mainly pushing this out for fun at the moment, but life is hectic. I have no idea how frequently I'll be able to update, or whether I'll forget about it entirely!
 
+## How to Cite
+For now, please cite the website by the name **ASP&#8704;: Answer Set Programming "Algorithms"** by "Guerin, Joshua" with the full URL. You may use whatever citation conventions are most reasonable for the publication.
 
