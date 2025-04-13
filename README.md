@@ -1,9 +1,7 @@
 # ASP&#8704;: Answer Set Programming "Algorithms"
 
-## Background
-I have been a logic programming enthusiast for some time. My first experiences were during my undergrad years with Prolog in the early 2000's at Transylvania University. My interest in the subject really began to grow during graduate school at the University of Kentucky where I received formal training in Answer Set Programming and other related topics in formal logic.
-
-My goal for this repo is to bring together solutions/algorithms to classical problems in computer science in the Answer Set Programming dialect of [Clingo](https://potassco.org/clingo/). Perhaps one day I will write a book on the subject, using this repo as a basis for the text.
+## What is ASP&#8704;
+Pronounced "ASP for all," this repository is designed to serve as a sort of online textbook or OER for Answer Set Programming, in particular in the [Clingo](https://potassco.org/clingo/) dialect. The universal quantifier, &#8704;, is an important symbol in logic programming, ascribing properties to **everything** of a particular type of atom in logic programming. The upside-down 'A' also serves to reinforce the sort of misnomer of the term "algorithms," as it may or may not apply to languages like Clingo.
 
 ## "Algorithms"
 You are absolutely correct! The term really doesn't apply based on the definition of an algorithm in Computer Science. "Patterns" or "implementations" may be better, but don't really have a solid sound to them. I needed *something* to call the repo, and I'm modeling the idea off the myriad of books out there with titles like "Algorithms in C++" or "Algorithms in Python." What I'm going for is essentially similar to the purposes of those books--just in a language that isn't inherently algorithmic.
