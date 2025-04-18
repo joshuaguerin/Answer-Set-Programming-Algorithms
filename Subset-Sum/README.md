@@ -14,9 +14,6 @@ There are several variants of this problem that are NP-Complete. Some assumption
 * Generating software is over positive integers (an arbitrary decision that should be easy to modify).
 
 ## Related
-See also the  problem.
-
-## Related
 See also:
 * [equal sum partitioning](https://github.com/joshuaguerin/Answer-Set-Programming-Algorithms/tree/master/Numerical-3-Dimensional-Matching) and
 * [numerical 3-dimensional matching](https://github.com/joshuaguerin/Answer-Set-Programming-Algorithms/tree/master/Numerical-3-Dimensional-Matching).
