@@ -1,5 +1,5 @@
 %*
- * File: graph_coloring.lp
+ * File: chromatic_number.lp
  * Author: David Gonzalez, Joshua T. Guerin
  *
  * Description: Given a graph, find the minimal set of colors s.t. no
