@@ -1,6 +1,7 @@
 # Use:
 # clingo subset_sum.lp instance.lp -c n=<val> | python3 print/print.py
-# to be ran in previous directory where subset_sum.lp and instance.lp are
+#
+# To be ran in previous directory where subset_sum.lp and instance.lp are.
 
 def get_input():
     toks = input().split()
