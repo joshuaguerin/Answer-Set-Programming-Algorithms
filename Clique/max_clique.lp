@@ -3,8 +3,9 @@
  * Author: Joshua T. Guerin
  *
  * Description: Given a graph and an integer, n, find an n-clique in the graph.
- * Use: clingo clique.lp instance.lp
- *      where instance.lp contains node and edge predicates.
+ *
+ * Use: clingo max_clique.lp instance.lp
+ *          where instance.lp contains node and edge predicates.
  *%
 
 % Edges are undirected
