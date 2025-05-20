@@ -3,6 +3,7 @@
 #
 # To be ran in previous directory where prime.lp and composite.lp are.
 
+
 toks = input().split()
 
 while not toks[0].startswith("Answer:"):
