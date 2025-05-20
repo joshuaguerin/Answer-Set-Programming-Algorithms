@@ -3,9 +3,12 @@
  * Author: Joshua T. Guerin
  *
  * Description: Given a graph and an integer, n, find an n-clique in the graph.
- * Use: clingo clique.lp instance.lp -c n=<val>
- *      clingo clique.lp instance.lp -c n=<val> -n 0
+ *
+ * Use: clingo k_clique.lp instance.lp -c n=<val>
+ *      clingo k_clique.lp instance.lp -c n=<val> -n 0
+ *          where instance.lp contains node and edge predicates.
  *%
+
 
 % Edges are undirected
 edge(Y, X) :- edge(X, Y).
