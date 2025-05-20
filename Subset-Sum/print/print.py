@@ -3,6 +3,7 @@
 #
 # To be ran in previous directory where subset_sum.lp and instance.lp are.
 
+
 def get_input():
     toks = input().split()
 
