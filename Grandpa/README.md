@@ -4,7 +4,6 @@
 "[I'm My Own Grandpa](https://en.wikipedia.org/wiki/I%27m_My_Own_Grandpa)" is a song written by Dwight Latham and Moe Jaffe, and has been performed by several artists including Ray Stevens, Willie Nelson, and Tom Arnold (in the 1996 comedy "The Stupids."). The song is told from the perspective of a narrator who (along with his father) engage in marriages and producting offspring. Through a somewhat convoluted series of inferences, the narrator concludes that, by definition, he has become his own grandfather.
 
 The notion of encoding a family tree is not new, and actually serves as a somewhat common school assignment in logical models and introducing newcomers to logical languages. Indeed, the "I'm my own Grandpa" lyrics have actually inspired discussion of models for representing relationships in family domains, including a chapter of the text "How We Reason" by Philip Johnson-Laird [^1].
-]
 
 [^1]: Johnson-Laird, P. N. (2006). How we reason. Oxford University Press. ISBN 978-0199551330.
 
@@ -17,12 +16,14 @@ The song contains only a handful of preexisting relationships, at which point it
 * The widow has a son.
 
 Additional relationships that are inferred over the course of the song:
-* My father becomes my son.
+* My father is my son.
 * The widow (by marriage to my father) is my daughter and mother.
 * The baby is the brother to my father.
-* The baby becomes my uncle.
-* The baby becomes brother of the widow's daughter.
-* 
+* The baby is my uncle.
+* The baby is brother of the widow's daughter.
+* The son (of the widow's daughter) is my grandchild.
+* My wife (widow) is now my grandmother, and I am her grandchild.
+* because I am married to the widow (my grandmother) I am my own grandfather.
 
 Due to current copyright, the lyrics are not reproduced on this page, however at the time of this writing text, audio, and video versions can be located easily elsewhere on the Internet.
 
