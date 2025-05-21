@@ -60,7 +60,6 @@ else:
         style=invis
 
 '''
-    print(toks)
     
     for t in toks:
         nums = re.findall(r'\d+', t)
