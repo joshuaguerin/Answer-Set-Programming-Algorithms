@@ -25,14 +25,5 @@ Additional relationships that are inferred over the course of the song:
 * My wife (widow) is now my grandmother, and I am her grandchild.
 * because I am married to the widow (my grandmother) I am my own grandfather.
 
-Due to current copyright, the lyrics are not reproduced on this page, however at the time of this writing text, audio, and video versions can be located easily elsewhere on the Internet.
+Note: Due to existing copyright, the lyrics are not reproduced on this page outside of an analysis of the relationships. For further reading, at the time of this writing, the song can easily be located online in text, audio, and video formats.
 
-## Problem Variants
-There are several variants of this problem that are NP-Complete. Some assumptions in this encoding are:
-* A [set](https://en.wikipedia.org/wiki/Set_(mathematics)) of values is encoded (vs. a [multiset](https://en.wikipedia.org/wiki/Multiset)) because the encoding of values is a single predicate.
-* Generating software is over positive integers (an arbitrary decision that should be easy to modify).
-
-## Related
-See also:
-* [equal sum partitioning](https://github.com/joshuaguerin/Answer-Set-Programming-Algorithms/tree/master/Numerical-3-Dimensional-Matching) and
-* [numerical 3-dimensional matching](https://github.com/joshuaguerin/Answer-Set-Programming-Algorithms/tree/master/Numerical-3-Dimensional-Matching).
