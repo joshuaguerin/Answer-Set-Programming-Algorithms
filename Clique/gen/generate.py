@@ -37,25 +37,19 @@ while len(connected) < cliqueSize:
 connected = list(connected)
 
 # Generate edges, with some random additional edges thrown in as well
-for i in range(len(connected)-1):
-  currNode = connected[i]
-  nextNode = connected[i+1]
-
-  print(f"edge({currNode}, {nextNode}", sep = "", end = "")
-
-  # Add a random number of additional nodes, up to the maxNumber of nodes
-  # Keeps track of seen nodes to make sure no duplicates
-  '''
-  seen = set()
+for i in connected:
+  seen = set(connected)
+  edgeStr = f"edge({i}, ("
+  for j in connected:
+    if i != j:
+      edgeStr += f"{j} ; "
   for _ in range(randint(0, numNodes)):
-    randNode = randint(0, numNodes)
-    if randNode not in seen and randNode != currNode and randNode != nextNode:
+    randNode = randint(1, numNodes)
+    if randNode not in seen:
       seen.add(randNode)
-      print(f" ; {randNode}", sep = "", end = "")
-  '''
-  print(").")
-
-print(f"edge({connected[-1]}, {connected[0]}).", sep = "")
+      edgeStr += f"{randNode} ; "
+  
+  print(edgeStr[:len(edgeStr)-3] + ")).")
 
 
 
