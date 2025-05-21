@@ -1,7 +1,7 @@
 # Problem: I'm my own Grandpa
 
 ## Description
-"[https://en.wikipedia.org/wiki/I%27m_My_Own_Grandpa](I'm My Own Grandpa)" is a song written by Dwight Latham and Moe Jaffe, and has been performed by several artists including Ray Stevens, Willie Nelson, and Tom Arnold (in the 1996 comedy "The Stupids."). The song is told from the perspective of a narrator who (along with his father) engage in marriages and producting offspring. Through a somewhat convoluted series of inferences, the narrator concludes that, by definition, he has become his own grandfather.
+"[I'm My Own Grandpa](https://en.wikipedia.org/wiki/I%27m_My_Own_Grandpa)" is a song written by Dwight Latham and Moe Jaffe, and has been performed by several artists including Ray Stevens, Willie Nelson, and Tom Arnold (in the 1996 comedy "The Stupids."). The song is told from the perspective of a narrator who (along with his father) engage in marriages and producting offspring. Through a somewhat convoluted series of inferences, the narrator concludes that, by definition, he has become his own grandfather.
 
 The notion of encoding a family tree is not new, and actually serves as a somewhat common school assignment in logical models and introducing newcomers to logical languages. Indeed, the "I'm my own Grandpa" lyrics have actually inspired discussion of models for representing relationships in family domains, including a chapter of the text "How We Reason" by Philip Johnson-Laird [^1].
 ]
@@ -14,6 +14,17 @@ The song contains only a handful of preexisting relationships, at which point it
 * The widow had an adult daughter with red hear.
 * My father marries the widow's daughter.
 * I have a son (with the widow), a "bouncing baby boy."
+* The widow has a son.
+
+Additional relationships that are inferred over the course of the song:
+* My father becomes my son.
+* The widow (by marriage to my father) is my daughter and mother.
+* The baby is the brother to my father.
+* The baby becomes my uncle.
+* The baby becomes brother of the widow's daughter.
+* 
+
+Due to current copyright, the lyrics are not reproduced on this page, however at the time of this writing text, audio, and video versions can be located easily elsewhere on the Internet.
 
 ## Problem Variants
 There are several variants of this problem that are NP-Complete. Some assumptions in this encoding are:
