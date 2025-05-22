@@ -10,7 +10,7 @@ male(son).
 female(widow).
 female(widows_daughter).
 
-% initail parents relations
+% initial parents relations
 parent(father, me).
 parent(widow, widows_daughter).
 parent(me, bouncing_baby_boy).
