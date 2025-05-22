@@ -4,6 +4,7 @@
 male(me).
 male(father).
 male(bouncing_baby_boy).
+male(son).
 
 % female gender
 female(widow).

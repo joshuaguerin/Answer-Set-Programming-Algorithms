@@ -48,4 +48,4 @@ grandpa(Person) :- grandparent(Person, Person),
 		   male(Person).
 
 % PRINT
-#show grandpa/1.
+%#show grandpa/1.
