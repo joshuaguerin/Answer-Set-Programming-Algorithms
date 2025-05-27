@@ -38,4 +38,4 @@ The [print](print/) system generates [graphviz](https://graphviz.org/) files for
 ## Implementational Notes
 In order to have the [print](print/) system work correctly all output is currently enabled. Due to the volume of relationships printed, this does not lend itself to easy parsing by the reader, but instead enables a graphical visualization of the output.
 
-If the user wishes to see a binary output based on the problem syntax, the final `#show` can be uncommented, and any other desired predicates can be easily added. 
+If the user wishes to see a binary output based on the problem syntax, the final `#show` can be uncommented, and any other desired print statements can be easily added. 
