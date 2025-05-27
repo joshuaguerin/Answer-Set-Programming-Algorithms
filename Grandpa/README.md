@@ -32,4 +32,6 @@ The following image illustrates the relationships specified directly and inferre
 ![Family relationships inferred from the song logic.](images/relationships.png)
 A larger version of the image can be found in the [images](images/relationships.pdf) directory.
 
+## Implementational Notes
 
+In order to have the [print](print/) system work correctly all output is currently enabled. If the user wishes to see a binary output based on the problem syntax, the final `#show` can be uncommented, and any other desired predicates can be easily added. 
