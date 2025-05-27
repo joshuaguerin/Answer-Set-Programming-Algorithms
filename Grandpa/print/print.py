@@ -1,7 +1,7 @@
 # Description: Creates dot code visualizable using graphviz.
 #              Second line in 'Use' will create a pdf with the created graph.
 #
-# Use: clingo grandpa.lp instance.lp | python3 print/print.py | dot -Tpdf -o image.pdf
+# Use: clingo grandpa.lp instance.lp | python3 print/print.py | dot -Tpdf -o grandpa.pdf
 #
 # To be ran in previous directory where grandpa.lp and instance.lp are.
 
