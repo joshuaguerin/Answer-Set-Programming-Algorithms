@@ -8,12 +8,14 @@ The notion of encoding a family tree is not new, and actually serves as a somewh
 [^1]: Johnson-Laird, P. N. (2006). How we reason. Oxford University Press. ISBN 978-0199551330.
 
 ## Relationships
-The song contains only a handful of preexisting relationships, at which point it switches into inference to discover the eventual grandparent relationship between the narrator and himself. These starting relationships are:
+The song lyrics [^2] contains only a handful of preexisting relationships, at which point it switches into inference to discover the eventual grandparent relationship between the narrator and himself. These starting relationships are:
 * I (the narrator) am married to a widow.
 * The widow had an adult daughter with red hear.
 * My father marries the widow's daughter.
 * I have a son (with the widow), a "bouncing baby boy."
 * The widow has a son.
+
+[^2]: Due to existing copyright, the lyrics are not reproduced on this page outside of an analysis of the relationships. For further reading, at the time of this writing, the song can easily be located online in text, audio, and video formats.
 
 Additional relationships that are inferred over the course of the song:
 * My father is my son.
@@ -25,5 +27,9 @@ Additional relationships that are inferred over the course of the song:
 * My wife (widow) is now my grandmother, and I am her grandchild.
 * because I am married to the widow (my grandmother) I am my own grandfather.
 
-Note: Due to existing copyright, the lyrics are not reproduced on this page outside of an analysis of the relationships. For further reading, at the time of this writing, the song can easily be located online in text, audio, and video formats.
+The following image illustrates the relationships specified directly and inferred from the song:
+
+![Family relationships inferred from the song logic.](images/relationships.png)
+A larger version of the image can be found in the [images](images/relationships.pdf) directory.
+
 
