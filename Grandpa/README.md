@@ -32,8 +32,10 @@ The following image illustrates the relationships specified directly and inferre
 ![Family relationships inferred from the song logic.](images/relationships.png)
 A larger version of the image can be found in the [images](images/relationships.pdf) directory.
 
-## Implementational Notes
+## Dependencies
+The [print](print/) system generates [graphviz](https://graphviz.org/) files for input, that can be viewed, redirected into a file, or rendered using dot. The latter step can be omitted if graphviz is not present or if graphical output is not desired. 
 
+## Implementational Notes
 In order to have the [print](print/) system work correctly all output is currently enabled. Due to the volume of relationships printed, this does not lend itself to easy parsing by the reader, but instead enables a graphical visualization of the output.
 
 If the user wishes to see a binary output based on the problem syntax, the final `#show` can be uncommented, and any other desired predicates can be easily added. 
