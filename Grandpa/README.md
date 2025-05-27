@@ -15,7 +15,7 @@ The song lyrics [^2] contains only a handful of preexisting relationships, at wh
 * I have a son (with the widow), a "bouncing baby boy."
 * The widow has a son.
 
-[^2]: Due to existing copyright, the lyrics are not reproduced on this page outside of an analysis of the relationships. For further reading, at the time of this writing, the song can easily be located online in text, audio, and video formats.
+[^2]: Due to existing copyright, the lyrics are not reproduced on this page outside of an analysis of the relationships. At the time of this writing the song lyrics can be found  online in text, audio, and video formats.
 
 Additional relationships that are inferred over the course of the song:
 * My father is my son.
