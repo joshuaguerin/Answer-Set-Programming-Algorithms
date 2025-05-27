@@ -47,5 +47,7 @@ grandparent(Grandparent, Child) :- parent(Grandparent, Parent),
 grandpa(Person) :- grandparent(Person, Person),
 		   male(Person).
 
-% PRINT
+%% PRINT
+% Can be enabled by uncommenting for a binary yes/no.
+% Full output is currently displayed for the graphical printing system.
 %#show grandpa/1.
