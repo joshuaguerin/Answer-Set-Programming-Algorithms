@@ -1,8 +1,10 @@
 # Use:
-# clingo k_clique.lp instance.lp -c n=<val> | python3 print/print.py
-# clingo max_clique.lp instance.lp | python3 print/print.py
+# clingo k_clique.lp instance.lp -c n=<val> | python3 print/print.py | dot -Tpdf -o clique.pdf
+# clingo max_clique.lp instance.lp | python3 print/print.py | dot -Tpdf -o clique.pdf
 #
-# To be ran in previous directory where instance.lp, k_clique.lp, and max_clique.lp are.
+# Note:
+#  The final pipe and call to dot can be omitted if graphviz is not present.
+#  To be ran in previous directory where instance.lp, k_clique.lp, and max_clique.lp are.
 
 
 import re
