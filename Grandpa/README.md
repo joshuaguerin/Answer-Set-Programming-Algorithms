@@ -1,11 +1,11 @@
 # Problem: I'm my own Grandpa
 
 ## Description
-"[I'm My Own Grandpa](https://en.wikipedia.org/wiki/I%27m_My_Own_Grandpa)" is a song written by [Dwight Latham](https://www.imdb.com/name/nm0490077/) and [Moe Jaffe](https://en.wikipedia.org/wiki/Moe_Jaffe), and has been performed by several artists including Ray Stevens, Willie Nelson, and Tom Arnold (in the 1996 comedy "The Stupids."). The song is told from the perspective of a narrator who (along with his father) engage in marriages and producting offspring. Through a somewhat convoluted series of inferences, the narrator concludes that, by definition, he has become his own grandfather.
+"[I'm My Own Grandpa](https://en.wikipedia.org/wiki/I%27m_My_Own_Grandpa)" is a song written by [Dwight Latham](https://www.imdb.com/name/nm0490077/) and [Moe Jaffe](https://en.wikipedia.org/wiki/Moe_Jaffe), and has been performed by several artists including [Ray Stevens](https://en.wikipedia.org/wiki/Ray_Stevens), [Willie Nelson](https://en.wikipedia.org/wiki/Willie_Nelson), and [Tom Arnold](https://en.wikipedia.org/wiki/Tom_Arnold_(actor)) (in the 1996 comedy "[The Stupids](https://en.wikipedia.org/wiki/The_Stupids)."). The song is told from the perspective of a(n unnamed) narrator who, along with his father, engage in marriages and producting offspring. Through a somewhat convoluted series of inferences, the narrator concludes that, by definition, he has become his own grandfather.
 
-The notion of encoding a family tree is not new, and actually serves as a somewhat common school assignment in logical models and introducing newcomers to logical languages. Indeed, the "I'm my own Grandpa" lyrics have actually inspired discussion of models for representing relationships in family domains, including a chapter of the text "How We Reason" by Philip Johnson-Laird [^1].
+The notion of encoding a family tree is not new, and actually serves as a somewhat common school assignment in logical models and introducing newcomers to logical languages. Indeed, the "I'm my own Grandpa" lyrics have actually inspired discussion of models for representing relationships in family domains, including a chapter of the text "[How We Reason](https://academic.oup.com/book/11984)" by Philip Johnson-Laird [^1].
 
-[^1]: Johnson-Laird, P. N. (2006). How we reason. Oxford University Press. ISBN 978-0199551330.
+[^1]: Johnson-Laird, P. N. (2006). How We Reason. Oxford University Press. ISBN 978-0199551330.
 
 ## Relationships
 The song lyrics [^2] contains only a handful of preexisting relationships, at which point it switches into inference to discover the eventual grandparent relationship between the narrator and himself. These starting relationships are:
