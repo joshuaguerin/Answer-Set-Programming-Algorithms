@@ -6,18 +6,8 @@
 #	  where: n is the maximum number of nodes (non-inclusive),
 #		 k is the guaranteed size of a clique to appear in the graph
 #		 filename.lp is the instance file to write to
-#      python3 generate.py -n n > filename.lp
-#	  where: n is the maximum number of nodes
-#		 k will default to a clique size of 3
-#		 filename.lp is the instance file to write to
-#      python3 generate.py -k k > filename.lp
-#	  where: n will default to 10 nodes
-#		 k is the guaranteed size of a clique to appear in the graph
-#		 filename.lp is the instance file to write to
-#      python3 generate.py > filename.lp
-#	  where: n will default to 10 nodes
-#		 k will default to a clique size of 3
-#		 filename.lp is the instance file to write to
+#         Each of n and k are optional (defaults n=10, k=3).
+#         The redirect (> filename.lp) can be ommitted (to print to stdout).
 
 import argparse
 from random import randint
