@@ -1,5 +1,6 @@
 
 set(1..10).
+max_transactions(3).
 
 transaction(1, bread).
 transaction(1, eggs).
