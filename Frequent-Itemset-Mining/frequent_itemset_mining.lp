@@ -2,31 +2,27 @@
  * File: frequent_itemset_mining.lp
  * Author: Joshua T. Guerin
  *
- * Description: Given an integer n, compute primes from 2..n
- * Use: clingo instance.lp frequent_itemset_mining.lp -c n=<min_support>
+ * Description: Find patterns in items that are frequently co-located
+ * 		together in transactions.
+ * Use:
+ *   clingo instance.lp frequent_itemset_mining.lp -c s=<support> -c n=<size>
  *
  *%
 
-
+% Extract items from transaction data.
 item(I) :- transaction(_, I).
 
-%count(C) :- C = #count{I : item(I)}.
+% Items are candidates for each set.
+{ set(I, S) : set(S) } :- item(I).
 
-transaction(C) :- C = #max{T : transaction(T, _)}.
+% Each nonempty itemset has an associated count of items.
+count(S, C) :- set(S), C = #count{ I, S : set(I, S) }, C != 0.
 
-% Create a graph from each transaction.
-% I and J are associated with one another in transaction N.
-associate(N, I, J) :- transaction(N, I), transaction(N, J), I!=J.
+% supports(T, S) - Transaction T supports itemset S.
+% supports(T, S) :-	       
 
-% Count occurrences of pairs with correct support
-count(I, J, C) :- C = #count{ N : associate(N, I, J) }, n<=C,
-	       	  item(I), item(J), I<J.
+% Itemsets must have the correct count.
+:- count(S, C), set(S), C != n.
 
-% Count occurrences of triplets with correct support
-count(I, J, K, C) :- C = #count{ N : associate(N, I, J), associate(N, I, K) },
-	       	     n<=C, item(I), item(J), item(K), I<J, J<K.
-
-% Generalization needed
-
-#show count/3.
-#show count/4.
+#show count/2.
+#show set/2.
