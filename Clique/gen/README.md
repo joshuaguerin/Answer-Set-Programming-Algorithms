@@ -1,6 +1,6 @@
-#Problem: K-Clique & Max-Clique
+# K-Clique & Max-Clique Generators
 
-##Generator Description
+## Generator Description
 The generator takes in 2 user arguments, the number of nodes in the graph and the specific size of a clique in the graph.
 The program then picks a set of the nodes equal to the clique size. From here, the program starts connecting the nodes to
 from the set to each other. Each time a connection is made, the program randomly decides how many additional nodes to connect
