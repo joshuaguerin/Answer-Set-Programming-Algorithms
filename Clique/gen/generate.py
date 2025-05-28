@@ -2,10 +2,22 @@
 # Author: Jackson Madsen
 
 # Description: Graph generator for clique problem solver
-# Use: python3 genereate.py -n num -k num > filename.lp
-#      python3 generate.py -n num > filename.lp
-#      python3 generate.py -k num > filename.lp
+# Use: python3 genereate.py -n n -k k > filename.lp
+#	  where: n is the maximum number of nodes (non-inclusive),
+#		 k is the guaranteed size of a clique to appear in the graph
+#		 filename.lp is the instance file to write to
+#      python3 generate.py -n n > filename.lp
+#	  where: n is the maximum number of nodes
+#		 k will default to a clique size of 3
+#		 filename.lp is the instance file to write to
+#      python3 generate.py -k k > filename.lp
+#	  where: n will default to 10 nodes
+#		 k is the guaranteed size of a clique to appear in the graph
+#		 filename.lp is the instance file to write to
 #      python3 generate.py > filename.lp
+#	  where: n will default to 10 nodes
+#		 k will default to a clique size of 3
+#		 filename.lp is the instance file to write to
 
 import argparse
 from random import randint
@@ -48,21 +60,6 @@ for i in connected:
     if randNode not in seen:
       seen.add(randNode)
       edgeStr += f"{randNode} ; "
-  
+
   print(edgeStr[:len(edgeStr)-3] + ")).")
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
