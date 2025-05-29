@@ -11,6 +11,7 @@ While the respository is open to anyone who wishes to learn ASP, the goals do no
 You are absolutely correct! The term really doesn't apply based on the definition of an algorithm in Computer Science. "Patterns" or "implementations" may be better, but don't really have a solid sound to them. I needed *something* to call the repo, and I'm modeling the idea off the myriad of books out there with titles like "Algorithms in C++" or "Algorithms in Python." What I'm going for is essentially similar to the purposes of those books--just in a language that isn't inherently algorithmic.
 
 ## Organization
+The repository  is designed around a "flat" organizational structure for ease of navigation. 
 While I am opting for a flat directory organization at the moment for ease of navigation, one possible organization of the problems for the reader could be:
 
 | Category  | Problems | Complexity |
@@ -23,7 +24,7 @@ While I am opting for a flat directory organization at the moment for ease of na
 |  | [Numerical 3-Dimensional Matching](https://github.com/joshuaguerin/Answer-Set-Programming-Algorithms/tree/master/Numerical-3-Dimensional-Matching) |
 |  Combinatorial Optimization  |  [Knapsack](https://github.com/joshuaguerin/Answer-Set-Programming-Algorithms/tree/master/Knapsack)  |
 |  | [Bin-Packing](https://github.com/joshuaguerin/Answer-Set-Programming-Algorithms/tree/master/Bin-Packing) |
-|  Puzzles/Games  | [I'm my own Grandpa!](https://github.com/joshuaguerin/Answer-Set-Programming-Algorithms/tree/grandpa/Grandpa) |
+|  Puzzles/Games  | [I'm my own Grandpa!](Grandpa/) |
 |    | [N-Queens](https://github.com/joshuaguerin/Answer-Set-Programming-Algorithms/tree/master/N-Queens) |
 |    | [Sudoku](https://github.com/joshuaguerin/Answer-Set-Programming-Algorithms/tree/master/Sudoku) |
 |  Graphs  | [Graph Coloring](https://github.com/joshuaguerin/Answer-Set-Programming-Algorithms/tree/master/Graph-Coloring)
