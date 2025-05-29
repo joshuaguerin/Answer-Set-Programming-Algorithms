@@ -13,8 +13,8 @@ You are absolutely correct! The term really doesn't apply based on the definitio
 ## Organization
 While I am opting for a flat directory organization at the moment for ease of navigation, one possible organization of the problems for the reader could be:
 
-| Category  | Problems |
-| ------------- | ------------- |
+| Category  | Problems | Complexity |
+| ------------- | ------------- | ------------- |
 | Number Theory   | [Composite Numbers](https://github.com/joshuaguerin/Answer-Set-Programming-Algorithms/tree/master/Prime-Sieve)  |
 |    | [Prime Sieve](https://github.com/joshuaguerin/Answer-Set-Programming-Algorithms/tree/master/Prime-Sieve)  |
 |    | [Perfect Numbers](https://github.com/joshuaguerin/Answer-Set-Programming-Algorithms/tree/master/Perfect-Numbers)  |
