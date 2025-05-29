@@ -15,7 +15,4 @@ divisor(M, N) :- num(N), num(M), N!=M, N\M==0.
 
 perfect(N) :- num(N), #sum {M : divisor(M, N)} == N.
 
-perfect(M, N) :- perfect(N), divisor(M, N).
-
 #show perfect/1.
-#show perfect/2.
