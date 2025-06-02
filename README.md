@@ -41,6 +41,8 @@ The repository  is designed around a "flat" organizational structure for ease of
 |  Network Flow  | [Max-Flow](https://github.com/joshuaguerin/Answer-Set-Programming-Algorithms/tree/master/Max-Flow) |
 |  Data Mining  | [Clustering](https://github.com/joshuaguerin/Answer-Set-Programming-Algorithms/tree/master/Clustering) |
 
+&#x2020; Directories that contain solutions with varying complexity are labeled using their "primary" designation. E.g., A decision version that is NP-Complete may be representative of the "standard" statement of the problem, with optimization versions also included (that may be NP-Hard).
+
 ## Structure and Use
 Entries are designed with a primary goal of comprehensibility for study. This is not to imply that solutions encountered will necessarily be slow in practice or deliberately inefficient. Instead we have designed solutions to be easy to understand and learn from, as articulating thoughts in a logical language may feel difficult at first.
 
