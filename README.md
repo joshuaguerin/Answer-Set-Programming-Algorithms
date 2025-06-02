@@ -60,7 +60,7 @@ Applications are designed under the assumptions of a standard Unix design philos
 The goal for this repo is to produce a set of original solutions to common/classical problems in Computer Science, however natural similarities are likely to exist between my own sources and those written by others. Of significant influence are the educational materials in the [Potassco](https://potassco.org/) collection, who are also the developers of clingo and other related solvers. Many programming conventions in this repository were learned from their materials and carry over directly.
 
 ## Bugs and other issues
-Our goal is to have solutions be well-documented, and fairly robust. While bugs are likely to be present, our hope is that the algorithms largely function under their defined parameters. If users discover bugs or other problems in our code, we welcome the user to submit an [issue](issues/) that clearly defines the unexpected behavior so it may be fixed or better documented.
+Our goal is to have solutions be well-documented, and fairly robust. While bugs are likely to be present, our hope is that the algorithms largely function under their defined parameters. If users discover bugs or other problems in our code, we welcome the user to submit an [issue](https://github.com/joshuaguerin/Answer-Set-Programming-Algorithms/issues) that clearly defines the unexpected behavior so it may be fixed or better documented.
 
 ## How to Cite
 For now, please cite the website by the name *ASP&#8704;: Answer Set Programming "Algorithms"* by "Joshua T. Guerin" with the full URL. You may use whatever citation conventions are most reasonable for the publication.
