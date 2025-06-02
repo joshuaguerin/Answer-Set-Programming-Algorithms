@@ -26,7 +26,7 @@ The repository  is designed around a "flat" organizational structure for ease of
 |  | [Numerical 3-Dimensional Matching](https://github.com/joshuaguerin/Answer-Set-Programming-Algorithms/tree/master/Numerical-3-Dimensional-Matching) |
 |  Combinatorial Optimization  |  [Knapsack](https://github.com/joshuaguerin/Answer-Set-Programming-Algorithms/tree/master/Knapsack)  | 
 |  | [Bin-Packing](https://github.com/joshuaguerin/Answer-Set-Programming-Algorithms/tree/master/Bin-Packing) |
-|  Puzzles/Games  | [I'm my own Grandpa!](Grandpa/) |
+|  Puzzles/Games  | [I'm my own Grandpa!](Grandpa/) (Song) | N/A |
 |    | [N-Queens](https://github.com/joshuaguerin/Answer-Set-Programming-Algorithms/tree/master/N-Queens) |
 |    | [Sudoku](https://github.com/joshuaguerin/Answer-Set-Programming-Algorithms/tree/master/Sudoku) |
 |  Graphs  | [Graph Coloring](https://github.com/joshuaguerin/Answer-Set-Programming-Algorithms/tree/master/Graph-Coloring) | 
@@ -37,11 +37,13 @@ The repository  is designed around a "flat" organizational structure for ease of
 |    | [Vertex Cover](https://github.com/joshuaguerin/Answer-Set-Programming-Algorithms/tree/master/Vertex-Cover) | 
 |  Deterministic Planning  | [Hamiltonian Path](https://github.com/joshuaguerin/Answer-Set-Programming-Algorithms/tree/master/Travelling_Salesman) | NP-Complete |
 |    | [Traveling Salesman](https://github.com/joshuaguerin/Answer-Set-Programming-Algorithms/tree/master/Travelling_Salesman) | NP-Hard |
-| Sequential/Time-Based Planning | [Wolf, Goat, and Cabbage](https://github.com/joshuaguerin/Answer-Set-Programming-Algorithms/tree/master/Wolf-Goat-Cabbage) |
+| Sequential/Time-Based Planning | [Wolf, Goat, and Cabbage](https://github.com/joshuaguerin/Answer-Set-Programming-Algorithms/tree/master/Wolf-Goat-Cabbage) | N/A |
 |  Network Flow  | [Max-Flow](https://github.com/joshuaguerin/Answer-Set-Programming-Algorithms/tree/master/Max-Flow) |
 |  Data Mining  | [Clustering](https://github.com/joshuaguerin/Answer-Set-Programming-Algorithms/tree/master/Clustering) |
 
-&#x2020; Directories that contain solutions with varying complexity are labeled using their "primary" designation. E.g., A decision version that is NP-Complete may be representative of the "standard" statement of the problem, with optimization versions also included (that may be NP-Hard).
+Note that a directory may contain multiple solutions. E.g., The "standard" problem in NP-Complete and an optimization variant in NP-Hard. Such problems are labeled with a dagger (&#x2020;).
+
+Additionally, some solutions are to purpose-built or contrived, single-purpose domains (e.g., [Grandpa](Grandpa) or [Wolf, Goat, and Cabbage](Wolf-Goat-Cabbage), which do not have a meaningful notion of "input size," (for which we will denote a N/A complexity).
 
 ## Structure and Use
 Entries are designed with a primary goal of comprehensibility for study. This is not to imply that solutions encountered will necessarily be slow in practice or deliberately inefficient. Instead we have designed solutions to be easy to understand and learn from, as articulating thoughts in a logical language may feel difficult at first.
