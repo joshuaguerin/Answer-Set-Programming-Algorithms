@@ -53,11 +53,20 @@ Additional resources are typically included on an as-needed basis including:
 
 Some of these features will be omitted where not applicable. E.g., [Prime-Sieve](Prime-Sieve)'s prime and composite sieves take a single integer, and thus domain/instance generation is not terribly useful to the reader. Unless otherwise stated, generation and printing software are likely written in Python.
 
-Applications are designed under the assumptions of a standard Unix design philosophy of small, single-purpose programs that operate largely over standard input and output. This means that either individual applications can be called as-needed, and invocations can be pipelined using pipes and redirects. Example calls/suggested uses are included in the headers of each file (either .lp or .py).
+Applications are designed under the assumptions of a standard Unix design philosophy of small, single-purpose programs that operate largely over standard input and output. This means that either individual applications can be called as-needed, and invocations can be pipelined using pipes and redirects. Example calls/suggested uses are included in the headers of each file (either `.lp` or `.py`).
 
-
-## Note about implementations
+## Notes about implementations
 The goal for this repo is to produce a set of original solutions to common/classical problems in Computer Science, however natural similarities are likely to exist between my own sources and those written by others. Of significant influence are the educational materials in the [Potassco](https://potassco.org/) collection, who are also the developers of clingo and other related solvers. Many programming conventions in this repository were learned from their materials and carry over directly.
+
+### Prerequisites/Dependencies
+Solution and instance files (`.lp`) are written for the [Clingo](https://potassco.org/clingo/) solver, from the [Potsdam](https://potassco.org/clingo/) Answer Set Solving Collection (Potassco).
+
+Auxiliary software applications (e.g., generation and printing) are usually written in [Python 3](https://www.python.org/downloads/).
+
+Finally, additional utilities may be used where appropriate. While efforts have been taken to ensure that required software packages are somewhat minimal, additional utilities may improve (for example) our ability to represent output.
+
+E.g., Many graph algorithms do not have a natural/human readable means to display as plaintext or *ASCII art*. Thus, for convenience, [graphviz/dot](https://graphviz.org/download/) may be used as an output format by printers. This particular format was selected because it is roughly as comprehensible as any other text-based format, but users also have the option of running these outputs through dot to produce graphical documents (e.g., pdfs) for final output.
+
 
 ## Bugs and other issues
 Our goal is to have solutions be well-documented, and fairly robust. While bugs are likely to be present, our hope is that the algorithms largely function under their defined parameters. If users discover bugs or other problems in our code, we welcome the user to submit an [issue](https://github.com/joshuaguerin/Answer-Set-Programming-Algorithms/issues) that clearly defines the unexpected behavior so it may be fixed or better documented.
