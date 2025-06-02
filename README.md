@@ -1,18 +1,20 @@
 # ASP&#8704;: Answer Set Programming "Algorithms"
 
 ## What is ASP&#8704;
-Pronounced "ASP for all," this repository is designed to serve as a sort of online textbook or Open Educational Repository (OER) for Answer Set Programming, in particular in the [Clingo](https://potassco.org/clingo/) dialect. The universal quantifier, &#8704;, is an important symbol in logic programming, ascribing properties to *everything* of a particular type of atom in logic programming. The upside-down 'A' also serves to reinforce the sort of misnomer of the term "algorithms," as it may or may not apply to languages like Clingo.
+Pronounced "Answer Set Programming for all," this repository is designed to serve as a sort of online textbook or Open Educational Repository (OER) for Answer Set Programming, in particular in the [Clingo](https://potassco.org/clingo/) dialect. The universal quantifier, &#8704;, is an important symbol in logic programming, ascribing properties to *everything* of a particular type of atom in logic programming. The upside-down 'A' also serves to reinforce the sort of misnomer of the term "algorithms," as it may or may not apply to languages like Clingo.
 
 In terms of overall design, our expected audiences are those who new to ASP and Clingo, but are looking to improve, and may be useful for those with an intermediate experience level as well. We hope that the overall structure will allow readers to learn ASP patterns "by example," to identify commonalities in program construction.
 
 While the respository is open to anyone who wishes to learn ASP, the goals do not currently include dedicated instruction in the language's features. This is a goal of ours, but we believe it would be better expressed through a different project. So some fluency with logical/declarative languages, or the Clingo semantics is likely useful. There are certainly [existing options](https://teaching.potassco.org/) for learning a bit of the language and solver semantics.
 
 ### "Algorithms"
-You are absolutely correct! The term really doesn't apply based on the definition of an algorithm in Computer Science. "Patterns" or "implementations" may be better, but don't really have a solid sound to them. I needed *something* to call the repo, and I'm modeling the idea off the myriad of books out there with titles like "Algorithms in C++" or "Algorithms in Python." What I'm going for is essentially similar to the purposes of those books--just in a language that isn't inherently algorithmic.
+The term "Algorithms" doesn't really apply as the conventional algorithm is a description of a step-by-step process to find a solution to a particular problem. In a declarative language like an answer set language, the *algorithm* is more easily attributed to the solver. The program specified in the language dialect by the end-user is a model or description of the problem domain, including a description of a solution in the domain. In this case "patterns" may be a better description, but are easily conflated with conventional "design patterns" in software.
+
+The inspiration (including the name) for the repository are the myriad of books with titles like "Algorithms in C++" or "Algorithms in Python," where the author's primary goal is to present implementations of conventional algorithms in the target language. We opted for a similar naming scheme in hopes of conveying a similar purpose for the repository as an educational tool, despite the largely non-algorithmic nature of solutions in the language.
+
 
 ## Organization
-The repository  is designed around a "flat" organizational structure for ease of navigation. 
-While I am opting for a flat directory organization at the moment for ease of navigation, one possible organization of the problems for the reader could be:
+The repository  is designed around a "flat" organizational structure for ease of navigation, however problems in the repository are easily grouped into categories related to their type. The following table presents one such organizational structure, with problems in each category organized (roughly) by complexity of the solution.
 
 | Category  | Problems | Complexity |
 | ------------- | ------------- | ------------- |
@@ -39,21 +41,27 @@ While I am opting for a flat directory organization at the moment for ease of na
 |  Network Flow  | [Max-Flow](https://github.com/joshuaguerin/Answer-Set-Programming-Algorithms/tree/master/Max-Flow) |
 |  Data Mining  | [Clustering](https://github.com/joshuaguerin/Answer-Set-Programming-Algorithms/tree/master/Clustering) |
 
-The organization of this table is design to roughly correspond with relative difficulty level of each problem/implementation.
+## Structure and Use
+Entries are designed with a primary goal of comprehensibility for study. This is not to imply that solutions encountered will necessarily be slow in practice or deliberately inefficient. Instead we have designed solutions to be easy to understand and learn from, as articulating thoughts in a logical language may feel difficult at first.
+
+Each problem entry contains, minimally, a description and example of the problem being solved (in the form of a `README.md` file), a problem instance file (data, usually called `instance.lp`), and a solution file (sharing the name of problem).
+
+Additional resources are typically included on an as-needed basis including:
+* Problem variants that are not sufficiently different to warrant separate inclusion (e.g., minimization/maximization variants).
+* Generators to construct new instances (`gen` directory).
+* Printing software (`print` directory).
+
+Some of these features will be omitted where not applicable. E.g., [Prime-Sieve](Prime-Sieve)'s prime and composite sieves take a single integer, and thus domain/instance generation is not terribly useful to the reader. Unless otherwise stated, generation and printing software are likely written in Python.
+
+Applications are designed under the assumptions of a standard Unix design philosophy of small, single-purpose programs that operate largely over standard input and output. This means that either individual applications can be called as-needed, and invocations can be pipelined using pipes and redirects. Example calls/suggested uses are included in the headers of each file (either .lp or .py).
+
 
 ## Note about implementations
-The goal for this repo is to produce a set of original solutions to common/classical problems in Computer Science, however natural similarities are likely to exist between my own sources and those written by others. I've been influenced greatly over the course of my own studies by the educational resources provided by the good folks over at [Potassco](https://potassco.org/). Many of the conventions in my coding carry over from theirs, and similar authors. Additionally, ASP solutions tend to be much smaller than other conventional programming languages. Many NP-Complete or NP-Hard problems can be solved in <10 lines (often <5) of actual code. Variations are likely to exist, however it is entirely likely to have two authors describe the same basic ideas/constraints in their code.
+The goal for this repo is to produce a set of original solutions to common/classical problems in Computer Science, however natural similarities are likely to exist between my own sources and those written by others. Of significant influence are the educational materials in the [Potassco](https://potassco.org/) collection, who are also the developers of clingo and other related solvers. Many programming conventions in this repository were learned from their materials and carry over directly.
 
 ## Bugs and other issues
-Oh, yea, there will be bugs. It's going to be a while before I'm comforatble enough to label anything as being "done." Assume that everything here is experimental--prone to incorrectness or breakage. Having said that, I'm trying to upload mostly correct code even before I get to thorough testing ;) With that in mind, I would be thrilled if anyone found benefit in reading the examples I've produced here.
-
-I will be using the [Issues](https://github.com/joshuaguerin/Answer-Set-Programming-Algorithms/issues) page to keep organized in terms of progress, bugs, and future ideas for the page.
-
-If you find a bug or want to chat feel free to hit us up! If you discover any untracked bugs, discussion points, or want to request a solution to a problem please feel free to add or comment on an [Issue](https://github.com/joshuaguerin/Answer-Set-Programming-Algorithms/issues).
-
-## Future updates
-We would like to consider this repository something of a "living document," continuing to add content in the form of new problems/solutions, utilities, and other information that the user may find useful. The frequency of updates is TBD, but we wish for this to be useful as an OER for ASP going into the future.
+Our goal is to have solutions be well-documented, and fairly robust. While bugs are likely to be present, our hope is that the algorithms largely function under their defined parameters. If users discover bugs or other problems in our code, we welcome the user to submit an [issue](issues/) that clearly defines the unexpected behavior so it may be fixed or better documented.
 
 ## How to Cite
-For now, please cite the website by the name *ASP&#8704;: Answer Set Programming "Algorithms"* by "Guerin, Joshua" with the full URL. You may use whatever citation conventions are most reasonable for the publication.
+For now, please cite the website by the name *ASP&#8704;: Answer Set Programming "Algorithms"* by "Joshua T. Guerin" with the full URL. You may use whatever citation conventions are most reasonable for the publication.
 
