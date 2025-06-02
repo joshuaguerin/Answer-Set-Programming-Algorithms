@@ -18,7 +18,7 @@ The repository  is designed around a "flat" organizational structure for ease of
 
 | Category  | Problems | Complexity |
 | ------------- | ------------- | ------------- |
-| Number Theory   | [Composite Numbers](https://github.com/joshuaguerin/Answer-Set-Programming-Algorithms/tree/master/Prime-Sieve)  |
+| Number Theory   | [Composite Numbers](Prime-Sieve)  |
 |    | [Prime Sieve](https://github.com/joshuaguerin/Answer-Set-Programming-Algorithms/tree/master/Prime-Sieve)  |
 |    | [Perfect Numbers](https://github.com/joshuaguerin/Answer-Set-Programming-Algorithms/tree/master/Perfect-Numbers)  |
 | Numerical Set/Partitioning  | [Subset Sum](https://github.com/joshuaguerin/Answer-Set-Programming-Algorithms/tree/master/Subset-Sum) | NP-Complete |
