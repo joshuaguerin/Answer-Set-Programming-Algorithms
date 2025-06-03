@@ -1,7 +1,7 @@
 # File: generate.py
 # Author: Jackson Madsen
 
-# Description: Graph generator for clique problem solver
+# Description: Graph generator for vertex-cover problem solver
 # Use: python3 genereate.py -n n > filename.lp
 #	where: n is the number of nodes in the graph
 #	       filename.lp is the file to write the instance to
@@ -32,15 +32,15 @@ nodes = [x for x in range(args.n)]
 seen = [set() for _ in range(args.n)]
 
 
-for index, node in enumerate(nodes):
+for node in nodes:
   connected = False
   printStr = f"edge({node} , "
 
   for _ in range(random.randint(0, args.n - 1)):
     randNode = random.randint(0, args.n - 1)
-    if randNode not in seen[index]:
+    if randNode not in seen[node] and node not in seen[randNode] and randNode != node:
       connected = True
-      seen[index].add(randNode)
+      seen[node].add(randNode)
       printStr += f"{randNode} ; "
 
   if connected:
