@@ -21,33 +21,33 @@ The repository  is designed around a "flat" organizational structure for ease of
 | Number Theory   | [Composite Numbers](Prime-Sieve)  |
 |    | [Prime Sieve](https://github.com/joshuaguerin/Answer-Set-Programming-Algorithms/tree/master/Prime-Sieve)  |
 |    | [Perfect Numbers](https://github.com/joshuaguerin/Answer-Set-Programming-Algorithms/tree/master/Perfect-Numbers)  |
-| Numerical Set/Partitioning  | [Subset Sum](https://github.com/joshuaguerin/Answer-Set-Programming-Algorithms/tree/master/Subset-Sum) | NP-Complete |
+| Numerical Set/Partitioning  | [Subset Sum](https://github.com/joshuaguerin/Answer-Set-Programming-Algorithms/tree/master/Subset-Sum) | $NP-Complete$ |
 |  | [Equal Sum Partition](https://github.com/joshuaguerin/Answer-Set-Programming-Algorithms/tree/master/Equal-Sum-Partition) | 
 |  | [Numerical 3-Dimensional Matching](https://github.com/joshuaguerin/Answer-Set-Programming-Algorithms/tree/master/Numerical-3-Dimensional-Matching) |
-|  Combinatorial Optimization  |  [Knapsack](https://github.com/joshuaguerin/Answer-Set-Programming-Algorithms/tree/master/Knapsack)  | NP-Complete |
-|  | [Bin-Packing](https://github.com/joshuaguerin/Answer-Set-Programming-Algorithms/tree/master/Bin-Packing) | NP-Complete |
+|  Combinatorial Optimization  |  [Knapsack](https://github.com/joshuaguerin/Answer-Set-Programming-Algorithms/tree/master/Knapsack)  | $NP-Complete$ |
+|  | [Bin-Packing](https://github.com/joshuaguerin/Answer-Set-Programming-Algorithms/tree/master/Bin-Packing) | $NP-Complete$ |
 |  Puzzles/Games  | [I'm my own Grandpa!](Grandpa/)  | P |
 |    | [N-Queens](https://github.com/joshuaguerin/Answer-Set-Programming-Algorithms/tree/master/N-Queens) |
 |    | [Sudoku](https://github.com/joshuaguerin/Answer-Set-Programming-Algorithms/tree/master/Sudoku) | 
-|  Graphs  | [Graph Coloring](https://github.com/joshuaguerin/Answer-Set-Programming-Algorithms/tree/master/Graph-Coloring) | NP-Complete |
-|    | [Chromatic Numbers](https://github.com/joshuaguerin/Answer-Set-Programming-Algorithms/tree/master/Graph-Coloring) | NP-Hard |
-|    | [Clique](https://github.com/joshuaguerin/Answer-Set-Programming-Algorithms/tree/master/Clique) | NP-Complete |
-|    | [Dominating Set](https://github.com/joshuaguerin/Answer-Set-Programming-Algorithms/tree/master/Dominating-Set) | NP-Complete&#x2020; |
+|  Graphs  | [Graph Coloring](https://github.com/joshuaguerin/Answer-Set-Programming-Algorithms/tree/master/Graph-Coloring) | $NP-Complete$ |
+|    | [Chromatic Numbers](https://github.com/joshuaguerin/Answer-Set-Programming-Algorithms/tree/master/Graph-Coloring) | $NP-Hard$ |
+|    | [Clique](https://github.com/joshuaguerin/Answer-Set-Programming-Algorithms/tree/master/Clique) | $NP-Complete$ |
+|    | [Dominating Set](https://github.com/joshuaguerin/Answer-Set-Programming-Algorithms/tree/master/Dominating-Set) | $NP-Complete$&#x2020; |
 |    | [Independent Set](https://github.com/joshuaguerin/Answer-Set-Programming-Algorithms/tree/master/Independent_Set) |
 |    | [Vertex Cover](https://github.com/joshuaguerin/Answer-Set-Programming-Algorithms/tree/master/Vertex-Cover) | 
-|  Deterministic Planning  | [Hamiltonian Path](https://github.com/joshuaguerin/Answer-Set-Programming-Algorithms/tree/master/Travelling_Salesman) | NP-Complete |
-|    | [Traveling Salesman](https://github.com/joshuaguerin/Answer-Set-Programming-Algorithms/tree/master/Travelling_Salesman) | NP-Hard |
+|  Deterministic Planning  | [Hamiltonian Path](https://github.com/joshuaguerin/Answer-Set-Programming-Algorithms/tree/master/Travelling_Salesman) | $NP-Complete$ |
+|    | [Traveling Salesman](https://github.com/joshuaguerin/Answer-Set-Programming-Algorithms/tree/master/Travelling_Salesman) | $NP-Hard$ |
 | Sequential/Time-Based Planning | [Wolf, Goat, and Cabbage](https://github.com/joshuaguerin/Answer-Set-Programming-Algorithms/tree/master/Wolf-Goat-Cabbage) | P |
 |  Network Flow  | [Max-Flow](https://github.com/joshuaguerin/Answer-Set-Programming-Algorithms/tree/master/Max-Flow) |
 |  Data Mining  | [Clustering](https://github.com/joshuaguerin/Answer-Set-Programming-Algorithms/tree/master/Clustering) |
 
-While not exclusive, this repository contains many solutions to problems in computationally difficult due to the nature of the solvers. Many of the named problems have a number of known variants that may or may not affect computational complexity. The simplest version of this is that a number of these problems may have *decision* variants (likely in NP-Complete), and *optimization* versions (which may be in NP-Hard) [^2]. Additionally, while several of these problems may have more "common" variants or "well-known" variants, there may be multiple versions of the problem statement that are in the same complexity class.
+While not exclusive, this repository contains many solutions to problems in computationally difficult due to the nature of the solvers. Many of the named problems have a number of known variants that may or may not affect computational complexity. The simplest version of this is that a number of these problems may have *decision* variants (likely in $NP-Complete$), and *optimization* versions (which may be in $NP-Hard$) [^2]. Additionally, while several of these problems may have more "common" variants or "well-known" variants, there may be multiple versions of the problem statement that are in the same complexity class.
 
 [^2]: We have attempted to identify when multiple variants are included in an antry using a dagger (&#x2020;), using the "common" problem variant as the stated complexity.
 
 We have attempted to write each entry around the "standard" (e.g., a parameterized k-colorability or an optimization version of the Traveling Salesman problem) statement of most of the included problems, and their associated complexity. We have attempted to annotate the complexities associated with these versions, including disambiguation, where necessary, in the problem's README.)
 
-Additionally, some solutions are to purpose-built or contrived, single-purpose domains (e.g., [Grandpa](Grandpa) or [Wolf, Goat, and Cabbage](Wolf-Goat-Cabbage), which do not have a meaningful notion of "input size." For the purposes of this repository we treat such problems as constant-time, and therefore are labeled as being in $P$. $NP-Complete$
+Additionally, some solutions are to purpose-built or contrived, single-purpose domains (e.g., [Grandpa](Grandpa) or [Wolf, Goat, and Cabbage](Wolf-Goat-Cabbage), which do not have a meaningful notion of "input size." For the purposes of this repository we treat such problems as constant-time, and therefore are labeled as being in $P$.
 
 ## Structure
 Entries are designed with a primary goal of comprehensibility for study. This is not to imply that solutions encountered will necessarily be slow in practice or deliberately inefficient. Instead we have designed solutions to be easy to understand and learn from, as articulating thoughts in a logical language may feel difficult at first.
