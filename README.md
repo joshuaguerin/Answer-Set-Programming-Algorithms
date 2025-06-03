@@ -61,9 +61,9 @@ Applications are designed under the assumptions of a standard Unix design philos
 
 ## Use
 
-Each implementation may have slight variations [1] on use (e.g., number of command-line arguments), we have maintained a fairly consistent interface throughout each entry. Clingo applications are divided into a separate `instance.lp` and `problem.lp` file, where the former holds the data for a specific problem instance and the latter contains the generalized solution. 
+Each implementation may have slight variations [^1] on use (e.g., number of command-line arguments), we have maintained a fairly consistent interface throughout each entry. Clingo applications are divided into a separate `instance.lp` and `problem.lp` file, where the former holds the data for a specific problem instance and the latter contains the generalized solution. 
 
-^[1]: Please see the header comment for individual files for more detailed use instructions.
+[^1]: Please see the header comment for individual files for more detailed use instructions.
 
 In general, instance and problem files can be passed directly to Clingo:
 
