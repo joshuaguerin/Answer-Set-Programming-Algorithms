@@ -41,9 +41,13 @@ The repository  is designed around a "flat" organizational structure for ease of
 |  Network Flow  | [Max-Flow](https://github.com/joshuaguerin/Answer-Set-Programming-Algorithms/tree/master/Max-Flow) |
 |  Data Mining  | [Clustering](https://github.com/joshuaguerin/Answer-Set-Programming-Algorithms/tree/master/Clustering) |
 
-Note that a directory may contain multiple solutions. E.g., The "standard" problem in NP-Complete and an optimization variant in NP-Hard. Such problems are labeled with a dagger (&#x2020;).
+While not exclusive, this repository contains many solutions to problems in computationally difficult due to the nature of the solvers. Many of the named problems have a number of known variants that may or may not affect computational complexity. The simplest version of this is that a number of these problems may have *decision* variants (likely in NP-Complete), and *optimization* versions (which may be in NP-Hard) [^2]. Additionally, while several of these problems may have more "common" variants or "well-known" variants, there may be multiple versions of the problem statement that are in the same complexity class.
 
-Additionally, some solutions are to purpose-built or contrived, single-purpose domains (e.g., [Grandpa](Grandpa) or [Wolf, Goat, and Cabbage](Wolf-Goat-Cabbage), which do not have a meaningful notion of "input size," (for which we will denote a N/A complexity).
+[^2]: We have attempted to identify when multiple variants are included in an antry using a dagger (&#x2020;), using the "common" problem variant as the stated complexity.
+
+We have attempted to write each entry around the "standard" (e.g., a parameterized k-colorability or an optimization version of the Traveling Salesman problem) statement of most of the included problems, and their associated complexity. We have attempted to annotate the complexities associated with these versions, including disambiguation, where necessary, in the problem's README.)
+
+Additionally, some solutions are to purpose-built or contrived, single-purpose domains (e.g., [Grandpa](Grandpa) or [Wolf, Goat, and Cabbage](Wolf-Goat-Cabbage), which do not have a meaningful notion of "input size," (for which a constant-time complexity is most accurate due to the lack of meaningful input).
 
 ## Structure
 Entries are designed with a primary goal of comprehensibility for study. This is not to imply that solutions encountered will necessarily be slow in practice or deliberately inefficient. Instead we have designed solutions to be easy to understand and learn from, as articulating thoughts in a logical language may feel difficult at first.
