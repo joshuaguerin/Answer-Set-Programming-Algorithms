@@ -2,7 +2,12 @@
 # Author: Jackson Madsen
 
 # Description: Set generator for Bin Packing problem solver
-# Use: python3 generate.py -n n -k k > filename.lp
+# Use: python3 generate.py -n n -w w > filename.lp
+#	where: n is the number of items to generate
+#	       w is the maximum weight of an item
+#	       filename.lp is the location to save the instance file to
+#	Each of n and w can be omitted (Defaults n=10, w=5)
+#	The redirect (> filename.lp) can be omitted (to print to stdout)
 
 
 import random
@@ -15,7 +20,7 @@ parser.add_argument('-n', default = 10, type = int,
 			help = "The number of items to generate. (Default = 10)")
 
 parser.add_argument('-w', default = 5, type = int,
-			help = "The maximum weight that an item can weigh, non-inclusive. (Default = 5)")
+			help = "The maximum weight of an item, non-inclusive. (Default = 5)")
 
 args = parser.parse_args()
 
