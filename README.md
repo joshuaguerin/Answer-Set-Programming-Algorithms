@@ -1,6 +1,6 @@
 # ASP&#8704;: Answer Set Programming "Algorithms"
 
-ASP&#8704; is a repository of solutions to common problems in Computer Science implemented in the logical/declarative Answer Set Programming (ASP) paradigm in the [Clingo](https://potassco.org/clingo/) dialect. In particular, we focus on computationally difficult problems, including well-known problems in [$NP-Complete](https://en.wikipedia.org/wiki/NP-completeness) and [$NP-Hard$](https://en.wikipedia.org/wiki/NP-hardness). These problems have no known efficient solutions, highlighting the expressive power and efficiency of the solvers in this language family.
+ASP&#8704; is a repository of solutions to common problems in Computer Science implemented in the logical/declarative Answer Set Programming (ASP) paradigm in the [Clingo](https://potassco.org/clingo/) dialect. In particular, we focus on computationally difficult problems, including well-known problems in [NP-Complete](https://en.wikipedia.org/wiki/NP-completeness) and [NP-Hard](https://en.wikipedia.org/wiki/NP-hardness). These problems have no known efficient solutions, highlighting the expressive power and efficiency of the solvers in this language family.
 
 We hope that this repository serves as a means for educators and learners alike to be inspired and grow their appreciation for the logic programming paradigm.
 
