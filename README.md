@@ -26,7 +26,7 @@ The repository  is designed around a "flat" organizational structure for ease of
 |  | [Numerical 3-Dimensional Matching](https://github.com/joshuaguerin/Answer-Set-Programming-Algorithms/tree/master/Numerical-3-Dimensional-Matching) |
 |  Combinatorial Optimization  |  [Knapsack](https://github.com/joshuaguerin/Answer-Set-Programming-Algorithms/tree/master/Knapsack)  | NP-Complete |
 |  | [Bin-Packing](https://github.com/joshuaguerin/Answer-Set-Programming-Algorithms/tree/master/Bin-Packing) | NP-Complete |
-|  Puzzles/Games  | [I'm my own Grandpa!](Grandpa/)  | N/A |
+|  Puzzles/Games  | [I'm my own Grandpa!](Grandpa/)  | P |
 |    | [N-Queens](https://github.com/joshuaguerin/Answer-Set-Programming-Algorithms/tree/master/N-Queens) |
 |    | [Sudoku](https://github.com/joshuaguerin/Answer-Set-Programming-Algorithms/tree/master/Sudoku) | 
 |  Graphs  | [Graph Coloring](https://github.com/joshuaguerin/Answer-Set-Programming-Algorithms/tree/master/Graph-Coloring) | NP-Complete |
@@ -37,7 +37,7 @@ The repository  is designed around a "flat" organizational structure for ease of
 |    | [Vertex Cover](https://github.com/joshuaguerin/Answer-Set-Programming-Algorithms/tree/master/Vertex-Cover) | 
 |  Deterministic Planning  | [Hamiltonian Path](https://github.com/joshuaguerin/Answer-Set-Programming-Algorithms/tree/master/Travelling_Salesman) | NP-Complete |
 |    | [Traveling Salesman](https://github.com/joshuaguerin/Answer-Set-Programming-Algorithms/tree/master/Travelling_Salesman) | NP-Hard |
-| Sequential/Time-Based Planning | [Wolf, Goat, and Cabbage](https://github.com/joshuaguerin/Answer-Set-Programming-Algorithms/tree/master/Wolf-Goat-Cabbage) | N/A |
+| Sequential/Time-Based Planning | [Wolf, Goat, and Cabbage](https://github.com/joshuaguerin/Answer-Set-Programming-Algorithms/tree/master/Wolf-Goat-Cabbage) | P |
 |  Network Flow  | [Max-Flow](https://github.com/joshuaguerin/Answer-Set-Programming-Algorithms/tree/master/Max-Flow) |
 |  Data Mining  | [Clustering](https://github.com/joshuaguerin/Answer-Set-Programming-Algorithms/tree/master/Clustering) |
 
@@ -47,7 +47,7 @@ While not exclusive, this repository contains many solutions to problems in comp
 
 We have attempted to write each entry around the "standard" (e.g., a parameterized k-colorability or an optimization version of the Traveling Salesman problem) statement of most of the included problems, and their associated complexity. We have attempted to annotate the complexities associated with these versions, including disambiguation, where necessary, in the problem's README.)
 
-Additionally, some solutions are to purpose-built or contrived, single-purpose domains (e.g., [Grandpa](Grandpa) or [Wolf, Goat, and Cabbage](Wolf-Goat-Cabbage), which do not have a meaningful notion of "input size," (for which a constant-time complexity is most accurate due to the lack of meaningful input).
+Additionally, some solutions are to purpose-built or contrived, single-purpose domains (e.g., [Grandpa](Grandpa) or [Wolf, Goat, and Cabbage](Wolf-Goat-Cabbage), which do not have a meaningful notion of "input size." For the purposes of this repository we treat such problems as constant-time, and therefore are labeled as being in $P$.
 
 ## Structure
 Entries are designed with a primary goal of comprehensibility for study. This is not to imply that solutions encountered will necessarily be slow in practice or deliberately inefficient. Instead we have designed solutions to be easy to understand and learn from, as articulating thoughts in a logical language may feel difficult at first.
