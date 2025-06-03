@@ -47,7 +47,7 @@ While not exclusive, this repository contains many solutions to problems in comp
 
 We have attempted to write each entry around the "standard" (e.g., a parameterized k-colorability or an optimization version of the Traveling Salesman problem) statement of most of the included problems, and their associated complexity. We have attempted to annotate the complexities associated with these versions, including disambiguation, where necessary, in the problem's README.)
 
-Additionally, some solutions are to purpose-built or contrived, single-purpose domains (e.g., [Grandpa](Grandpa) or [Wolf, Goat, and Cabbage](Wolf-Goat-Cabbage), which do not have a meaningful notion of "input size." For the purposes of this repository we treat such problems as constant-time, and therefore are labeled as being in $P$.
+Additionally, some solutions are to purpose-built or contrived, single-purpose domains (e.g., [Grandpa](Grandpa) or [Wolf, Goat, and Cabbage](Wolf-Goat-Cabbage), which do not have a meaningful notion of "input size." For the purposes of this repository we treat such problems as constant-time, and therefore are labeled as being in $P$. $NP-Complete$
 
 ## Structure
 Entries are designed with a primary goal of comprehensibility for study. This is not to imply that solutions encountered will necessarily be slow in practice or deliberately inefficient. Instead we have designed solutions to be easy to understand and learn from, as articulating thoughts in a logical language may feel difficult at first.
