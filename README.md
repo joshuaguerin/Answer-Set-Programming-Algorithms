@@ -21,6 +21,7 @@ The inspiration (including the name) for the repository are the myriad of books 
 This repository is an expression of enjoyment of logic programming by those who value high-quality educational materials. At the time of the repository's construction, there are several high-quality texts in logic programming (including answer set programming), however few available texts address the particular "Algorithms in" niche. As our goals are primarily educational, software examples are constructed under the following assumptions:
 
 * Simple, well-organized/documented examples.
+* Inclusion of a wide-variety of well-studied problems.
 * Thorough problem documentation, with examples.
 * Additional utilities (where needed) to support understanding.
 
@@ -31,8 +32,8 @@ The repository  is designed around a "flat" organizational structure for ease of
 
 | Category  | Problems | Complexity |
 | ------------- | ------------- | ------------- |
-| Number Theory   | [Composite Numbers](Prime-Sieve)  |
-|    | [Prime Sieve](https://github.com/joshuaguerin/Answer-Set-Programming-Algorithms/tree/master/Prime-Sieve)  |
+| Number Theory   | [Composite Numbers](Prime-Sieve)  | $P$ |
+|    | [Prime Sieve](https://github.com/joshuaguerin/Answer-Set-Programming-Algorithms/tree/master/Prime-Sieve)  | $P$ |
 |    | [Perfect Numbers](https://github.com/joshuaguerin/Answer-Set-Programming-Algorithms/tree/master/Perfect-Numbers)  |
 | Numerical Set/Partitioning  | [Subset Sum](https://github.com/joshuaguerin/Answer-Set-Programming-Algorithms/tree/master/Subset-Sum) | $NP-Complete$ |
 |  | [Equal Sum Partition](https://github.com/joshuaguerin/Answer-Set-Programming-Algorithms/tree/master/Equal-Sum-Partition) | 
