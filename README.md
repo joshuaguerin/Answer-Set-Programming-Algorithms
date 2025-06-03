@@ -45,7 +45,7 @@ Note that a directory may contain multiple solutions. E.g., The "standard" probl
 
 Additionally, some solutions are to purpose-built or contrived, single-purpose domains (e.g., [Grandpa](Grandpa) or [Wolf, Goat, and Cabbage](Wolf-Goat-Cabbage), which do not have a meaningful notion of "input size," (for which we will denote a N/A complexity).
 
-## Structure and Use
+## Structure
 Entries are designed with a primary goal of comprehensibility for study. This is not to imply that solutions encountered will necessarily be slow in practice or deliberately inefficient. Instead we have designed solutions to be easy to understand and learn from, as articulating thoughts in a logical language may feel difficult at first.
 
 Each problem entry contains, minimally, a description and example of the problem being solved (in the form of a `README.md` file), a problem instance file (data, usually called `instance.lp`), and a solution file (sharing the name of problem).
@@ -58,6 +58,32 @@ Additional resources are typically included on an as-needed basis including:
 Some of these features will be omitted where not applicable. E.g., [Prime-Sieve](Prime-Sieve)'s prime and composite sieves take a single integer, and thus domain/instance generation is not terribly useful to the reader. Unless otherwise stated, generation and printing software are likely written in Python.
 
 Applications are designed under the assumptions of a standard Unix design philosophy of small, single-purpose programs that operate largely over standard input and output. This means that either individual applications can be called as-needed, and invocations can be pipelined using pipes and redirects. Example calls/suggested uses are included in the headers of each file (either `.lp` or `.py`).
+
+## Use
+
+Each implementation may have slight variations [1] on use (e.g., number of command-line arguments), we have maintained a fairly consistent interface throughout each entry. Clingo applications are divided into a separate `instance.lp` and `problem.lp` file, where the former holds the data for a specific problem instance and the latter contains the generalized solution. 
+
+^[1]: Please see the header comment for individual files for more detailed use instructions.
+
+In general, instance and problem files can be passed directly to Clingo:
+
+```console
+clingo instance.lp problem.lp
+```
+
+Output can be parsed by the reader either directly, or through an included printing script. In most instances, this can be accomplished through pipes:
+
+```console
+clingo instance.lp problem.lp | python3 print/print.py
+```
+
+When generating a problem instance for testing, the user may find file redirects useful, as they allow easy inspection of generated instances:
+
+```console
+python3 gen/generate.py > instance.lp
+```
+
+
 
 ## Notes about implementations
 The goal for this repo is to produce a set of original solutions to common/classical problems in Computer Science, however natural similarities are likely to exist between my own sources and those written by others. Of significant influence are the educational materials in the [Potassco](https://potassco.org/) collection, who are also the developers of clingo and other related solvers. Many programming conventions in this repository were learned from their materials and carry over directly.
