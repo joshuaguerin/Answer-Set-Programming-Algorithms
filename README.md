@@ -1,58 +1,124 @@
 # ASP&#8704;: Answer Set Programming "Algorithms"
 
+ASP&#8704; is a repository of solutions to common problems in Computer Science implemented in the logical/declarative Answer Set Programming (ASP) paradigm in the [Clingo](https://potassco.org/clingo/) dialect. In particular, we focus on computationally difficult problems, including well-known problems in [NP-Complete](https://en.wikipedia.org/wiki/NP-completeness) and [NP-Hard](https://en.wikipedia.org/wiki/NP-hardness). These problems have no known efficient solutions, highlighting the expressive power and efficiency of the solvers in this language family.
+
+We hope that this repository serves as a means for educators and learners alike to be inspired and grow their appreciation for the logic programming paradigm.
+
 ## What is ASP&#8704;
-Pronounced "ASP for all," this repository is designed to serve as a sort of online textbook or Open Educational Repository (OER) for Answer Set Programming, in particular in the [Clingo](https://potassco.org/clingo/) dialect. The universal quantifier, &#8704;, is an important symbol in logic programming, ascribing properties to *everything* of a particular type of atom in logic programming. The upside-down 'A' also serves to reinforce the sort of misnomer of the term "algorithms," as it may or may not apply to languages like Clingo.
+Pronounced "Answer Set Programming for all," this repository is designed to serve as a sort of online textbook or Open Educational Repository (OER) for Answer Set Programming, in particular in the [Clingo](https://potassco.org/clingo/) dialect. The universal quantifier, &#8704;, is an important symbol in logic programming, ascribing properties to *everything* of a particular type (hence, "for all") of atom in logic programming. The upside-down 'A' also serves to reinforce the sort of misnomer of the term "algorithms," as it may or may not apply to languages like Clingo.
 
 In terms of overall design, our expected audiences are those who new to ASP and Clingo, but are looking to improve, and may be useful for those with an intermediate experience level as well. We hope that the overall structure will allow readers to learn ASP patterns "by example," to identify commonalities in program construction.
 
 While the respository is open to anyone who wishes to learn ASP, the goals do not currently include dedicated instruction in the language's features. This is a goal of ours, but we believe it would be better expressed through a different project. So some fluency with logical/declarative languages, or the Clingo semantics is likely useful. There are certainly [existing options](https://teaching.potassco.org/) for learning a bit of the language and solver semantics.
 
 ### "Algorithms"
-You are absolutely correct! The term really doesn't apply based on the definition of an algorithm in Computer Science. "Patterns" or "implementations" may be better, but don't really have a solid sound to them. I needed *something* to call the repo, and I'm modeling the idea off the myriad of books out there with titles like "Algorithms in C++" or "Algorithms in Python." What I'm going for is essentially similar to the purposes of those books--just in a language that isn't inherently algorithmic.
+The term "Algorithms" doesn't really apply as the conventional algorithm is a description of a step-by-step process to find a solution to a particular problem. In a declarative language like an answer set language, the *algorithm* is more easily attributed to the solver. The program specified in the language dialect by the end-user is a model or description of the problem domain, including a description of a solution in the domain. In this case "patterns" may be a better description, but are easily conflated with conventional "design patterns" in software.
+
+The inspiration (including the name) for the repository are the myriad of books with titles like "Algorithms in C++" or "Algorithms in Python," where the author's primary goal is to present implementations of conventional algorithms in the target language. We opted for a similar naming scheme in hopes of conveying a similar purpose for the repository as an educational tool, despite the largely non-algorithmic nature of solutions in the language.
+
+### Guiding Philosophies
+
+This repository is an expression of enjoyment of logic programming by those who value high-quality educational materials. At the time of the repository's construction, there are several high-quality texts in logic programming (including answer set programming), however few available texts address the particular "Algorithms in" niche. As our goals are primarily educational, software examples are constructed under the following assumptions:
+
+* Simple, well-organized/documented examples.
+* Inclusion of a wide-variety of well-studied problems.
+* Thorough problem documentation, with examples.
+* Additional utilities (where needed) to support understanding.
+
+While efficiency of our solutions isn't a primary guiding concern, we encourage the user to push the limits of our implementations--you may be surprised regarding what some of them may accomplish in (in many instances) 2-5 lines of code! Keep in mind that, due to the largely $NP-Complete$ and $NP-Hard$ complexity classes most examples occupy, the fastest (known) algorithms for many of these problems are exponential or worse. At the most extreme end, some of our implementations may be usable for dozens/hundreds/thousands of inputs. 
 
 ## Organization
-While I am opting for a flat directory organization at the moment for ease of navigation, one possible organization of the problems for the reader could be:
+The repository  is designed around a "flat" organizational structure for ease of navigation, however problems in the repository are easily grouped into categories related to their type. The following table presents one such organizational structure, with problems in each category organized (roughly) by length or conceptual difficulty of the solution.
 
-| Category  | Problems |
-| ------------- | ------------- |
-| Number Theory   | [Composite Numbers](https://github.com/joshuaguerin/Answer-Set-Programming-Algorithms/tree/master/Prime-Sieve)  |
-|    | [Prime Sieve](https://github.com/joshuaguerin/Answer-Set-Programming-Algorithms/tree/master/Prime-Sieve)  |
+| Category  | Problems | Complexity |
+| ------------- | ------------- | ------------- |
+| Number Theory   | [Composite Numbers](Prime-Sieve)  | $P$ |
+|    | [Prime Sieve](https://github.com/joshuaguerin/Answer-Set-Programming-Algorithms/tree/master/Prime-Sieve)  | $P$ |
 |    | [Perfect Numbers](https://github.com/joshuaguerin/Answer-Set-Programming-Algorithms/tree/master/Perfect-Numbers)  |
-| Numerical Set/Partitioning  | [Subset Sum](https://github.com/joshuaguerin/Answer-Set-Programming-Algorithms/tree/master/Subset-Sum) |
-|  | [Equal Sum Partition](https://github.com/joshuaguerin/Answer-Set-Programming-Algorithms/tree/master/Equal-Sum-Partition) |
+| Numerical Set/Partitioning  | [Subset Sum](https://github.com/joshuaguerin/Answer-Set-Programming-Algorithms/tree/master/Subset-Sum) | $NP-Complete$ |
+|  | [Equal Sum Partition](https://github.com/joshuaguerin/Answer-Set-Programming-Algorithms/tree/master/Equal-Sum-Partition) | 
 |  | [Numerical 3-Dimensional Matching](https://github.com/joshuaguerin/Answer-Set-Programming-Algorithms/tree/master/Numerical-3-Dimensional-Matching) |
-|  Combinatorial Optimization  |  [Knapsack](https://github.com/joshuaguerin/Answer-Set-Programming-Algorithms/tree/master/Knapsack)  |
-|  | [Bin-Packing](https://github.com/joshuaguerin/Answer-Set-Programming-Algorithms/tree/master/Bin-Packing) |
-|  Puzzles/Games  | [I'm my own Grandpa!](https://github.com/joshuaguerin/Answer-Set-Programming-Algorithms/tree/grandpa/Grandpa) |
+|  Combinatorial Optimization  |  [Knapsack](https://github.com/joshuaguerin/Answer-Set-Programming-Algorithms/tree/master/Knapsack)  | $NP-Complete$ |
+|  | [Bin-Packing](https://github.com/joshuaguerin/Answer-Set-Programming-Algorithms/tree/master/Bin-Packing) | $NP-Complete$ |
+|  Puzzles/Games  | [I'm my own Grandpa!](Grandpa/)  | $P$ |
 |    | [N-Queens](https://github.com/joshuaguerin/Answer-Set-Programming-Algorithms/tree/master/N-Queens) |
-|    | [Sudoku](https://github.com/joshuaguerin/Answer-Set-Programming-Algorithms/tree/master/Sudoku) |
-|  Graphs  | [Graph Coloring](https://github.com/joshuaguerin/Answer-Set-Programming-Algorithms/tree/master/Graph-Coloring)
-|    | [Chromatic Numbers](https://github.com/joshuaguerin/Answer-Set-Programming-Algorithms/tree/master/Graph-Coloring)
-|    | [Clique](https://github.com/joshuaguerin/Answer-Set-Programming-Algorithms/tree/master/Clique) |
-|    | [Dominating Set](https://github.com/joshuaguerin/Answer-Set-Programming-Algorithms/tree/master/Dominating-Set) |
+|    | [Sudoku](https://github.com/joshuaguerin/Answer-Set-Programming-Algorithms/tree/master/Sudoku) | 
+|  Graphs  | [Graph Coloring](https://github.com/joshuaguerin/Answer-Set-Programming-Algorithms/tree/master/Graph-Coloring) | $NP-Complete$ |
+|    | [Chromatic Numbers](https://github.com/joshuaguerin/Answer-Set-Programming-Algorithms/tree/master/Graph-Coloring) | $NP-Hard$ |
+|    | [Clique](https://github.com/joshuaguerin/Answer-Set-Programming-Algorithms/tree/master/Clique) | $NP-Complete$ |
+|    | [Dominating Set](https://github.com/joshuaguerin/Answer-Set-Programming-Algorithms/tree/master/Dominating-Set) | $NP-Complete$&#x2020; |
 |    | [Independent Set](https://github.com/joshuaguerin/Answer-Set-Programming-Algorithms/tree/master/Independent_Set) |
-|    | [Vertex Cover](https://github.com/joshuaguerin/Answer-Set-Programming-Algorithms/tree/master/Vertex-Cover) |
-|  Deterministic Planning  | [Hamiltonian Path](https://github.com/joshuaguerin/Answer-Set-Programming-Algorithms/tree/master/Travelling_Salesman) |
-|    | [Traveling Salesman](https://github.com/joshuaguerin/Answer-Set-Programming-Algorithms/tree/master/Travelling_Salesman) |
-| Sequential/Time-Based Planning | [Wolf, Goat, and Cabbage](https://github.com/joshuaguerin/Answer-Set-Programming-Algorithms/tree/master/Wolf-Goat-Cabbage) |
+|    | [Vertex Cover](https://github.com/joshuaguerin/Answer-Set-Programming-Algorithms/tree/master/Vertex-Cover) | 
+|  Deterministic Planning  | [Hamiltonian Path](https://github.com/joshuaguerin/Answer-Set-Programming-Algorithms/tree/master/Travelling_Salesman) | $NP-Complete$ |
+|    | [Traveling Salesman](https://github.com/joshuaguerin/Answer-Set-Programming-Algorithms/tree/master/Travelling_Salesman) | $NP-Hard$ |
+| Sequential/Time-Based Planning | [Wolf, Goat, and Cabbage](https://github.com/joshuaguerin/Answer-Set-Programming-Algorithms/tree/master/Wolf-Goat-Cabbage) | $P$ |
 |  Network Flow  | [Max-Flow](https://github.com/joshuaguerin/Answer-Set-Programming-Algorithms/tree/master/Max-Flow) |
 |  Data Mining  | [Clustering](https://github.com/joshuaguerin/Answer-Set-Programming-Algorithms/tree/master/Clustering) |
 
-The organization of this table is design to roughly correspond with relative difficulty level of each problem/implementation.
+While not exclusive, this repository contains many solutions to problems in computationally difficult due to the nature of the solvers. Many of the named problems have a number of known variants that may or may not affect computational complexity. The simplest version of this is that a number of these problems may have *decision* variants (likely in $NP-Complete$), and *optimization* versions (which may be in $NP-Hard$) [^2]. Additionally, while several of these problems may have more "common" variants or "well-known" variants, there may be multiple versions of the problem statement that are in the same complexity class.
 
-## Note about implementations
-The goal for this repo is to produce a set of original solutions to common/classical problems in Computer Science, however natural similarities are likely to exist between my own sources and those written by others. I've been influenced greatly over the course of my own studies by the educational resources provided by the good folks over at [Potassco](https://potassco.org/). Many of the conventions in my coding carry over from theirs, and similar authors. Additionally, ASP solutions tend to be much smaller than other conventional programming languages. Many NP-Complete or NP-Hard problems can be solved in <10 lines (often <5) of actual code. Variations are likely to exist, however it is entirely likely to have two authors describe the same basic ideas/constraints in their code.
+[^2]: We have attempted to identify when multiple variants are included in an antry using a dagger (&#x2020;), using the "common" problem variant as the stated complexity.
+
+We have attempted to write each entry around the "standard" (e.g., a parameterized k-colorability or an optimization version of the Traveling Salesman problem) statement of most of the included problems, and their associated complexity. We have attempted to annotate the complexities associated with these versions, including disambiguation, where necessary, in the problem's README.)
+
+Additionally, some solutions are to purpose-built or contrived, single-purpose domains (e.g., [Grandpa](Grandpa) or [Wolf, Goat, and Cabbage](Wolf-Goat-Cabbage), which do not have a meaningful notion of "input size." For the purposes of this repository we treat such problems as constant-time, and therefore are labeled as being in $P$.
+
+## Structure
+Entries are designed with a primary goal of comprehensibility for study. This is not to imply that solutions encountered will necessarily be slow in practice or deliberately inefficient. Instead we have designed solutions to be easy to understand and learn from, as articulating thoughts in a logical language may feel difficult at first.
+
+Each problem entry contains, minimally, a description and example of the problem being solved (in the form of a `README.md` file), a problem instance file (data, usually called `instance.lp`), and a solution file (sharing the name of problem).
+
+Additional resources are typically included on an as-needed basis including:
+* Problem variants that are not sufficiently different to warrant separate inclusion (e.g., minimization/maximization variants).
+* Generators to construct new instances (`gen` directory).
+* Printing software (`print` directory).
+
+Some of these features will be omitted where not applicable. E.g., [Prime-Sieve](Prime-Sieve)'s prime and composite sieves take a single integer, and thus domain/instance generation is not terribly useful to the reader. Unless otherwise stated, generation and printing software are written in Python.
+
+Applications are designed under the assumptions of a standard Unix design philosophy of small, single-purpose programs that operate largely over standard input and output. This means that either individual applications can be called as-needed, and invocations can be pipelined using pipes and redirects. Example calls/suggested uses are included in the headers of each file (either `.lp` or `.py`).
+
+## Use
+
+Each implementation may have slight variations [^1] on use (e.g., number of command-line arguments), we have maintained a fairly consistent interface throughout each entry. Clingo applications are divided into a separate `instance.lp` and `problem.lp` file, where the former holds the data for a specific problem instance and the latter contains the generalized solution. 
+
+[^1]: Please see the header comment for individual files for more detailed use instructions, including any necessary command-line arguments.
+
+In general, instance and problem files can be passed directly to Clingo:
+
+```console
+clingo instance.lp problem.lp
+```
+
+Output can be parsed by the reader either directly, or through an included printing script. In most instances, this can be accomplished through pipes:
+
+```console
+clingo instance.lp problem.lp | python3 print/print.py
+```
+
+When generating a problem instance for testing, the user may find file redirects useful, as they allow easy inspection of generated instances:
+
+```console
+python3 gen/generate.py > instance.lp
+```
+
+
+
+## Notes about implementations
+The goal for this repo is to produce a set of original solutions to common/classical problems in Computer Science, however natural similarities are likely to exist between my own sources and those written by others. Of significant influence are the educational materials in the [Potassco](https://potassco.org/) collection, who are also the developers of clingo and other related solvers. Many programming conventions in this repository were learned from their materials and carry over directly.
+
+### Prerequisites/Dependencies
+Solution and instance files (`.lp`) are written for the [Clingo](https://potassco.org/clingo/) solver, from the [Potsdam](https://potassco.org/clingo/) Answer Set Solving Collection (Potassco).
+
+Auxiliary software applications (e.g., generation and printing) are usually written in [Python 3](https://www.python.org/downloads/).
+
+Finally, additional utilities may be used where appropriate. While efforts have been taken to ensure that required software packages are somewhat minimal, additional utilities may improve (for example) our ability to represent output.
+
+E.g., Many graph algorithms do not have a natural/human readable means to display as plaintext or *ASCII art*. Thus, for convenience, [graphviz/dot](https://graphviz.org/download/) may be used as an output format by printers. This particular format was selected because it is roughly as comprehensible as any other text-based format, but users also have the option of running these outputs through dot to produce graphical documents (e.g., pdfs) for final output.
+
 
 ## Bugs and other issues
-Oh, yea, there will be bugs. It's going to be a while before I'm comforatble enough to label anything as being "done." Assume that everything here is experimental--prone to incorrectness or breakage. Having said that, I'm trying to upload mostly correct code even before I get to thorough testing ;) With that in mind, I would be thrilled if anyone found benefit in reading the examples I've produced here.
-
-I will be using the [Issues](https://github.com/joshuaguerin/Answer-Set-Programming-Algorithms/issues) page to keep organized in terms of progress, bugs, and future ideas for the page.
-
-If you find a bug or want to chat feel free to hit us up! If you discover any untracked bugs, discussion points, or want to request a solution to a problem please feel free to add or comment on an [Issue](https://github.com/joshuaguerin/Answer-Set-Programming-Algorithms/issues).
-
-## Future updates
-We would like to consider this repository something of a "living document," continuing to add content in the form of new problems/solutions, utilities, and other information that the user may find useful. The frequency of updates is TBD, but we wish for this to be useful as an OER for ASP going into the future.
+Our goal is to have solutions be well-documented, and fairly robust. While bugs are likely to be present, our hope is that the algorithms largely function under their defined parameters. If users discover bugs or other problems in our code, we welcome the user to submit an [issue](https://github.com/joshuaguerin/Answer-Set-Programming-Algorithms/issues) that clearly defines the unexpected behavior so it may be fixed or better documented.
 
 ## How to Cite
-For now, please cite the website by the name *ASP&#8704;: Answer Set Programming "Algorithms"* by "Guerin, Joshua" with the full URL. You may use whatever citation conventions are most reasonable for the publication.
+For now, please cite the website by the name *ASP&#8704;: Answer Set Programming "Algorithms"* by "Joshua T. Guerin" with the full URL. You may use whatever citation conventions are most reasonable for the publication.
 
