@@ -24,9 +24,12 @@ parser.add_argument('-w', default = 5, type = int,
 
 args = parser.parse_args()
 
+print("% Possible items")
 # Print all possible items
 print(f"item(1..{args.n}).")
+print()
 
+print("% Item definitions\n% item(number, cost).")
 # Assign weights to each individual item
 for i in range(1, args.n + 1):
   print(f"item({i}, {random.randint(1,args.w)}).")
