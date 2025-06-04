@@ -38,7 +38,7 @@ else:
 
     print("\nEqual Sums Found!\n\n" +
           "Full set:\n" +
-          S = {" + ', '.join(list(map(str, sorted(set(map(int, a + b)))))) + "}\n\n" +
+          "S = {" + ', '.join(list(map(str, sorted(set(map(int, a + b)))))) + "}\n\n" +
           "Set A: {" + ', '.join(a) + "}\n" +
           total + " = " + ' + '.join(a) + "\n\n"
           "Set B: {" + ', '.join(b) + "}\n" +
