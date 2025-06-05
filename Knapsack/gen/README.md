@@ -5,8 +5,8 @@ The generator allows for the user to describe the number of items in the set,
 the maximum value that can appear in the set, as well as the maximum weight that can
 appear in the set.
 
-The program borrows an approach from combinatorics called the "Stars & Bars" method to 
-partition out how many items of each value we will have. Additional reading can be found [here](https://en.wikipedia.org/wiki/Stars_and_bars_(combinatorics))
+The program borrows an approach from combinatorics called the [Stars & Bars](https://en.wikipedia.org/wiki/Stars_and_bars_(combinatorics)) 
+method to partition out how many items of each value we will have. 
 
 
 It first makes a list containing a number of stars equal to the number of items and a number 
