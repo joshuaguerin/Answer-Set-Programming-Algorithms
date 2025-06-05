@@ -1,6 +1,6 @@
 # Use:
-# clingo k_vertex_cover.lp instance.lp -c n=<val> | python3 print/print.py | dot -Tpdf -o images/vertex_cover.pdf
-# clingo min_vertex_cover.lp instance.lp | python3 print/print.py | dot -Tpdf -o images/vertex_cover.pdf
+# clingo k_vertex_cover.lp instance.lp -c n=<val> | python3 print/print.py | dot -Tpdf -o vertex_cover.pdf
+# clingo min_vertex_cover.lp instance.lp | python3 print/print.py | dot -Tpdf -o vertex_cover.pdf
 #      where instance.lp contains node and edge predicates.
 #
 # Note:
