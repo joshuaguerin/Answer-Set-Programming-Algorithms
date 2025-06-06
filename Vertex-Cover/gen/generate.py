@@ -40,17 +40,24 @@ print(f"{printStr[:-2]}).\n")
 # Create a n x n matrix filled with zeros. 0 will represent blanks and 1 will represent an edge at that coordinate
 matrix = [[0 for _ in range(numNodes)] for _ in range(numNodes)]
 
+# Converts which square of the matrix we are looking at into row and col
 def coordFinder(square, size):
   row = square // size
   col = square % size
   return (row, col)
 
+# Finds the sum of the entire matrix. Helps us to determine how many edges we have formed
 def matrixSum(matrix):
     return sum(map(sum, matrix))
 
+# Generates a spanning tree to start from using Depth-First-Search
 def dfsTreeGen(col, visited):
   visited[col] = True
-  for row in range(numNodes):
+
+  neighbors = list(range(numNodes))
+  random.shuffle(neighbors)
+
+  for row in neighbors:
     if not visited[row] and matrix[row][col] == 0:
       matrix[col][row] = 1
       dfsTreeGen(row, visited)
@@ -58,10 +65,11 @@ def dfsTreeGen(col, visited):
 visited = [False] * numNodes
 dfsTreeGen(0, visited)
 
+# Calculate the number of edges we can have in our graph based on user-input factor
 maxEdges = (numNodes * (numNodes - 1)) / 2
 numEdges = math.ceil(maxEdges * connectFactor)
-print(numEdges)
 
+# Start adding random edges if needed
 while matrixSum(matrix) < numEdges:
   randSquare = random.randint(0, (numNodes**2) - 1)
   row, col = coordFinder(randSquare, numNodes)
@@ -71,8 +79,18 @@ while matrixSum(matrix) < numEdges:
 
   matrix[col][row] = 1
 
-for i in range(len(matrix)):
-    for j in range(len(matrix)):
-      print(matrix[j][i], end="")
-    print("")
+# Iterate through the matrix and print out the edges
+print("% Edges of the Graph")
+for index, col in enumerate(matrix):
+  if sum(col) > 0:
+    printStr = f"edge({index}, "
 
+    if sum(col) > 1:
+      printStr += "("
+
+    for row, edge in enumerate(col):
+      if edge == 1:
+        printStr += f"{row} ; "
+
+    print(printStr[:-3], end="")
+    print(")).") if sum(col) > 1 else print(").")
