@@ -29,7 +29,8 @@ While efficiency of our solutions isn't a primary guiding concern, we encourage 
 
 The inclusion of additional software is multi-purpose. First, this allows us to provide solutions to problems that are encoded fairly strictly in the logical/ASP paradigm, with non-declarative (sometimes called "impure") notions such as input parsing and output generation moved to different portions of the toolchain. [^2]
 
-[^2]: These elements could be incorporated more directly using [built-in support for](https://potassco.org/clingo/python-api/5.4/) for languages like Python, however we have opted for the simplicity of small toolchains over multi-language aggregate programs.
+[^2]: These elements could be incorporated more directly using [built-in support for](https://potassco.org/clingo/python-api/5.4/) for languages like Python, however we have opted (for the simplicity) for small toolchains over larger, monolithic applications that aggregate multiple languages/paradigms.
+
 
 ## Organization
 The repository  is designed around a "flat" organizational structure for ease of navigation, however problems in the repository are easily grouped into categories related to their type. The following table presents one such organizational structure, with problems in each category organized (roughly) by length or conceptual difficulty of the solution.
@@ -60,7 +61,7 @@ The repository  is designed around a "flat" organizational structure for ease of
 |    | [Traveling Salesman](https://github.com/joshuaguerin/Answer-Set-Programming-Algorithms/tree/master/Travelling_Salesman) |
 | Sequential/Time-Based Planning | [Wolf, Goat, and Cabbage](https://github.com/joshuaguerin/Answer-Set-Programming-Algorithms/tree/master/Wolf-Goat-Cabbage) |
 |  Network Flow  | [Max-Flow](https://github.com/joshuaguerin/Answer-Set-Programming-Algorithms/tree/master/Max-Flow) |
-
+|  Data Mining  | [Frequent Itemset Mining](Frequent-Itemset-Mining) |
 
 ## Structure
 Entries are designed with a primary goal of comprehensibility for study. This is not to imply that solutions encountered will necessarily be slow in practice or deliberately inefficient. Instead we have designed solutions to be easy to understand and learn from, as articulating thoughts in a logical language may feel difficult at first.
