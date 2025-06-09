@@ -5,14 +5,14 @@ ASP&#8704; is a repository of solutions to common problems in Computer Science i
 We hope that this repository serves as a means for educators and learners alike to be inspired and grow their appreciation for the logic programming paradigm.
 
 ## What is ASP&#8704;?
-Pronounced "Answer Set Programming for all," this repository is designed to serve as a sort of online textbook or Open Educational Repository (OER) for Answer Set Programming, in particular in the [Clingo](https://potassco.org/clingo/) dialect. The [universal quantifier](https://en.wikipedia.org/wiki/Universal_quantification), &#8704;, is an important symbol in logic programming, ascribing properties to *everything* of a particular type (hence, "for all") of atom in logic programming. The upside-down 'A' also serves to reinforce the sort of misnomer of the term "algorithms," as it may or may not apply to languages like Clingo.
+Pronounced "Answer Set Programming for all," this repository is designed to serve as a sort of online textbook or Open Educational Repository (OER) for Answer Set Programming, in particular in the [Clingo](https://potassco.org/clingo/) dialect. The [universal quantifier](https://en.wikipedia.org/wiki/Universal_quantification), &#8704;, is an important symbol in logic (programming), ascribing properties to *everything* of a particular type or set (hence, "for all") of atom in logic programming. The upside-down 'A' also serves to reinforce the sort of misnomer of the term "algorithms," as it may or may not apply to languages like the language of Clingo.
 
 In terms of overall design, our expected audiences are those who new to ASP and Clingo, but are looking to improve, and may be useful for those with an intermediate experience level as well. We hope that the overall structure will allow readers to learn ASP patterns "by example," to identify commonalities in program construction.
 
-While the respository is open to anyone who wishes to learn ASP, the goals do not currently include dedicated instruction in the language's features. This is a goal of ours, but we believe it would be better expressed through a different project. So some fluency with logical/declarative languages, or the Clingo semantics is likely useful. There are certainly [existing options](https://teaching.potassco.org/) for learning a bit of the language and solver semantics.
+While the respository is open to anyone who wishes to learn ASP, the goals do not currently include dedicated instruction in the language or paradigm's primitives or basic features. This is a goal of ours, but we believe it would be better expressed through a different project. So some fluency with logical/declarative languages, or the Clingo semantics is likely useful. There are certainly [existing options](https://teaching.potassco.org/) for learning a bit of the language and solver semantics.
 
 ### "Algorithms"
-The term "Algorithms" doesn't really apply as the conventional algorithm is a description of a step-by-step process to find a solution to a particular problem. In a declarative language like an answer set language, the *algorithm* is more easily attributed to the solver. The program specified in the language dialect by the end-user is a model or description of the problem domain, including a description of a solution in the domain. In this case "patterns" may be a better description, but are easily conflated with conventional "design patterns" in software.
+The term "Algorithm" arguably doesn't apply directly to implementations as the conventional algorithm is a description of a step-by-step process to find a solution to a particular problem. In a declarative language like an answer set language, the *algorithm* is more easily attributed to the solver. The program specified in the language dialect by the end-user is a model or description of the problem domain, including a description of a solution in the domain. In this case "patterns" may be a better description, but are easily conflated with conventional "design patterns" in software.
 
 The inspiration (including the name) for the repository are the myriad of books with titles like "Algorithms in C++" or "Algorithms in Python," where the author's primary goal is to present implementations of conventional algorithms in the target language. We opted for a similar naming scheme in hopes of conveying a similar purpose for the repository as an educational tool, despite the largely non-algorithmic nature of solutions in the language.
 
@@ -22,10 +22,14 @@ This repository is an expression of enjoyment of logic programming by those who 
 
 * Simple, well-organized/documented examples.
 * Inclusion of a wide-variety of well-studied problems.
-* Thorough problem documentation, with examples.
+* Problem documentation, with examples.
 * Additional utilities (where needed) to support understanding.
 
 While efficiency of our solutions isn't a primary guiding concern, we encourage the user to push the limits of our implementations--you may be surprised regarding what some of them may accomplish in (in many instances) 2-5 lines of code! Keep in mind that, due to the largely $NP-Complete$ and $NP-Hard$ complexity classes most examples occupy, the fastest (known) algorithms for many of these problems are exponential or worse. At the most extreme end, some of our implementations may be usable for dozens/hundreds/thousands of inputs. 
+
+The inclusion of additional software is multi-purpose. First, this allows us to provide solutions to problems that are encoded fairly strictly in the logical/ASP paradigm, with non-declarative (sometimes called "impure") notions such as input parsing and output generation moved to different portions of the toolchain. [^2]
+
+[^2]: These elements could be incorporated more directly using [built-in support for](https://potassco.org/clingo/python-api/5.4/) for languages like Python, however we have opted for the simplicity of small toolchains over multi-language aggregate programs.
 
 ## Organization
 The repository  is designed around a "flat" organizational structure for ease of navigation, however problems in the repository are easily grouped into categories related to their type. The following table presents one such organizational structure, with problems in each category organized (roughly) by length or conceptual difficulty of the solution.
