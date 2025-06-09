@@ -38,29 +38,29 @@ The repository  is designed around a "flat" organizational structure for ease of
 | Category  | Problems |
 | ------------- | ------------- |
 | Number Theory   | [Composite Numbers](Prime-Sieve)  |
-|    | [Prime Sieve](https://github.com/joshuaguerin/Answer-Set-Programming-Algorithms/tree/master/Prime-Sieve)  |
-|    | [Perfect Numbers](https://github.com/joshuaguerin/Answer-Set-Programming-Algorithms/tree/master/Perfect-Numbers)  |
-| Numerical Set/Partitioning  | [Subset Sum](https://github.com/joshuaguerin/Answer-Set-Programming-Algorithms/tree/master/Subset-Sum) |
-|  | [Equal Sum Partition](https://github.com/joshuaguerin/Answer-Set-Programming-Algorithms/tree/master/Equal-Sum-Partition) | 
-|  | [Numerical 3-Dimensional Matching](https://github.com/joshuaguerin/Answer-Set-Programming-Algorithms/tree/master/Numerical-3-Dimensional-Matching) |
-|  Combinatorial Optimization  |  [Knapsack](https://github.com/joshuaguerin/Answer-Set-Programming-Algorithms/tree/master/Knapsack)  |
-|  | [Bin-Packing](https://github.com/joshuaguerin/Answer-Set-Programming-Algorithms/tree/master/Bin-Packing) |
+|    | [Prime Sieve](Prime-Sieve)  |
+|    | [Perfect Numbers](Perfect-Numbers)  |
+| Numerical Set/Partitioning  | [Subset Sum](Subset-Sum) |
+|  | [Equal Sum Partition](Equal-Sum-Partition) | 
+|  | [Numerical 3-Dimensional Matching](Numerical-3-Dimensional-Matching) |
+|  Combinatorial Optimization  |  [Knapsack](Knapsack)  |
+|  | [Bin-Packing](Bin-Packing) |
 |  Puzzles/Games  | [I'm my own Grandpa!](Grandpa/)  |
-|    | [N-Queens](https://github.com/joshuaguerin/Answer-Set-Programming-Algorithms/tree/master/N-Queens) |
-|    | [Sudoku](https://github.com/joshuaguerin/Answer-Set-Programming-Algorithms/tree/master/Sudoku) | 
-|  Graphs  | [Graph Coloring](https://github.com/joshuaguerin/Answer-Set-Programming-Algorithms/tree/master/Graph-Coloring) |
-|    | [Chromatic Numbers](https://github.com/joshuaguerin/Answer-Set-Programming-Algorithms/tree/master/Graph-Coloring) |
-|    | [Clique](https://github.com/joshuaguerin/Answer-Set-Programming-Algorithms/tree/master/Clique) |
-|    | [Max Clique](https://github.com/joshuaguerin/Answer-Set-Programming-Algorithms/tree/master/Clique) |
-|    | [Dominating Set](https://github.com/joshuaguerin/Answer-Set-Programming-Algorithms/tree/master/Dominating-Set) |
-|    | [Minimum Dominating Set](https://github.com/joshuaguerin/Answer-Set-Programming-Algorithms/tree/master/Dominating-Set) |
-|    | [Independent Set](https://github.com/joshuaguerin/Answer-Set-Programming-Algorithms/tree/master/Independent_Set) |
-|    | [Vertex Cover](https://github.com/joshuaguerin/Answer-Set-Programming-Algorithms/tree/master/Vertex-Cover) | 
-|    | [Minimum Vertex Cover](https://github.com/joshuaguerin/Answer-Set-Programming-Algorithms/tree/master/Vertex-Cover) | 
-|  Deterministic Planning  | [Hamiltonian Path](https://github.com/joshuaguerin/Answer-Set-Programming-Algorithms/tree/master/Travelling_Salesman) |
-|    | [Traveling Salesman](https://github.com/joshuaguerin/Answer-Set-Programming-Algorithms/tree/master/Travelling_Salesman) |
-| Sequential/Time-Based Planning | [Wolf, Goat, and Cabbage](https://github.com/joshuaguerin/Answer-Set-Programming-Algorithms/tree/master/Wolf-Goat-Cabbage) |
-|  Network Flow  | [Max-Flow](https://github.com/joshuaguerin/Answer-Set-Programming-Algorithms/tree/master/Max-Flow) |
+|    | [N-Queens](N-Queens) |
+|    | [Sudoku](Sudoku) | 
+|  Graphs  | [Graph Coloring](Graph-Coloring) |
+|    | [Chromatic Numbers](Graph-Coloring) |
+|    | [Clique](Clique) |
+|    | [Max Clique](Clique) |
+|    | [Dominating Set](Dominating-Set) |
+|    | [Minimum Dominating Set](Dominating-Set) |
+|    | [Independent Set](Independent_Set) |
+|    | [Vertex Cover](Vertex-Cover) | 
+|    | [Minimum Vertex Cover](Vertex-Cover) | 
+|  Deterministic Planning  | [Hamiltonian Path](Travelling_Salesman) |
+|    | [Traveling Salesman](Travelling_Salesman) |
+| Sequential/Time-Based Planning | [Wolf, Goat, and Cabbage](Wolf-Goat-Cabbage) |
+|  Network Flow  | [Max-Flow](Max-Flow) |
 |  Data Mining  | [Frequent Itemset Mining](Frequent-Itemset-Mining) |
 
 ## Structure
