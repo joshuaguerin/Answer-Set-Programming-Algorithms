@@ -14,6 +14,12 @@
 import random
 import argparse
 import math
+import sys
+
+# While this implementation isn't particularly efficient for large (500+ node)
+# graphs, the recursion limit below can be adjusted by the user if 1k+
+# node generation is desired.
+# sys.setrecursionlimit(10000)
 
 parser = argparse.ArgumentParser()
 
