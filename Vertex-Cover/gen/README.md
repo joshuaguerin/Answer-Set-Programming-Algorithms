@@ -7,7 +7,7 @@ appear as part of the graph. The connectivity factor controls how interconnected
 
 For smaller graphs the user will want a larger connectivity factor (> .5) if connectivity far beyond the minimum spanning tree is desired.
 
-# How it works
+## Algorithm
 The generator first lists all the possible nodes for the solver. Then it generates a minimum spanning tree using 
 [Depth-First Search](https://en.wikipedia.org/wiki/Depth-first_search). We use a n x n matrix to represent our graph. At any
 given point, if it is a 1, then there is an edge between it's coordinates, otherwise 0. Example if (2,3) is a 1, then there is 
