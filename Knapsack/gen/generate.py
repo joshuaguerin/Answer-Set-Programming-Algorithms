@@ -6,7 +6,7 @@
 #	where: v is the upper limit on the value of the items, inclusive
 #	       n is the the number of items to generate, inclusive
 #	       w is the maximum weight of the items, non-inclusive
-#	       filename.lp is the location to write the instance tfo
+#	       filename.lp is the location to write the instance to
 #	Each of v, n, w are optional (Defaults: v=10, n=25, w=10)
 #	The redirect (> filename.lp) can be omitted (to print to stdout)
 
