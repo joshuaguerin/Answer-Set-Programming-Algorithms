@@ -1,12 +1,11 @@
 # Problem: Vertex-Cover Generator
 
 ## Description
-The generator takes in 2 arguments from the User. Graph size and a connecting factor. The graph size is how many nodes will
-appear as part of the graph. The connecting factor controls how interconnected our graph is going to be. It is a number from
-0 to 1. 0 will output only a [Minimum Spanning Tree](https://en.wikipedia.org/wiki/Minimum_spanning_tree), or a tree that includes 
-all nodes of the graph exactly once. 1 will output a graph where every node is connected to every node. The default is 0.5, 
-which will generate half of the maximum number of edges. With smaller graphs, the factor will still only sometimes only output
-the minimum spanning tree since there must be n - 1 edges in a minimum spanning tree.
+The generator takes in 2 arguments from the User. Graph size and a connectivity factor. The graph size is how many nodes will
+appear as part of the graph. The connectivity factor controls how interconnected our graph is going to be. It is a floating-point value in the range
+[0, 1.0]. We do ensure minimal connectivity, as an argument of 0 will output a [Minimum Spanning Tree](https://en.wikipedia.org/wiki/Minimum_spanning_tree). On the other extreme, 1 will be fully connected (with the exception of self-loops, which are not generated).
+
+For smaller graphs the user will want a larger connectivity factor (> .5) if connectivity far beyond the minimum spanning tree is desired.
 
 # How it works
 The generator first lists all the possible nodes for the solver. Then it generates a minimum spanning tree using 
