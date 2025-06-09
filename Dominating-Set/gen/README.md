@@ -1,4 +1,4 @@
-# Problem: Dominating Set
+jackson-dom-set# Problem: Dominating Set
 
 ## Description
 The generator takes in 2 arguments from the User: Graph size(n) and a connecttivity factor(f). The connectivity factor controls how interconnected our graph is going to be. It is a floating-point value in the range
