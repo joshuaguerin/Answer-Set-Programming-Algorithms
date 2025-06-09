@@ -8,11 +8,4 @@ appear as part of the graph. The connectivity factor controls how interconnected
 For smaller graphs the user will want a larger connectivity factor (> .5) if connectivity far beyond the minimum spanning tree is desired.
 
 ## Algorithm
-The generator first lists all the possible nodes for the solver. Then it generates a minimum spanning tree using 
-[Depth-First Search](https://en.wikipedia.org/wiki/Depth-first_search). We use a n x n matrix to represent our graph. At any
-given point, if it is a 1, then there is an edge between it's coordinates, otherwise 0. Example if (2,3) is a 1, then there is 
-an edge from node 2 to node 3. Since this is an undirected graph, order doesn't matter. However, for the matrix it does. 
-So any time we check (X,Y) we also check (Y,X) before making an edge. Once we have placed our spanning tree in the matrix, 
-we calculate how many edges we need based on the maximum number of edges possible for the graph, multiplied by our connecting factor.
-The spanning tree is our minimum, so we do not remove edges if the number is lesser. If the number is greater, then we begin
-adding random edges until our matrix sums to the number. Finally we print out our matrix in the appropriate format.
+The data structure representation is a matrix, with connectivity measured by the number of edges generated. First a minimum spanning tree is generated using a recursive, [depth-first search](https://en.wikipedia.org/wiki/Depth-first_search) strategy to ensure a minimal level of connectivity. Additional edges are generated randomly to satisfy the desired connectivity factor.
