@@ -1,7 +1,7 @@
 # Problem: Independent Set
 
 ## Description
-The generator takes in 2 arguments from the User. Graph size and a connectivity factor. The graph size is how many nodes will
+The generator takes in 2 arguments: graph size (`n`) and a connectivity factor (`f`). The graph size is how many nodes will
 appear as part of the graph. The connectivity factor controls how interconnected our graph is going to be. It is a floating-point value in the range
 [0, 1.0]. We do ensure minimal connectivity, as an argument of 0 will output a [Minimum Spanning Tree](https://en.wikipedia.org/wiki/Minimum_spanning_tree). On the other extreme, 1 will be fully connected (with the exception of self-loops, which are not generated).
 
