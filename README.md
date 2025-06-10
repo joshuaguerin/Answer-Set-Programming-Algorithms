@@ -121,7 +121,7 @@ This adds a small complication for graph problems, as graphical models lack a co
 
 
 ## Bugs and other issues
-Our goal is to have solutions be well-documented, and fairly robust. While bugs are likely to be present, our hope is that the algorithms largely function under their defined parameters. If users discover bugs or other problems in our code, we welcome the user to submit an [issue](https://github.com/joshuaguerin/Answer-Set-Programming-Algorithms/issues) that clearly defines the unexpected behavior so it may be fixed or better documented.
+We wish to present solutions that are correct, well-documented, and fairly robust (not to mention efficient, where possible!). We hope is that the solutions presented function under their defined parameters, however with a project of this size unintended behaviors are naturally going to be discovered. If any such problems, bugs, or or areas that require further documentation are discovered we welcome the reader to submit [issue](https://github.com/joshuaguerin/Answer-Set-Programming-Algorithms/issues) that clearly defines the unexpected behavior so it may be fixed or better documented. Where possible please try to provide inputs, outputs, and any relevant source to expedite our ability to review any suggestions.
 
 ## How to Cite
 For now, please cite the website by the name *ASP&#8704;: Answer Set Programming "Algorithms"* by "Joshua T. Guerin" with the full URL. You may use whatever citation conventions are most reasonable for the publication.
