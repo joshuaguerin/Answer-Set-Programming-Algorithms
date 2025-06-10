@@ -103,13 +103,13 @@ When generating a problem instance for testing, the user may find file redirects
 python3 gen/generate.py > instance.lp
 ```
 
-
-
 ## Notes about implementations
-The goal for this repo is to produce a set of original solutions to common/classical problems in Computer Science, however natural similarities are likely to exist between my own sources and those written by others. Of significant influence are the educational materials in the [Potassco](https://potassco.org/) collection, who are also the developers of clingo and other related solvers. Many programming conventions in this repository were learned from their materials and carry over directly.
+The goal for this repository is to produce a set of original solutions to common/classical problems in Computer Science, however natural similarities are likely to exist between my own sources and those written by others. Of significant influence are the educational materials in the [Potassco](https://potassco.org/) collection, who are also the developers of clingo and other related utilities. Many programming conventions in this repository were learned from their materials and carry over directly.
 
 ### Prerequisites/Dependencies
-Solution and instance files (`.lp`) are written for the [Clingo](https://potassco.org/clingo/) solver, from the [Potsdam](https://potassco.org/clingo/) Answer Set Solving Collection (Potassco).
+
+#### Clingo
+Solution and instance files (`.lp`) are written for the [Clingo](https://potassco.org/clingo/) solver, from the [Potsdam](https://potassco.org/clingo/) Answer Set Solving Collection (Potassco). The binary is rather small, and can easily be installed in the cloned repository directory or a system binary directory.
 
 Auxiliary software applications (e.g., generation and printing) are usually written in [Python 3](https://www.python.org/downloads/).
 
