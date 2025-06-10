@@ -63,7 +63,6 @@ The repository  is designed around a "flat" organizational structure for ease of
 |    | [Traveling Salesman](Travelling_Salesman) |
 | Sequential/Time-Based Planning | [Wolf, Goat, and Cabbage](Wolf-Goat-Cabbage) |
 |  Network Flow  | [Max-Flow](Max-Flow) |
-|  Data Mining  | [Frequent Itemset Mining](Frequent-Itemset-Mining) |
 
 ## Structure
 Entries are designed with a primary goal of being correct/complete, but comprehensible for study. This is not to imply that solutions encountered will necessarily be slow in practice or deliberately inefficient. Instead we have designed solutions to be easy to understand and learn from, as articulating thoughts in a logical language may feel difficult (or foreign) at first. Solutions are designed around reasoning that is easily expressed in human-readable thoughts, and these expressions are used to document the narrative flow of each program. Indeed, most examples were developed around the expression of problem constraints in plain English, with lines of code engineered to make those thoughts salient.
