@@ -1,4 +1,4 @@
-# Problem: Independent Set
+# Problem: Max Flow
 
 ## Description
 The generator takes in 3 arguments: graph size (`n`), a connectivity factor (`f`), and a max weight (`w`). The graph size is how many nodes will
