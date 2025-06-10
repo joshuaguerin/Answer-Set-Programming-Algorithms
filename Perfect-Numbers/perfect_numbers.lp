@@ -2,9 +2,10 @@
  * File: perfect.lp
  * Author: Joshua T. Guerin
  *
- * Description: Given an integer n, compute primes from 2..n
- * Use: clingo prime.lp -c n=max
- *      where composites between 2..max are to be generated.
+ * Description: Given an integer n, perfect numbers from 2..n
+ *
+ * Use: clingo perfect_numbers.lp -c n=<max>
+ *      where perfect numbers between 2..max are to be generated.
  *%
 
 
