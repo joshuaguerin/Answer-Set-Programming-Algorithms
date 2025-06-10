@@ -81,7 +81,7 @@ Applications are designed under the assumptions of a standard Unix design philos
 
 ## Use
 
-Each implementation may have slight variations [^1] on use (e.g., number and form of command-line arguments), we have maintained a fairly consistent interface throughout each entry. Clingo applications are divided into a separate `instance.lp` and `problem.lp` file, where the former holds the data for an example problem instance and the latter contains the generalized solution. Problem instances supplied are designed as "toy" instances, so that the user can draw examples out by hand and verify results without the support of a computer.
+While each implementation may have slight variations [^1] on use (e.g., number and form of command-line arguments), we have sought to maintain a fairly consistent interface throughout each entry. Clingo applications are divided into a separate `instance.lp` and `problem.lp` file, where the former holds the data for an example problem instance and the latter contains the generalized solution. Problem instances supplied are designed as "toy" instances, so that the user can draw examples out by hand and verify results without the support of a computer.
 
 [^1]: Please see the header comment for individual files for more detailed use instructions, including any necessary command-line arguments.
 
@@ -91,7 +91,7 @@ In general, instance and problem files can be passed directly to Clingo:
 clingo instance.lp problem.lp
 ```
 
-Output can be parsed by the reader either directly, or through an included printing script. In most instances, this can be accomplished through pipes:
+Output can be parsed by the user either directly/visually, or through an included printing script. In most instances, this can be accomplished through pipes:
 
 ```console
 clingo instance.lp problem.lp | python3 print/print.py
