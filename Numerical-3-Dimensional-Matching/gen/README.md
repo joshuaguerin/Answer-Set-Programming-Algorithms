@@ -1,7 +1,7 @@
 # Problem: Numerical 3-Dimensional Matching
 
 # Description
-The generator takes in 2 arguments: the graph size (`n`) and the desired set size (`s`) for each input set.
+The generator takes in 2 arguments: the desired set size (`s`) for each input set and the target value of the sum (`n`).
 
 # Algorithm
 For generating the sets, we borrow an approach from combinatorics called the [Stars & Bars](https://en.wikipedia.org/wiki/Stars_and_bars_(combinatorics)) method.
