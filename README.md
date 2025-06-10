@@ -114,10 +114,10 @@ Solution and instance files (`.lp`) are written for the [Clingo](https://potassc
 #### Python
 Auxiliary software applications (e.g., generation and printing) are usually written in [Python 3](https://www.python.org/downloads/).
 
-Finally, additional utilities may be used where appropriate. While efforts have been taken to ensure that required software packages are somewhat minimal, additional utilities may improve (for example) our ability to represent output.
-
 #### Graphviz
-E.g., Many graph algorithms do not have a natural/human readable means to display as plaintext or *ASCII art*. Thus, for convenience, [graphviz/dot](https://graphviz.org/download/) may be used as an output format by printers. This particular format was selected because it is roughly as comprehensible as any other text-based format, but users also have the option of running these outputs through dot to produce graphical documents (e.g., pdfs) for final output.
+Finally, additional utilities may be used where appropriate. While efforts have been taken to ensure that required software packages are somewhat minimal, additional utilities may improve (for example) our ability to represent output. In the case of many implementations we have opted for text-based representations of output figures.
+
+This adds a small complication for graph problems, as graphical models lack a convenient, text-based form for display of results. Thus, for convenience, [graphviz/dot](https://graphviz.org/download/) may be used as an output format by printers. This particular format was selected because it is roughly as comprehensible as any other text-based format, but users also have the option of running these outputs through dot to produce graphical documents (e.g., pdfs) for final output.
 
 
 ## Bugs and other issues
