@@ -68,12 +68,12 @@ The repository  is designed around a "flat" organizational structure for ease of
 ## Structure
 Entries are designed with a primary goal of being correct/complete, but comprehensible for study. This is not to imply that solutions encountered will necessarily be slow in practice or deliberately inefficient. Instead we have designed solutions to be easy to understand and learn from, as articulating thoughts in a logical language may feel difficult (or foreign) at first. Solutions are designed around reasoning that is easily expressed in human-readable thoughts, and these expressions are used to document the narrative flow of each program. Indeed, most examples were developed around the expression of problem constraints in plain English, with lines of code engineered to make those thoughts salient.
 
-Each problem entry contains, minimally, a description and example of the problem being solved (in the form of a `README.md` file), a problem instance file (data, usually called `instance.lp`), and a solution file (sharing the name of problem).
+Each problem entry contains, minimally, a description and example of the problem being solved (in the form of a `README.md` file), a problem instance file (data, usually called `instance.lp`), and a solution file (reflecting the name of problem with an `.lp` extension).
 
 Additional resources are typically included on an as-needed basis including:
-* Problem variants that are not sufficiently different to warrant separate inclusion (e.g., minimization/maximization variants).
-* Generators to construct new instances (`gen` directory).
-* Printing software (`print` directory).
+* Problem variants that are not sufficiently different to warrant separate directories (e.g., minimization/maximization variants may take no more than a single line).
+* Generators to construct random instances for testing (`gen/`).
+* Printing software (`print/`).
 
 Some of these features will be omitted where not applicable. E.g., [Prime-Sieve](Prime-Sieve)'s prime and composite sieves take a single integer, and thus domain/instance generation is not terribly useful to the reader. Unless otherwise stated, generation and printing software are written in Python.
 
