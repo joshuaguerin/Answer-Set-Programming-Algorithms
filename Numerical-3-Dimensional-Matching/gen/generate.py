@@ -54,6 +54,7 @@ while len(sets[0]) < maxSize:
 char = 'x'
 
 for part in sets:
+  random.shuffle(part)
   seperator = " ; "
   printStr = f"{char}( {seperator.join(part)}"
   print(printStr[:-3],").")
