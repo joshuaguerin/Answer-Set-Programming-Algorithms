@@ -33,7 +33,7 @@ stars = ['*'] * targetVal + ['|'] * 2
 
 sets = [[], [] ,[]]
 
-while len(sets[0]) <= maxSize:
+while len(sets[0]) < maxSize:
   random.shuffle(stars)
   partition = []
 
@@ -54,8 +54,11 @@ while len(sets[0]) <= maxSize:
 char = 'x'
 
 for part in sets:
-  seperator = " ; "
-  printStr = f"{char}( {seperator.join(part)}"
-  print(printStr[:-3],").")
+#  random.shuffle(part)
+
+  sep = " ; "
+  printStr = f"{char}({sep.join(part)}"
+  print(printStr + ").")
 
   char = chr(ord(char) + 1)
+
