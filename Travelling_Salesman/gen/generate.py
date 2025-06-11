@@ -15,12 +15,6 @@
 import random
 import argparse
 import math
-import sys
-
-# While this implementation isn't particularly efficient for large (500+ node)
-# graphs, the recursion limit below can be adjusted by the user if 1k+
-# node generation is desired.
-# sys.setrecursionlimit(10000)
 
 parser = argparse.ArgumentParser()
 
@@ -57,9 +51,8 @@ def coordFinder(square, size):
   col = square % size
   return (row, col)
 
-# Finds the sum of the entire matrix. Helps us to determine how many edges we have formed
 def matrixSum(matrix):
-    return sum(map(sum, matrix))
+  return sum(map(sum,matrix))
 
 def nodeDegree(matrix, node):
   # We do not need to subtract matrix[node][node] because that value is always 0 since we are avoiding self-loops
@@ -80,6 +73,17 @@ for index, col in enumerate(matrix):
 
     col[randNode] = 1
 
+maxEdges = connectFactor * ((numNodes**2) - numNodes) / 2
+
+# Start adding random edges if needed
+while matrixSum(matrix) < maxEdges:
+  randSquare = random.randint(0, (numNodes**2) - 1)
+  row, col = coordFinder(randSquare, numNodes)
+  while row == col or matrix[col][row] != 0 or matrix[row][col] != 0:
+    randSquare = random.randint(0, (numNodes**2) - 1)
+    row, col = coordFinder(randSquare, numNodes)
+
+  matrix[col][row] = 1
 
 # Iterate through the matrix and print out the edges
 print("% Edges of the Graph")
