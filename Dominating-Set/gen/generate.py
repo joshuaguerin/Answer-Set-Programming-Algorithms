@@ -7,7 +7,7 @@
 #	       f is a connecting factor for the graph generation from 0 to 1,
 #		0 will produce a spanning tree, 1 will produce a completely connected graph
 #	       filename.lp is the file to write the instance to
-#	n can be omitted (Default = 10)
+#	Each of n, f can be omitted (Default n=10, f=0.5)
 #	The redirect (> filename.lp) can be omitted (to write to stdout)
 
 
