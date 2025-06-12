@@ -11,17 +11,12 @@
 import re
 
 
-output = '''// Graph visualization using dot
-strict digraph {
-    node [color=black]
-    edge [color=black,dir=none]
-
-'''
-
+# Reading in graph
 instance = open("instance.lp", "r")
 instance_lines = instance.readlines()
 instance.close()
 
+# Reading in clingo output
 toks_last = None
 toks = None
 toks_next = input().split()
@@ -31,7 +26,17 @@ while not (toks_next[0].startswith("SAT") or toks_next[0].startswith("UNSAT") or
     toks = toks_next
     toks_next = input().split()
 
+# Scripting graph
+output = '''// Graph visualization using dot
+strict digraph {
+    node [color=black]
+    edge [color=black,dir=none]
+
+'''
+    
 if toks_next[0].startswith("SAT") or toks_next[0].startswith("OPT"):
+
+    # Setting up graph
     for line in instance_lines:
         if line.startswith("node"):
             line = re.sub(r"node\(", "    ", line)
@@ -49,6 +54,7 @@ if toks_next[0].startswith("SAT") or toks_next[0].startswith("OPT"):
                 
         output += line
 
+    # Adding solution to graph
     output += '''
     subgraph cluster_0 {
         style=invis
@@ -66,14 +72,12 @@ if toks_next[0].startswith("SAT") or toks_next[0].startswith("OPT"):
         t = re.sub(r",", " -> ", t)
 
         if toks_next[0].startswith("OPT"):
-            t = re.sub(r"\[temp\]", "[color=red,dir=yes,label=\"" + weight + "\"];", t)
-            
+            t = re.sub(r"\[temp\]", "[color=red,dir=yes,label=\"" + weight + "\"];", t)            
             tempt = t.split(" ")
             output = re.sub("    " + tempt[-2] + " -> " + tempt[-4] + r" \[.*?\];", "", output)
 
         else:
             t = re.sub(r"\[temp\]", "[color=red,dir=yes];", t)
-
             tempt = t.split(" ")
             output = re.sub("    " + tempt[-2] + " -> " + tempt[-4] + ";", "", output)
         
@@ -83,5 +87,6 @@ if toks_next[0].startswith("SAT") or toks_next[0].startswith("OPT"):
                 
     print(output + "}\n")
 
+# In case of unsatisfiability
 elif toks_next[0].startswith("UNSAT"):
     print("No solution found.")
