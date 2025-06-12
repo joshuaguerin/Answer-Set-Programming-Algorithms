@@ -1,7 +1,7 @@
 # Use:
-# clingo independent_set.lp instance.lp | python3 print/print.py -f filename.lp | dot -Tpdf -o independent_path.pdf
+# clingo independent_set.lp instance.lp | python3 print/print.py -f f | dot -Tpdf -o independent_set.pdf
 #      where instance.lp contains node and edge predicates.
-#            f is the optional file name with the instance graph (default = "instance.lp").
+#            f is the optional file that contains a graph's node and edge predicates (default = "instance.lp").
 #
 # Note:
 #  The final pipe and call to dot can be omitted if graphviz is not present.
@@ -16,7 +16,7 @@ import math
 parser = argparse.ArgumentParser()
 
 parser.add_argument('-f', default = "instance.lp", type = str,
-                    help = "File (filename.lp) with the graph's node and edge predicates.")
+                    help = "File (filename.lp) with the graph's node and edge predicates. (Default = instance.lp)")
 
 args = parser.parse_args()
 
