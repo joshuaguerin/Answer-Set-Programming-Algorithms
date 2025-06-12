@@ -1,7 +1,8 @@
 # Use:
-# clingo clingo hamiltonian_path.lp instance.lp -c s=<val> -c e=<val> | python3 print/print.py | dot -Tpdf -o hamiltonian_path.pdf
-# clingo clingo travelling_salesman.lp instance.lp -c s=<val> -c e=<val> | python3 print/print.py | dot -Tpdf -o hamiltonian_path.pdf
+# clingo hamiltonian_path.lp instance.lp -c s=<val> -c e=<val> | python3 print/print.py -f f | dot -Tpdf -o hamiltonian_path.pdf
+# clingo travelling_salesman.lp instance.lp -c s=<val> -c e=<val> | python3 print/print.py -f f | dot -Tpdf -o hamiltonian_path.pdf
 #      where instance.lp contains node and edge predicates.
+#            f is the optional file that contains a graph's node and edge predicates (default = "instance.lp").
 #
 # Note:
 #  The final pipe and call to dot can be omitted if graphviz is not present.
@@ -9,10 +10,19 @@
 
 
 import re
+import argparse
+import math
 
+
+parser = argparse.ArgumentParser()
+
+parser.add_argument('-f', default = "instance.lp", type = str,
+                    help = "File (filename.lp) with the graph's node and edge predicates. (Default = instance.lp)")
+
+args = parser.parse_args()
 
 # Reading in graph
-instance = open("instance.lp", "r")
+instance = open(args.f, "r")
 instance_lines = instance.readlines()
 instance.close()
 
