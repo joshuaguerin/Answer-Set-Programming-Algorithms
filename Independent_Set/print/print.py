@@ -5,7 +5,7 @@
 #
 # Note:
 #  The final pipe and call to dot can be omitted if graphviz is not present.
-#  To be ran in previous directory where independent_set.lp, and instance.lp are.
+#  To be ran in previous directory where independent_set.lp and instance.lp are.
 
 
 import re
