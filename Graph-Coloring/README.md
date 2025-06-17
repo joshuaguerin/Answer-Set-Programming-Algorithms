@@ -7,7 +7,7 @@ Given a graph *G=(V, E)*, where *V* is a set of vertices and *E* is a set of edg
 Two problems related to the *graph coloring* problem are:
 * **k-coloring** - Is there a coloring with *k* colors? E.g., 3-colorability.
 * **chromatic numbers** - Find the *minimum* number of colors for a given graph.
-* **bipartite graph partitioning** - See below under "Problem Variants."
+* **bipartite graph partitioning** - See below under [Problem Variants](#problem-variants).
 
 ## Example
 A graph with 10 vertices and 3 colors.
