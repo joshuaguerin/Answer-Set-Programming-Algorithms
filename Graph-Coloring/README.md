@@ -35,6 +35,6 @@ From [Wikipedia](https://en.wikipedia.org/wiki/Bipartite_graph).
 
 Note that the bipartite graph above fits the definition of 2-colorability. Indeed, a graph has a bipartite partition if and only if it is 2-colorable (or, equivalently, has a chromatic number of 2 or fewer).[^1]
 
-Because this difference is semantic and not practical, we opt not to provide a separte implementation.
+Because this difference is semantic and not practical, we do not provide a separate (and nearly identical) implementation for partitioning.
 
 [^1]: Asratian AS, Denley TMJ, Häggkvist R. [Bipartite Graphs and Their Applications.](https://archive.org/details/bipartitegraphst0000asra/page/n3/mode/2up?view=theater&ui=embed&wrapper=false) Cambridge University Press; 1998.
