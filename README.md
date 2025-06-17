@@ -52,7 +52,7 @@ The repository  is designed around a "flat" organizational structure for ease of
 |    | [Sudoku](Sudoku) | 
 |  Graphs  | [Graph Coloring](Graph-Coloring) |
 |    | [Bipartite Graph Partitioning](Graph-Coloring) |
-|    | [Chromatic Numbers](Graph-Coloring) |
+|    | [Chromatic Numbers](Graph-Coloring#problem-variants) |
 |    | [Clique](Clique) |
 |    | [Max Clique](Clique) |
 |    | [Dominating Set](Dominating-Set) |
