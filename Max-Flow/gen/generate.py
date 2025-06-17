@@ -8,13 +8,12 @@
 #		0 will produce a spanning tree, 1 will produce a completely connected graph
 #	       w is the maximum weight of an edge in the graph, inclusive
 #	       filename.lp is the file to write the instance to
-#	Each of n, f, w can be omitted (Default n=6, f=0.5, w=10)
+#	Each of n, f, w can be omitted (Default n=5, f=0.5, w=10)
 #	The redirect (> filename.lp) can be omitted (to write to stdout)
 
 
 import random
 import argparse
-import math
 import sys
 
 # While this implementation isn't particularly efficient for large (500+ node)
@@ -24,8 +23,8 @@ import sys
 
 parser = argparse.ArgumentParser()
 
-parser.add_argument('-n', default = 6, type = int,
-			help = "The number of nodes to include in the graph. (Default = 6)")
+parser.add_argument('-n', default = 5, type = int,
+			help = "The number of nodes to include in the graph. (Default = 5)")
 
 parser.add_argument('-f', default = 0.5, type = float,
 			help = '''Connecting factor for the graph generation from 0-1.
@@ -48,62 +47,70 @@ for i in range(numNodes):
 print("% Individual Nodes for the graph")
 print(f"{printStr[:-2]}).\n")
 
-# Print start stop
+# Define and Print start stop
 print("% Start stop for the graph")
-start = random.randint(0,numNodes)
-stop = random.randint(0,numNodes)
+start = random.randint(0,numNodes-1)
+stop = random.randint(0, numNodes-1)
 while start == stop:
-  stop = random.randint(0,numNodes)
+  stop = random.randint(0,numNodes-1)
 
 print(f"start({start}).")
 print(f"terminal({stop}).\n")
 
-# Create a n x n matrix filled with zeros. 0 will represent blanks and 1 will represent an edge at that coordinate
-matrix = [[0 for _ in range(numNodes)] for _ in range(numNodes)]
+# Partition how many nodes will be in each layer by Stars & Bars method
+stars = ['*'] * (numNodes - 2) +['|'] * (numNodes - 2)
+partition = []
 
-# Converts which square of the matrix we are looking at into row and col
-def coordFinder(square, size):
-  row = square // size
-  col = square % size
-  return (row, col)
+random.shuffle(stars)
 
-# Finds the sum of the entire matrix. Helps us to determine how many edges we have formed
-def matrixSum(matrix):
-    return sum(map(sum, matrix))
+count = 0
+for item in stars:
+  if item == '*':
+    count += 1
+  elif item == '|' and count != 0:
+    partition.append(count)
+    count = 0
 
-# Generates a spanning tree to start from using Depth-First-Search
-def dfsTreeGen(col, visited):
-  visited[col] = True
+if count != 0:
+  partition.append(count)
 
-  neighbors = list(range(numNodes))
-  random.shuffle(neighbors)
+cols = [set() for _ in range(len(partition))]
 
-  for row in neighbors:
-    if not visited[row] and matrix[row][col] == 0:
-      matrix[col][row] = 1
-      dfsTreeGen(row, visited)
+def checkPrevious(node, matrix):
+  for col in matrix:
+    if node in col:
+      return True
 
-visited = [False] * numNodes
-dfsTreeGen(0, visited)
+  return False
 
-# Calculate the number of edges we can have in our graph based on user-input factor
-maxEdges = (numNodes * (numNodes - 1)) / 2
-numEdges = math.ceil(maxEdges * connectFactor)
+for index, col in enumerate(cols):
+    while len(col) < partition[index]:
+      randNode = random.randint(0, numNodes - 1)
+      while randNode == start or randNode == stop or checkPrevious(randNode, cols):
+        randNode = random.randint(0, numNodes - 1)
 
-# Start adding random edges if needed
-while matrixSum(matrix) < numEdges:
-  randSquare = random.randint(0, (numNodes**2) - 1)
-  row, col = coordFinder(randSquare, numNodes)
-  while row == col or matrix[col][row] != 0 or matrix[row][col] != 0:
-    randSquare = random.randint(0, (numNodes**2) - 1)
-    row, col = coordFinder(randSquare, numNodes)
+      col.add(randNode)
 
-  matrix[col][row] = 1
+cols = [{start}] + cols + [{stop}]
 
+print("% edge(start, end, capacity)")
+for index, col in enumerate(cols):
+  # Start of the list connects to all the nodes
+  if index == 0:
+    for node in cols[index+1]:
+      print(f"edge({start}, {node}, {random.randint(1, maxWeight)}).")
 
-# Iterate through the matrix and print out the edges
-print("% Edges of the Graph")
-for cIndex, col in enumerate(matrix):
-  for rIndex, row in enumerate(col):
-    if row == 1:
-      print(f"edge({cIndex}, {rIndex}, {random.randint(1,maxWeight)}).")
+  # Last Tier will connect to the sink node
+  elif index <= len(cols) - 2:
+    for node1 in col:
+      for node2 in cols[index + 1]:
+        print(f"edge({node1}, {node2}, {random.randint(1, maxWeight)}).")
+
+  # End of the list will already have all the edges flowing into it, so we skip it
+  elif index == len(cols) - 1:
+    print()
+  # Otherwise we can make random edges as desired
+  else:
+    for node in col:
+      if random.random() < connectFactor:
+        print(f"edge({node}, {random.choice(list(cols[index+1]))}, {random.randint(1, maxWeight)}).")
