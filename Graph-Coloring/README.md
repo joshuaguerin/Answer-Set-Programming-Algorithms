@@ -33,6 +33,6 @@ The names and colors are assigned to this example graph to identify its biparite
 
 From [Wikipedia](https://en.wikipedia.org/wiki/Bipartite_graph).
 
-Note that the bipartite graph above fits the definition of 2-colorability. Indeed, a graph has a bipartite partition if and only if it is 2-colorable[^1].
+Note that the bipartite graph above fits the definition of 2-colorability. Indeed, a graph has a bipartite partition if and only if it is 2-colorable (or, equivalently, has a chromatic number of 2 or fewer).[^1]
 
-[^1]: Asratian AS, Denley TMJ, Häggkvist R. [Bipartite Graphs and Their Applications.](https://archive.org/embed/bipartitegraphst0000asra) Cambridge University Press; 1998.
+[^1]: Asratian AS, Denley TMJ, Häggkvist R. [Bipartite Graphs and Their Applications.](https://archive.org/details/bipartitegraphst0000asra/page/n3/mode/2up?view=theater&ui=embed&wrapper=false) Cambridge University Press; 1998.
