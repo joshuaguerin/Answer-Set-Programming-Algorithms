@@ -21,15 +21,18 @@ From [Wikipedia](https://en.wikipedia.org/wiki/Graph_coloring).
 ### Bipartite Graph Partition
 A [bipartite graph](https://en.wikipedia.org/wiki/Bipartite_graph) is a graph with nodes that can be partitioned into two sets: *A* and *B*, where every edge connects a vertex in *A* with a vertex in *B*. I.e., No two vertices in either set may be adjacent.
 
-E.g., Consider the simple graph:
+E.g., Consider the graph:
+
 ![Bipartite Graph](images/Simple_bipartite_graph_line_bg.png)
 
 From [Wikipedia](https://en.wikipedia.org/wiki/Bipartite_graph).
 
-The names and colors are assigned to this example graph to identify its biparite nature. The visualization of the partition can be easily created by reconfiguring the vertex layout:
+The names and colors are assigned to this example graph to identify its biparite nature. The visualization of the partition can be easily created by reconfiguring the vertex layout, guided by colors and names:
 
 ![Bipartite Graph](images/Simple_bipartite_graph_bg.png)
 
 From [Wikipedia](https://en.wikipedia.org/wiki/Bipartite_graph).
 
+Note that the bipartite graph above fits the definition of 2-colorability. Indeed, a graph has a bipartite partition if and only if it is 2-colorable[^1].
 
+[^1]: Asratian AS, Denley TMJ, Häggkvist R. [Bipartite Graphs and Their Applications.](https://archive.org/embed/bipartitegraphst0000asra) Cambridge University Press; 1998.
