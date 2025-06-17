@@ -37,4 +37,4 @@ Note that the bipartite graph above fits the definition of 2-colorability. Indee
 
 Because this difference is semantic and not practical, we do not provide a separate (and nearly identical) implementation for partitioning.
 
-[^1]: Asratian AS, Denley TMJ, Häggkvist R. [Bipartite Graphs and Their Applications.](https://archive.org/details/bipartitegraphst0000asra/page/n3/mode/2up?view=theater&ui=embed&wrapper=false) Cambridge University Press; 1998.
+[^1]: Asratian AS, Denley TMJ, Häggkvist R. [Bipartite Graphs and Their Applications.](https://archive.org/details/bipartitegraphst0000asra/page/6/mode/2up?view=theater&ui=embed&wrapper=falsee) Cambridge University Press; 1998.
