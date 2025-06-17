@@ -51,8 +51,8 @@ The repository  is designed around a "flat" organizational structure for ease of
 |    | [N-Queens](N-Queens) |
 |    | [Sudoku](Sudoku) | 
 |  Graphs  | [Graph Coloring](Graph-Coloring) |
-|    | [Bipartite Graph Partitioning](Graph-Coloring) |
-|    | [Chromatic Numbers](Graph-Coloring#problem-variants) |
+|    | [Bipartite Graph Partitioning](Graph-Coloring#problem-variants) |
+|    | [Chromatic Numbers](Graph-Coloring) |
 |    | [Clique](Clique) |
 |    | [Max Clique](Clique) |
 |    | [Dominating Set](Dominating-Set) |
