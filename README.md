@@ -114,6 +114,8 @@ The goal for this repository is to produce a set of original solutions to common
 
 ### Prerequisites/Dependencies
 
+Virtually all files in this repository are plaintext, and can be read by the user in any standard text editor, however minimally the user will likely want access to a solver to run code examples. In order to fully utilize the functionalities we provide, a small number of additional utilities may be desirable.
+
 #### Clingo
 Solution and instance files (`.lp`) are written for the [Clingo](https://potassco.org/clingo/) solver, from the [Potsdam](https://potassco.org/clingo/) Answer Set Solving Collection (Potassco). The binary is rather small, and can easily be installed in the cloned repository directory or a system binary directory.
 
