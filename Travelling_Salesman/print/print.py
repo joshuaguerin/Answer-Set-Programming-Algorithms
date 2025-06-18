@@ -51,6 +51,8 @@ if toks_next[0].startswith("SAT") or toks_next[0].startswith("OPT"):
         if line.startswith("node"):
             line = re.sub(r"node\(", "    ", line)
             line = re.sub(r"\)\.", "", line)
+
+            output += line
     
         elif line.startswith("edge"):
             weight = re.findall(r"\d+", line)[0]
@@ -61,8 +63,8 @@ if toks_next[0].startswith("SAT") or toks_next[0].startswith("OPT"):
 
             if toks_next[0].startswith("OPT"):
                 line = re.sub(r";", " [label=\"" + weight + "\"];", line)
-                
-        output += line
+
+            output += line
 
     # Adding solution to graph
     output += '''
