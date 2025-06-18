@@ -5,7 +5,7 @@ ASP&#8704; is a repository of solutions to common problems in Computer Science i
 We hope that this repository serves as a means for educators and learners alike to be inspired and grow their appreciation for the logic programming paradigm.
 
 ## What is ASP&#8704;?
-Pronounced "Answer Set Programming for all," this repository is designed to serve as an [Open Educational Repository](https://en.wikipedia.org/wiki/Open_educational_resources) (OER) for Answer Set Programming, in particular in the [Clingo](https://potassco.org/clingo/) dialect. The [universal quantifier](https://en.wikipedia.org/wiki/Universal_quantification), &#8704;, is an important symbol in logic (programming), ascribing properties to *everything* of a particular type or belonging to a particular set (hence, "for all") in logic programming. The upside-down 'A' also serves to reinforce the sort of misapplication of the term "algorithms," as it may or may not apply to a very declarative languages like the Clingo dialect.
+Pronounced "Answer Set Programming for all," this repository is designed to serve as an [Open Educational Repository](https://en.wikipedia.org/wiki/Open_educational_resources) (OER) for Answer Set Programming, in particular in the [Clingo](https://potassco.org/clingo/) dialect. The [universal quantifier](https://en.wikipedia.org/wiki/Universal_quantification), &#8704;, is an important symbol in logic (programming), ascribing properties to *everything* of a particular type or belonging to a particular set (hence, "for all"). The upside-down 'A' also serves to reinforce a sort of misapplication of the term "algorithms," as it may or may not apply to a declarative languages like the ASP family.
 
 In terms of overall design, our expected audiences are those who new to ASP and Clingo, but are looking to start or improve learning, and may be useful for those with an intermediate experience level as well. We hope that the overall structure will allow readers to learn ASP patterns "by example," to identify commonalities in program construction.
 
@@ -20,14 +20,14 @@ The inspiration (including the name) for the repository are the myriad of books 
 
 This repository is an expression of enjoyment of logic programming by those who value high-quality educational materials. At the time of the repository's construction, there are several great texts in logic programming (including answer set programming), however few available texts address the particular "Algorithms in" niche. As our goals are primarily educational, software examples are constructed under the following assumptions:
 
-* Simple, well-organized/documented examples.
+* Simple, well-organized/documented code examples.
 * Inclusion of a wide-variety of well-studied problems.
 * Problem documentation, with examples.
-* Additional utilities (where needed) to support understanding.
+* Additional utilities (where needed) to support understanding or use.
 
 While efficiency of our solutions isn't a primary guiding concern, we encourage the user to push the limits of our implementations--you may be surprised regarding what some of them may accomplish in (in many instances) 2-5 lines of code! Keep in mind that, due to the largely $NP-Complete$ and $NP-Hard$ complexity classes most examples occupy, the fastest (known) algorithms for many of these problems are exponential or worse. At the most extreme end, some of our implementations may be usable for dozens/hundreds/thousands of inputs. 
 
-The inclusion of additional software is multi-purpose. First, this allows us to provide solutions to problems that are encoded fairly strictly in the logical/ASP paradigm, with non-declarative (sometimes called "impure") notions such as input parsing and output generation moved to different portions of the toolchain. [^2] Additionally, we hope that these additional utilities will help the user in their journey of understanding how to program in the ASP paradigm. The separation of functionalities with ASP languages can be rather extreme (s.t. input parsing and output formatting aren't even a part of the base language). Because purely predicate-based output (e.g., `attribute(atom)`) can prove difficult to parse for many problems--especially with larger instances.
+The inclusion of additional software is multi-purpose. First, this allows us to provide solutions to problems that are encoded fairly strictly in the logical/ASP paradigm, with non-declarative (sometimes called "impure") notions such as input parsing and output generation moved to different portions of the toolchain. [^2] Additionally, we hope that these additional utilities will help the user in their journey of understanding how to program in the ASP paradigm. Because human predicate-based output (e.g., `attribute(literal)`) can prove difficult to parse for many problems--especially with larger instances--we have provided printing software for nearly all implementations. Likewise, custom problem generators have been written for many/most problems to allow the user to easily explore the various facets of each implementation.
 
 By providing an end-to-end toolchain, from problem generation to solving to presentation, we hope that we have created a toolset that is flexible, comprehensible, and easy to modify and apply to new domains.
 
