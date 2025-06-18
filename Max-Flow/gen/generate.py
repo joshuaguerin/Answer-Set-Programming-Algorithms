@@ -92,8 +92,6 @@ for index, col in enumerate(cols):
 
 cols = [{start}] + cols + [{stop}]
 
-print(cols)
-
 print("% edge(start, end, capacity)")
 for index, col in enumerate(cols):
   # Start of the list connects to all the nodes
@@ -113,13 +111,14 @@ for index, col in enumerate(cols):
 
   # Otherwise we can make random edges as desired
   else:
-    # If the current list or the next List is length 1 , then we need to make at least one connection
-    needsConnection = False
-    if len(cols[index+1]) == 1 or len(col) == 1:
-      needsConnection = True
+    needsConnection = True
 
     for node1 in col:
       for node2 in cols[index+1]:
         if random.random() < connectFactor or needsConnection:
           print(f"edge({node1}, {node2}, {random.randint(1, maxWeight)}).")
           needsConnection = False
+
+      for node2 in col:
+        if node1 != node2 and random.random() < connectFactor:
+          print(f"edge({node1}, {node2}, {random.randint(1, maxWeight)}).")
