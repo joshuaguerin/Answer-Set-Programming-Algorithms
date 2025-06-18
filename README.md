@@ -65,6 +65,10 @@ The repository  is designed around a "flat" organizational structure for ease of
 | Sequential/Time-Based Planning | [Wolf, Goat, and Cabbage](Wolf-Goat-Cabbage) |
 |  Network Flow  | [Max-Flow](Max-Flow) |
 
+Regarding this structure, the reader will note that entries in the list do not necessarily correspond to unique directories. This is a delibereate attempt to simplify overall structure, while still fully enumerating the problems classes that are addressed.
+
+In several instances we seek to consolodate similar functionalities into the same location. This is selected based on interrelationships between problems and similarities in the constructed solutions. I.e., Where [Hamiltonian Path](Travelling_Salesman) and [Traveling Salesman](Travelling_Salesman) are indeed different problems, from the perspective of the solution there is remarkably little difference: the addition of weights, where appropriate, and a minimization statement. In a few instances, dissimilarly named problems are actually equivalent (e.g., bipartite graph partitioning vs. 2-colorability), and hence do not even require additional implementation.
+
 ## Structure
 Entries are designed with a primary goal of being correct/complete, but comprehensible for study. This is not to imply that solutions encountered will necessarily be slow in practice or deliberately inefficient. Instead we have designed solutions to be easy to understand and learn from, as articulating thoughts in a logical language may feel difficult (or foreign) at first. Solutions are designed around reasoning that is easily expressed in human-readable thoughts, and these expressions are used to document the narrative flow of each program. Indeed, most examples were developed around the expression of problem constraints in plain English, with lines of code engineered to make those thoughts salient.
 
