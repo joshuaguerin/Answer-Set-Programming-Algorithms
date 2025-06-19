@@ -44,4 +44,4 @@ strict graph {
 
 And the same graph when processed by `dot`:
 
-![Provided Instance Output](images/6n-graf-clique.svg.png)
+![Provided Instance Output](../images/instance.png)
