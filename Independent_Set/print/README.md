@@ -1,4 +1,4 @@
-# Dominating Set Printers
+# Independent Set Printers
 
 ## Description
 The printer takes input from standard input, and can be piped directly in from the program's output in Clingo.
