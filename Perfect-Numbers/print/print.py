@@ -1,5 +1,5 @@
 # Use:
-# python3 print/print.py
+# clingo perfect_numbers.lp -c n=100 | python3 print/print.py
 #
 # To be ran in previous directory where perfect_numbers.lp is.
 # notes: These solutions are hard-coded. The clingo program will struggle coming up with all of these.
