@@ -5,5 +5,4 @@ The generator takes in 1 argument from the user, the number of cells to remove (
 [Depth-First Search](https://en.wikipedia.org/wiki/Depth-first_search) algorithm to generate random sudoku boards,
 then removes the appropraite number of cells.
 
-The user should note that removing too many cells may result in more than one solution to the board. We view this as
-a strength to the solver, being able to find many different solutions, should they exist.
+The user should note that removing too many cells may result in an increase in the number of possible solution to the board.
