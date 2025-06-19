@@ -10,7 +10,6 @@ There are no arguments, nor configurations necessary.
 Using the provided `instance.lp` with an argument of `n=8`.
 
 ```
-clingo bin_packing.lp instance.lp -c n=8 | python3 print/print.py 
 Bin Contents:
         _____
         | 1 |
