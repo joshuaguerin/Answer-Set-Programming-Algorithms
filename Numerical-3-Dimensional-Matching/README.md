@@ -12,7 +12,7 @@ Let *X* = {7, 1, 5, 4}, *Y*={0, 2, 1, 3}, and *Z*={5, 8, 0, 4}, with *n*=10. We 
 * T = {(5,0,5), (1,1,8), (7,3,0), (4,2,4)}.
 
 ## Implementational Details
-Note that the declaration of `x(k ; k).` in an instance.lp file will result in a *single* instance of `k` having property `value`. For simplicity this implementation was designed where *x*, *y*, and *z* are *sets*, allowing inclusion, but not duplicates. For a multi-set-based implementation, modification would be necessary.
+Note that the declaration of `x(k ; k).` in an instance.lp file will result in a *single* instance of `k` having property `value`. For simplicity this implementation was designed where *X*, *Y*, and *Z* are *sets*, allowing inclusion, but not duplicates. For a multi-set-based implementation, modification would be necessary.
 
 
 ## Problem Variants
