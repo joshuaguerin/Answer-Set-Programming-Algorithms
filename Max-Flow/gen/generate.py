@@ -2,14 +2,15 @@
 # Author: Jackson Madsen
 
 # Description: Graph generator for Independent Set problem solver
-# Use: python3 genereate.py -n n -f f -w w > filename.lp
+# Use: python3 genereate.py -n n -f f -w w --cyclic > filename.lp
 #	where: n is the number of nodes in the graph
 #	       f is a connecting factor for the graph generation from 0 to 1,
 #		0 will produce a spanning tree, 1 will produce a completely connected graph
 #	       w is the maximum weight of an edge in the graph, inclusive
 #	       l is the maximum number of layers in the graph that will appear, excluding the start and end nodes
+#	       'cyclic' flag is optional and allows for cycles to appear in the graph, but not guaranteed
 #	       filename.lp is the file to write the instance to
-#	Each of n, f, w, l can be omitted (Default n=5, f=0.5, w=10, l=(n-2))
+#	Each of n, f, w, l can be omitted (Default n=5, f=0.5, w=10, l=(n-2)
 #	The redirect (> filename.lp) can be omitted (to write to stdout)
 
 
@@ -31,12 +32,16 @@ parser.add_argument('-w', default = 10, type = int,
 parser.add_argument('-l', type = int,
 			help = "Maximum number of layers in the network, inclusive. Default = Number of nodes - 2")
 
+parser.add_argument('--cyclic', action='store_true',
+			help = "Allows for cycles to appear in the graph")
+
 args = parser.parse_args()
 
 numNodes = args.n
 connectFactor = args.f
 maxWeight = args.w
 numLayers = args.l if args.l is not None else numNodes - 2
+cyclesAllowed = args.cyclic
 
 # List all the nodes
 printStr = "node("
@@ -122,3 +127,10 @@ for index, col in enumerate(cols):
       for node2 in col:
         if node1 != node2 and random.random() < connectFactor:
           print(f"edge({node1}, {node2}, {random.randint(1, maxWeight)}).")
+
+
+      if cyclesAllowed:
+        for node2 in cols[index-1]:
+          if random.random() < connectFactor:
+            print(f"edge({node1}, {node2}, {random.randint(1, maxWeight)}).")
+
