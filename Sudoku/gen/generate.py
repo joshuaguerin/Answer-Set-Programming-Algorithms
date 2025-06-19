@@ -1,10 +1,10 @@
 # File: generate.py
 # Author: Jackson Madsen
 
-# Description: Set generator for Bin Packing problem solver
+# Description: Sudoku Board generator for Sudoku solver
 # Use: python3 generate.py -n n -w w > filename.lp
 #	where: n is the number of cells to remove
-#	n can be omitted (Defaults n=10)
+#	n can be omitted (Defaults n=18)
 #	The redirect (> filename.lp) can be omitted (to print to stdout)
 
 import random
