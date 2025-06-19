@@ -3,8 +3,6 @@
 ## Description
 The printer takes input from standard input, and can be piped directly in from the program's output in Clingo.
 
-There are no arguments, nor configurations necessary.
-
 ### Arguments
 There is a single, (optional) parameter, `-f f`, where `f` is the file name.
 
