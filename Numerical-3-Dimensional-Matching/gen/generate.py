@@ -3,7 +3,7 @@
 
 # Description: Set generator for Numerical 3-Dimension problem solver
 # Use: python3 generate.py -s s -n n > filename.lp
-#	where: s is the the size of each set, inclusive
+#	where: s is the maximum size of each set, inclusive
 #	       n is the target value for the triples
 #	       filename.lp is the location to write the instance to
 #	Each of s, n are optional (Defaults: s=5, n=10)
@@ -31,9 +31,9 @@ maxSize = args.s
 # Repeat n times until we have 3 sets of the requested size from the User.
 stars = ['*'] * targetVal + ['|'] * 2
 
-sets = [[], [] ,[]]
+sets = []
 
-while len(sets[0]) < maxSize:
+for _ in range(maxSize):
   random.shuffle(stars)
   partition = []
 
@@ -46,19 +46,29 @@ while len(sets[0]) < maxSize:
       count = 0
   partition.append(count)
 
-  for index, item in enumerate(partition):
-    sets[index].append(str(item))
+  seen = False
+  for index, part in enumerate(partition):
+    for item in sets:
+      if part == item[index]:
+        seen = True
+
+  if not seen:
+    sets.append(partition)
 
   random.shuffle(stars)
 
 char = 'x'
 
-for part in sets:
-#  random.shuffle(part)
+for index in range(3):
+  printStr = f"{char}("
 
-  sep = " ; "
-  printStr = f"{char}({sep.join(part)}"
-  print(printStr + ").")
+  for part in sets:
+    printStr += f"{part[index]} ; "
+
+  print(printStr[:-3] + ").")
 
   char = chr(ord(char) + 1)
+
+
+
 
