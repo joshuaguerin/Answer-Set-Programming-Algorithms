@@ -9,7 +9,7 @@ def printGrid(coords, n):
         grid.append([' ']*n)
 
     for (a, b) in coords:
-        print(a, b)
+        # print(a, b)
         grid[a-1][b-1] = 'Q'
         
     for g in grid:
