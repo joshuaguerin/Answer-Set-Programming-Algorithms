@@ -57,10 +57,7 @@ for _ in range(maxSize):
 
   random.shuffle(stars)
 
-char = 'x'
-
-#print(sets)
-
+# Create lists
 x = []
 y = []
 z = []
@@ -75,37 +72,21 @@ random.shuffle(x)
 random.shuffle(y)
 random.shuffle(z)
 
+# Output file
 print("% GENERATE")
 print("% Custom instance works with a parameter of n=", targetVal)
 
-#print(x)
 print("x(", end="")
 for val in x[:-1]:
   print(val, end=" ; ")
 print(x[-1], ").", sep="")
 
-#print(y)
 print("y(", end="")
 for val in y[:-1]:
   print(val, end=" ; ")
 print(y[-1], ").", sep="")
 
-#print(z)
 print("z(", end="")
 for val in z[:-1]:
   print(val, end=" ; ")
 print(z[-1], ").", sep="")
-
-# for index in range(3):
-#   printStr = f"{char}("
-
-#   for part in sets:
-#     printStr += f"{part[index]} ; "
-
-#   print(printStr[:-3] + ").")
-
-#   char = chr(ord(char) + 1)
-
-
-
-
