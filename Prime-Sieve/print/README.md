@@ -1,4 +1,4 @@
-# Primality and Composite Printer
+# Prime and Composite Sieve Printer
 
 ## Description
 The printer takes input from standard input, and can be piped directly in from the program's output in Clingo.
