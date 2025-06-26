@@ -38,7 +38,7 @@ And the same graph when processed by `dot`:
 ![Provided Instance Output](../images/chromatic.png)
 
 
-## Implementational Details
+## Implementation Details
 
 In order to differentiate node "colors," we use the available colors in graphviz. We have provided a list of 15 sample colors by default--this can easily be modified by the user if a different palette is desired.
 
