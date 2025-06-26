@@ -2,7 +2,7 @@
  * File: set.lp
  * Author: Joshua T. Guerin
  *
- * Description: Given a graph and an integer, n, find the maximal independent
+ * Description: Given a graph, find the maximal independent
  *              set of the graph.
  * Use: clingo independent_set.lp instance.lp
  *%

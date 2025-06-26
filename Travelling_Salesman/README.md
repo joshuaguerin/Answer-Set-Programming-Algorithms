@@ -22,6 +22,10 @@ However, only one such path is a solution to the Travelling salesman problem:
 Note that due to the similarities between the two algorithms, the implementations may be nearly identical.
 * Only an additional minimization constraint is required to go from one to the other.
 
+## Implementational Details
+
+The reader may recognize that the cost, `C`, in the `edge` and `path` predicates is unused. Indeed, this extra information serves no purpose in our Hamiltonian path implementation. I.e., The user could easily remove it from the implementation and instance files and everything should still work. The third parameter is maintaned across both HAMPATH and TSP solutions, allowing for the same instance file to work across both implementations.
+
 ## Problem Variants
 Both the Hamiltonian Path problem and The Travelling Salesman Problem are phrased above in terms of paths, with distinct start and end points, *s* and *e*. Both problems can be phrased as both a *path* or a *cycle*. The latter is reformulated in terms of a single point that servers as *both* start and end. I.e., the cycle formulation starts and ends at the same location.
 

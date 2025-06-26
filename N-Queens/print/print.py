@@ -1,5 +1,5 @@
 # Use:
-# clingo n_queens.lp | python3 ./validate/print.py
+# clingo n_queens.lp | python3 ./print/print.py
 # to be ran in previous directory where n_queens.lp is
 
 
@@ -9,7 +9,7 @@ def printGrid(coords, n):
         grid.append([' ']*n)
 
     for (a, b) in coords:
-        print(a, b)
+        # print(a, b)
         grid[a-1][b-1] = 'Q'
         
     for g in grid:
