@@ -10,7 +10,8 @@ There are no arguments, nor configurations necessary.
 
 When ran with the example instance:
 
-```[5 3 4] [6 7 8] [9 1 2] 
+```
+[5 3 4] [6 7 8] [9 1 2] 
 [6 7 2] [1 9 5] [3 4 8] 
 [1 9 8] [3 4 2] [5 6 7] 
 
