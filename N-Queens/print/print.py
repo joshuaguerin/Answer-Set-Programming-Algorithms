@@ -1,5 +1,5 @@
 # Use:
-# clingo n_queens.lp | python3 ./validate/print.py
+# clingo n_queens.lp | python3 ./print/print.py
 # to be ran in previous directory where n_queens.lp is
 
 
