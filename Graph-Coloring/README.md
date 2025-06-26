@@ -16,6 +16,10 @@ A graph with 10 vertices and 3 colors.
 
 From [Wikipedia](https://en.wikipedia.org/wiki/Graph_coloring).
 
+## Implementation Details
+
+For simplicity, our implementation of k-colorability treats its argument (number of colors) as an *upper bound*. I.e., A parameter of 5 colors specifies the palette of available colors, but does not enforce their use. As a possible challenge to the user, this would likely be introduced with an additional integrety constraint restricting color use.
+
 ## Problem Variants
 
 ### Bipartite Graph Partition
