@@ -71,14 +71,15 @@ if toks_next[0].startswith("OPT"):
 '''
 
     for t in toks:
-        weight = re.findall(r"\d+", t)[0]
-
+        weight = re.findall(r"\d+\)", t)[0][:-1]
+        
         t = re.sub(r"flow\(", "        ", t)
         t = re.sub(r",\d+\)", " [temp]", t)
         t = re.sub(r",", " -> ", t)
         t = re.sub(r"\[temp\]", "[dir=yes,label=\"" + weight + "\"];", t)            
 
         tempt = t.split(" ")
+
         output = re.sub("    " + tempt[-2] + " -> " + tempt[-4] + r" \[.*?\];", "", output)
 
         output += t + "\n"
