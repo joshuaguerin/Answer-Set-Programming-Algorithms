@@ -1,4 +1,4 @@
-# Prime-Sieve Generator
+# I'm my own Grandpa Generator
 
 ## Description
 This problem does not contain an instance generator
