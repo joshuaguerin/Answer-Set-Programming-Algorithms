@@ -1,6 +1,6 @@
-# Problem: Prime-Sieve
+# Prime-Sieve Generator
 
-## Generator Description
+## Description
 This problem does not contain an instance generator
 due to the nature of the problem. We are filtering 
 through all the possible numbers from 2 through n,
