@@ -1,21 +1,28 @@
+# Use:
+# clingo ramsey.lp -c k=<int> -c r=<int> -c s=<int> | python3 print/print.py | dot -Tpdf -o ramsey.pdf
+# Note:
+#  The final pipe and call to dot can be omitted if graphviz is not present.
+#  To be ran in previous directory where instance.lp, k_clique.lp, and max_clique.lp are.
+
 
 import sys
 
 raw = []
 
+# Make a copy of stdin
 for line in sys.stdin:
     raw.append(line)
 
-
-# print(raw)
-    
+# No solution
 if "UNSATISFIABLE\n" in raw:
     print("UNSAT", file=sys.stderr)
     exit()
 
+# First solution located.
 index = raw.index("Answer: 1\n")+1
 toks = raw[index].split()
 
+# Parse the output
 edges = []
 red = []
 blue = []
@@ -37,6 +44,7 @@ for t in toks:
         else:
             blue.append(fst)
 
+# Print to graphviz format.
 header = '''
 graph {
    rankdir=LR;
@@ -63,8 +71,3 @@ footer= '''
 
 print(footer)
             
-# print(edges)
-# print(red)
-# print(blue)
-
-# print(toks)
