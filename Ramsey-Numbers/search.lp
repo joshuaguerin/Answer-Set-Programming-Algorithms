@@ -76,6 +76,6 @@ color(X, Y, blue) :- blue(X), blue(Y), X != Y.
 
 %#show edge/2.
 % #show clique/2.
-#show color/3.
-#show red/1.
-#show blue/1.
+%#show color/3.
+%#show red/1.
+%#show blue/1.
