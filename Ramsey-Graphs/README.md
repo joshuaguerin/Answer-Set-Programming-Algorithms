@@ -13,15 +13,8 @@ While searching for a [clique](https://github.com/joshuaguerin/Answer-Set-Progra
 
 Given a complete graph on and two colors, **r**ed and **b**lue, there exists a least positive integer *R(r, b)* for which every coloring contains either a *red* clique of size **r** or a blue clique of size **s**.
 
+We define the Ramsey Graph problem (in [ramsey_graph.lp](https://github.com/joshuaguerin/Answer-Set-Programming-Algorithms/blob/ramsey-numbers/Ramsey-Graphs/ramsey_graph.lp)) as the problem of searching for a positive instance of a graph, given parameters of *k*, *r*, and *b*.
 
-
-
-
-A **complete** graph is a graph where every vertex is connected by an edge.
-
-
-* **K-Clique** - Given *G* and an integer *k*, find a clique with *k* vertices.
-* **Max Clique** - Given *G*, locate the *largest* clique in the graph.
 
 ## Example
 See the following example for a *3-clique* in a graph of 6 vertices:
