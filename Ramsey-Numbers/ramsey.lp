@@ -36,13 +36,8 @@ color(red ; blue).
 % ^Sub-constraint: Consider edge symmetry for color assignment.
 color(Y, X, C) :- color(X, Y, C).
 
-% Color assignments must match arguments r, b
-% I'm suddenly thinking this won't work until we define clique.
-%:- #count{ X, Y : color(X, Y, red) } != r*2.
-%:- #count{ X, Y : color(X, Y, blue) } != b*2.
 
 %%%% Clique Constraints
-% Note: Cliques will naturally exist as colors are assigned.
 
 % Edge colors imply candidates for a clique.
 % Vertices may (optionally) be in _either_ clique.
@@ -51,31 +46,14 @@ color(Y, X, C) :- color(X, Y, C).
 { blue(X) } :- color(X, Y, blue).
 { blue(Y) } :- color(X, Y, blue).
 
-% Ensure that appropriate cardinality exists.
-:- #count{ X : red(X) } != r.
-:- #count{ X : blue(X) } != b.
-
 % If two vertices are in a clique they must be
 % connected by an appropraite edge.
-%:- red(X), red(Y), not color(X, Y, red).
 color(X, Y, red) :- red(X), red(Y), X != Y.
 color(X, Y, blue) :- blue(X), blue(Y), X != Y.
 
-% Identify cliques in the graph.
-% 1 {clique(X, Y) ; clique(Y, X)} 1 :- clique(X), clique(Y), X != Y.
+% Need one of the two cliques to exist.
+result(success) :- #count{ X : red(X) } == r.
+result(success) :- #count{ X : blue(X) } == b.
 
-
-
-% Cardinalty: There must be a *red* clique of size r.
-% red(C) :- C = #count{ X : clique(X, red) }.
-
-% Cardinalty: There must be a *blue* clique of size b.
-% blue(C) :- C = #count{ X : clique(X, blue) }.
-
-
-
-%#show edge/2.
-% #show clique/2.
-%#show color/3.
-%#show red/1.
-%#show blue/1.
+% At least one of the cliques must exist.
+:- not result(success).
