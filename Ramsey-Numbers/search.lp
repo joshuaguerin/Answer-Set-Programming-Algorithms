@@ -6,7 +6,7 @@
  *              R(r, b) = k
  *              For a complete graph of k nodes, is there an assignment
  *              of 2 colors (red, blue) that have *either* a red clique
- *              of size r *or* a blue clique of size b.
+ *              of size r *or* a blue clique of size b
  *
  *              We are searching for an assignment that lacks either.
  *
