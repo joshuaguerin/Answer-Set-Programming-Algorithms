@@ -1,0 +1,61 @@
+%*
+ * File: ramsey.lp
+ * Author: Joshua T. Guerin
+ *
+ * Description: Computes assignments based on the Ramsey theorem:
+ *              R(r, b) = k
+ *              For a complete graph of k nodes, is there an assignment
+ *              of 2 colors (red, blue) that have *either* a red clique
+ *              of size r *or* a blue clique of size b.
+ *
+ *              We are searching for an assignment that lacks either.
+ *
+ * Use: clingo search.lp -c k=<int> -c r=<int> -c b=<int>
+ *      clingo search.lp -c k=<int> -c r=<int> -c b=<int> -n 0
+ *          where instance.lp contains node and edge predicates.
+ *%
+
+%%%% Elaborate the graph.
+
+% There are k nodes in the graph.
+node(1..k).
+
+% The graph is complete: There are edges between all pairs.
+% The edges are undirected: edge(X, Y) and edge(Y, X).
+edge(X, Y) :- node(X), node(Y), X != Y.
+
+
+%%%% Coloring requirements are met.
+
+% Set of available colors.
+color(red ; blue).
+
+% All nodes are assigned exactly one color.
+1 { color(X, C) : color(C) } 1 :- node(X).
+
+% Color assignments must match arguments r, b
+:- #count{ X : color(X, red) } != r.
+:- #count{ X : color(X, blue) } != b.
+
+%%%% Clique Constraints
+% Note: Cliques will naturally exist as colors are assigned.
+
+% Identify cliques in the graph.
+
+% 1 {clique(X, Y) ; clique(Y, X)} 1 :- clique(X), clique(Y), X != Y.
+
+
+
+% Cardinalty: There must be a *red* clique of size r.
+% red(C) :- C = #count{ X : clique(X, red) }.
+
+% Cardinalty: There must be a *blue* clique of size b.
+% blue(C) :- C = #count{ X : clique(X, blue) }.
+
+
+
+%#show edge/2.
+%#show clique/2.
+%#show color/2.
+%#show red/1.
+%#show blue/1.
