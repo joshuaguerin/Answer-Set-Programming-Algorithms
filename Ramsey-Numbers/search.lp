@@ -30,18 +30,38 @@ edge(X, Y) :- node(X), node(Y), X != Y.
 % Set of available colors.
 color(red ; blue).
 
-% All nodes are assigned exactly one color.
-1 { color(X, C) : color(C) } 1 :- node(X).
+% All _edges_ are assigned exactly one color.
+1 { color(X, Y, C) : color(C) } 1 :- edge(X, Y).
+
+% ^Sub-constraint: Consider edge symmetry for color assignment.
+color(Y, X, C) :- color(X, Y, C).
 
 % Color assignments must match arguments r, b
-:- #count{ X : color(X, red) } != r.
-:- #count{ X : color(X, blue) } != b.
+% I'm suddenly thinking this won't work until we define clique.
+%:- #count{ X, Y : color(X, Y, red) } != r*2.
+%:- #count{ X, Y : color(X, Y, blue) } != b*2.
 
 %%%% Clique Constraints
 % Note: Cliques will naturally exist as colors are assigned.
 
-% Identify cliques in the graph.
+% Edge colors imply candidates for a clique.
+% Vertices may (optionally) be in _either_ clique.
+{ red(X) } :- color(X, Y, red).
+{ red(Y) } :- color(X, Y, red).
+{ blue(X) } :- color(X, Y, blue).
+{ blue(Y) } :- color(X, Y, blue).
 
+% Ensure that appropriate cardinality exists.
+:- #count{ X : red(X) } != r.
+:- #count{ X : blue(X) } != b.
+
+% If two vertices are in a clique they must be
+% connected by an appropraite edge.
+%:- red(X), red(Y), not color(X, Y, red).
+color(X, Y, red) :- red(X), red(Y), X != Y.
+color(X, Y, blue) :- blue(X), blue(Y), X != Y.
+
+% Identify cliques in the graph.
 % 1 {clique(X, Y) ; clique(Y, X)} 1 :- clique(X), clique(Y), X != Y.
 
 
@@ -55,7 +75,7 @@ color(red ; blue).
 
 
 %#show edge/2.
-%#show clique/2.
-%#show color/2.
-%#show red/1.
-%#show blue/1.
+% #show clique/2.
+#show color/3.
+#show red/1.
+#show blue/1.
