@@ -45,4 +45,4 @@ graph {
 
 And the same graph when processed by `dot`:
 
-![Provided Instance Output](../images/instance.png)
+![Provided Instance Output](../images/lips.png)
