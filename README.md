@@ -60,7 +60,7 @@ The repository  is designed around a "flat" organizational/directory structure f
 |    | [Independent Set](Independent_Set) |
 |    | [Vertex Cover](Vertex-Cover) | 
 |    | [Minimum Vertex Cover](Vertex-Cover) |
-|    | [Ramsey Graphs](Ramsey_Graphs) | 
+|    | [Ramsey Graphs](Ramsey-Graphs) | 
 |  Deterministic Planning  | [Hamiltonian Path](Travelling_Salesman) |
 |    | [Traveling Salesman](Travelling_Salesman) |
 | Sequential/Time-Based Planning | [Wolf, Goat, and Cabbage](Wolf-Goat-Cabbage) |
