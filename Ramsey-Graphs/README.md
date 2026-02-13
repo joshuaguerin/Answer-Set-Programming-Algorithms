@@ -21,6 +21,8 @@ The following example is searching for a graph where **k=6**, **r=3**, and **b=3
 
 ![A graph with cliques colored.](images/lips.png)
 
+Cliques are indicated by line weight and node coloring. In the event that a node serves to be in **both** cliques it is colored with a gradient.
+
 Note that node 5 would also satisfy being in the red clique, however the implementation looks to match arguments for *r* and *b* exactly.
 
 ## Dependencies
