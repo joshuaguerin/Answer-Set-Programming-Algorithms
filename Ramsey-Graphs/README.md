@@ -30,3 +30,4 @@ The [print](print/) system generates [graphviz](https://graphviz.org/) files for
 See also:
 * [Clique](https://github.com/joshuaguerin/Answer-Set-Programming-Algorithms/tree/master/Clique) 
 * [Graph Coloring](https://github.com/joshuaguerin/Answer-Set-Programming-Algorithms/tree/ramsey-numbers/Graph-Coloring)
+* [Independent Set](https://github.com/joshuaguerin/Answer-Set-Programming-Algorithms/tree/ramsey-numbers/Independent_Set)
