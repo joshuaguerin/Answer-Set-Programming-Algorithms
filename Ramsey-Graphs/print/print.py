@@ -1,8 +1,8 @@
 # Use:
-# clingo search.lp -c k=<int> -c r=<int> -c s=<int> | python3 print/print.py | dot -Tpdf -o search.pdf
+# clingo ramsey_graph.lp -c k=<int> -c r=<int> -c b=<int> | python3 print/print.py | dot -Tpdf -o ramsey_graph.pdf
 # Note:
 #  The final pipe and call to dot can be omitted if graphviz is not present.
-#  To be ran in previous directory where instance.lp, k_clique.lp, and max_clique.lp are.
+#  To be ran in previous directory where ramsey_graph.lp is installed.
 
 
 import sys
