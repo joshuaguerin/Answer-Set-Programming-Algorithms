@@ -17,10 +17,11 @@ We define the Ramsey Graph problem (in [ramsey_graph.lp](https://github.com/josh
 
 
 ## Example
-See the following example for a *3-clique* in a graph of 6 vertices:
+The following example is searching for a graph where **k=6**, **r=3**, and **b=3**.
 
 ![A graph with cliques colored.](images/lips.png)
 
+Note that node 5 would also satisfy being in the red clique, however the implementation looks to match arguments for *r* and *b* exactly.
 
 ## Dependencies
 The [print](print/) system generates [graphviz](https://graphviz.org/) files for input, that can be viewed, redirected into a file, or rendered using dot. The latter step can be omitted if graphviz is not present or if graphical output is not desired. 
