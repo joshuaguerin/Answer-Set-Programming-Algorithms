@@ -28,4 +28,5 @@ The [print](print/) system generates [graphviz](https://graphviz.org/) files for
 
 ## Related
 See also:
-* [clique](https://github.com/joshuaguerin/Answer-Set-Programming-Algorithms/tree/master/Clique) 
+* [Clique](https://github.com/joshuaguerin/Answer-Set-Programming-Algorithms/tree/master/Clique) 
+* [Graph Coloring](https://github.com/joshuaguerin/Answer-Set-Programming-Algorithms/tree/ramsey-numbers/Graph-Coloring)
