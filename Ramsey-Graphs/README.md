@@ -3,7 +3,7 @@
 
 ## Description
 
-A **graph**, *G = (V, E)*, is comprised of a set of **vertices** and connections called **edges**.
+A [**graph**](https://en.wikipedia.org/wiki/Graph_(discrete_mathematics)), *G = (V, E)*, is comprised of a set of **vertices** and connections called **edges**.
 
 A complete graph on *n* vertices, *K<sub>n</sub>* is a graph where all vertices are connected by an edge.
 
