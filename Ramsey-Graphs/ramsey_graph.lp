@@ -1,5 +1,5 @@
 %*
- * File: ramsey.lp
+ * File: ramsey_graph.lp
  * Author: Joshua T. Guerin
  *
  * Description: Computes assignments based on the Ramsey theorem:
@@ -8,10 +8,10 @@
  *              of 2 colors (red, blue) that have *either* a red clique
  *              of size r *or* a blue clique of size b
  *
- *              We are searching for an assignment that lacks either.
+ *              We are searching for such assignments to complete graphs.
  *
- * Use: clingo search.lp -c k=<int> -c r=<int> -c b=<int>
- *      clingo search.lp -c k=<int> -c r=<int> -c b=<int> -n 0
+ * Use: clingo ramsey_graph.lp -c k=<int> -c r=<int> -c b=<int>
+ *      clingo ramsey_graph.lp -c k=<int> -c r=<int> -c b=<int> -n 0
  *          where instance.lp contains node and edge predicates.
  *%
 
