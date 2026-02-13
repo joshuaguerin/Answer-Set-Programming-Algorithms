@@ -5,11 +5,11 @@
 
 A [**graph**](https://en.wikipedia.org/wiki/Graph_(discrete_mathematics)), *G = (V, E)*, is comprised of a set of **vertices** and connections called **edges**.
 
-A complete graph on *n* vertices, *K<sub>n</sub>* is a graph where all vertices are connected by an edge.
+A [**complete graph**](https://en.wikipedia.org/wiki/Complete_graph) on *n* vertices, *K<sub>n</sub>* is a graph where all vertices are connected by an edge.
 
-Given a graph, *G*, as input, a **clique** is a subgraph that is complete.
+Given a graph, *G*, as input, a [**clique**](https://en.wikipedia.org/wiki/Clique_(graph_theory)) is a subgraph that is complete.
 
-While searching for a [clique](https://github.com/joshuaguerin/Answer-Set-Programming-Algorithms/tree/master/Clique) in a given graph is a common phrasing of the clique problem, Ramsey graphs are related to [Ramsey's theorem](https://en.wikipedia.org/wiki/Ramsey%27s_theorem):
+While [searching for a clique](https://github.com/joshuaguerin/Answer-Set-Programming-Algorithms/tree/master/Clique) in a given graph is a common phrasing of the clique problem, Ramsey graphs are related to [Ramsey's theorem](https://en.wikipedia.org/wiki/Ramsey%27s_theorem):
 
 Given a complete graph on and two colors, **r**ed and **b**lue, there exists a least positive integer *R(r, b)* for which every coloring contains either a *red* clique of size **r** or a blue clique of size **s**.
 
