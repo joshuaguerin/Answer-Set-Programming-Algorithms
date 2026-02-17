@@ -40,11 +40,11 @@ color(Y, X, C) :- color(X, Y, C).
 %%%% Clique Constraints
 
 % Edge colors imply candidates for a clique.
-% Vertices may (optionally) be in _either_ clique.
-{ red(X) } :- color(X, Y, red).
-{ red(Y) } :- color(X, Y, red).
-{ blue(X) } :- color(X, Y, blue).
-{ blue(Y) } :- color(X, Y, blue).
+% Up to r/b vertices may (optionally) be in red/blue cliques.
+{ red(X) } r :- color(X, Y, red).
+{ red(Y) } r :- color(X, Y, red).
+{ blue(X) } b :- color(X, Y, blue).
+{ blue(Y) } b :- color(X, Y, blue).
 
 % If two vertices are in a clique they must be
 % connected by an appropraite edge.
@@ -54,6 +54,11 @@ color(X, Y, blue) :- blue(X), blue(Y), X != Y.
 % Need one of the two cliques to exist.
 result(success) :- #count{ X : red(X) } == r.
 result(success) :- #count{ X : blue(X) } == b.
+
+% Weed out incorrect color assignments:
+% May only have r, b, or 0 nodes of a particular color.
+:- #count{ X : red(X) } != r, #count{ X : red(X) } != 0.
+:- #count{ X : blue(X) } != b, #count{ X : blue(X) } != 0.
 
 % At least one of the cliques must exist.
 :- not result(success).
