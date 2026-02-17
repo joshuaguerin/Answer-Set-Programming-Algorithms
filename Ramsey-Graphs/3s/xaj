@@ -1,0 +1,2 @@
+Answer: 1
+node(1) node(2) node(3) edge(2,1) edge(3,1) edge(1,2) edge(3,2) edge(1,3) edge(2,3) color(red) color(blue) blue(2) color(1,2,blue) blue(1) color(2,1,blue) color(2,3,red) color(1,3,red) color(3,2,red) red(1) color(3,1,red) result(success)
