@@ -133,5 +133,8 @@ This adds a small complication for graph problems, as graphical models lack a co
 We wish to present solutions that are correct, well-documented, and fairly robust (not to mention efficient, where possible!). We hope is that the solutions presented function under their defined parameters, however with a project of this size unintended behaviors are naturally going to be discovered. If any such problems, bugs, or or areas that require further documentation are discovered we welcome the reader to submit [issue](https://github.com/joshuaguerin/Answer-Set-Programming-Algorithms/issues) that clearly defines the unexpected behavior so it may be fixed or better documented. Where possible please try to provide inputs, outputs, and any relevant source to expedite our ability to review any suggestions.
 
 ## How to Cite
-For now, please cite the website by the name *ASP&#8704;: Answer Set Programming "Algorithms"* by "Joshua T. Guerin" with the full URL. You may use whatever citation conventions are most reasonable for the publication.
+We are excited to announce that we will be appearing at (FLAIRS-39)[https://www.flairs-39.info/home]. If you wish to cite the repository, the easiest means would be our paper:
+
+Guerin, J. T., Gonzalez, D., Madsen, J. (Upcoming). *ASP: An Open Educational Resource for Answer Set Programming*. Proceedings of the Florida Artificial Intelligence Research Society (FLAIRS-39). 2026.
+
 
