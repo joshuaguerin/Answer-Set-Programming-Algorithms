@@ -51,6 +51,11 @@ color(Y, X, C) :- color(X, Y, C).
 color(X, Y, red) :- red(X), red(Y), X != Y.
 color(X, Y, blue) :- blue(X), blue(Y), X != Y.
 
+% Weed out incorrect color assignments:
+% May only have r, b, or 0 nodes of a particular color.
+:- #count{ X : red(X) } != r, #count{ X : red(X) } != 0.
+:- #count{ X : blue(X) } != b, #count{ X : blue(X) } != 0.
+
 % Need one of the two cliques to exist.
 result(success) :- #count{ X : red(X) } == r.
 result(success) :- #count{ X : blue(X) } == b.
