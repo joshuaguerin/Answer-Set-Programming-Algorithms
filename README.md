@@ -137,5 +137,4 @@ We are excited to announce that we will be appearing at [FLAIRS-39](https://www.
 
 Guerin, Johsua T.; Gonzalez Sua, David; Madsen, Jackson. 2026 *[ASP: An Open Educational Resource for Answer Set Programming](https://journals.flvc.org/FLAIRS/article/view/141580)*. Proceedings of the Florida Artificial Intelligence Research Society (FLAIRS-39).
 
-DOI: https://doi.org/10.32473/flairs.39.1.141580
 
