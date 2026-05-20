@@ -1,0 +1,10 @@
+point(0,1).
+point(2,-2).
+point(-3,-2).
+point(-2,-2).
+point(-2,4).
+point(2,0).
+point(4,-4).
+point(-2,3).
+point(-3,-4).
+point(-2,2).
