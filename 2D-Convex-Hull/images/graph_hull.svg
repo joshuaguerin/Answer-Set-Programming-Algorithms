@@ -1,0 +1,125 @@
+<svg width="802pt" height="802pt" viewBox="0.00 0.00 802.00 802.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 797.56)">
+<polygon fill="white" stroke="none" points="-4,4 -4,-797.56 797.56,-797.56 797.56,4 -4,4"/>
+<!-- p_0_10 -->
+<g id="node1" class="node">
+<title>p_0_10</title>
+<ellipse fill="#f38ba8" stroke="#f38ba8" cx="34.37" cy="-394.37" rx="34.37" ry="34.37"/>
+<text xml:space="preserve" text-anchor="middle" x="34.37" y="-390.17" font-family="JetBrains Mono" font-size="14.00" fill="#1e1e2e">(0,10)</text>
+</g>
+<!-- p_5_5 -->
+<g id="node2" class="node">
+<title>p_5_5</title>
+<ellipse fill="#45475a" stroke="#bac2de" cx="214.37" cy="-214.37" rx="29.54" ry="29.54"/>
+<text xml:space="preserve" text-anchor="middle" x="214.37" y="-210.17" font-family="JetBrains Mono" font-size="14.00" fill="#cdd6f4">(5,5)</text>
+</g>
+<!-- p_0_0 -->
+<g id="node3" class="node">
+<title>p_0_0</title>
+<ellipse fill="#f38ba8" stroke="#f38ba8" cx="34.37" cy="-34.37" rx="29.54" ry="29.54"/>
+<text xml:space="preserve" text-anchor="middle" x="34.37" y="-30.17" font-family="JetBrains Mono" font-size="14.00" fill="#1e1e2e">(0,0)</text>
+</g>
+<!-- p_15_5 -->
+<g id="node4" class="node">
+<title>p_15_5</title>
+<ellipse fill="#45475a" stroke="#bac2de" cx="574.37" cy="-214.37" rx="34.37" ry="34.37"/>
+<text xml:space="preserve" text-anchor="middle" x="574.37" y="-210.17" font-family="JetBrains Mono" font-size="14.00" fill="#cdd6f4">(15,5)</text>
+</g>
+<!-- p_10_0 -->
+<g id="node5" class="node">
+<title>p_10_0</title>
+<ellipse fill="#f38ba8" stroke="#f38ba8" cx="394.37" cy="-34.37" rx="34.37" ry="34.37"/>
+<text xml:space="preserve" text-anchor="middle" x="394.37" y="-30.17" font-family="JetBrains Mono" font-size="14.00" fill="#1e1e2e">(10,0)</text>
+</g>
+<!-- p_20_20 -->
+<g id="node6" class="node">
+<title>p_20_20</title>
+<ellipse fill="#f38ba8" stroke="#f38ba8" cx="754.37" cy="-754.37" rx="39.2" ry="39.2"/>
+<text xml:space="preserve" text-anchor="middle" x="754.37" y="-750.17" font-family="JetBrains Mono" font-size="14.00" fill="#1e1e2e">(20,20)</text>
+</g>
+<!-- p_7_3 -->
+<g id="node7" class="node">
+<title>p_7_3</title>
+<ellipse fill="#45475a" stroke="#bac2de" cx="286.37" cy="-142.37" rx="29.54" ry="29.54"/>
+<text xml:space="preserve" text-anchor="middle" x="286.37" y="-138.17" font-family="JetBrains Mono" font-size="14.00" fill="#cdd6f4">(7,3)</text>
+</g>
+<!-- p_13_17 -->
+<g id="node8" class="node">
+<title>p_13_17</title>
+<ellipse fill="#45475a" stroke="#bac2de" cx="502.37" cy="-646.37" rx="39.2" ry="39.2"/>
+<text xml:space="preserve" text-anchor="middle" x="502.37" y="-642.17" font-family="JetBrains Mono" font-size="14.00" fill="#cdd6f4">(13,17)</text>
+</g>
+<!-- p_20_0 -->
+<g id="node9" class="node">
+<title>p_20_0</title>
+<ellipse fill="#f38ba8" stroke="#f38ba8" cx="754.37" cy="-34.37" rx="34.37" ry="34.37"/>
+<text xml:space="preserve" text-anchor="middle" x="754.37" y="-30.17" font-family="JetBrains Mono" font-size="14.00" fill="#1e1e2e">(20,0)</text>
+</g>
+<!-- p_10_20 -->
+<g id="node10" class="node">
+<title>p_10_20</title>
+<ellipse fill="#f38ba8" stroke="#f38ba8" cx="394.37" cy="-754.37" rx="39.2" ry="39.2"/>
+<text xml:space="preserve" text-anchor="middle" x="394.37" y="-750.17" font-family="JetBrains Mono" font-size="14.00" fill="#1e1e2e">(10,20)</text>
+</g>
+<!-- p_0_20 -->
+<g id="node11" class="node">
+<title>p_0_20</title>
+<ellipse fill="#f38ba8" stroke="#f38ba8" cx="34.37" cy="-754.37" rx="34.37" ry="34.37"/>
+<text xml:space="preserve" text-anchor="middle" x="34.37" y="-750.17" font-family="JetBrains Mono" font-size="14.00" fill="#1e1e2e">(0,20)</text>
+</g>
+<!-- p_15_15 -->
+<g id="node12" class="node">
+<title>p_15_15</title>
+<ellipse fill="#45475a" stroke="#bac2de" cx="574.37" cy="-574.37" rx="39.2" ry="39.2"/>
+<text xml:space="preserve" text-anchor="middle" x="574.37" y="-570.17" font-family="JetBrains Mono" font-size="14.00" fill="#cdd6f4">(15,15)</text>
+</g>
+<!-- p_10_10 -->
+<g id="node13" class="node">
+<title>p_10_10</title>
+<ellipse fill="#45475a" stroke="#bac2de" cx="394.37" cy="-394.37" rx="39.2" ry="39.2"/>
+<text xml:space="preserve" text-anchor="middle" x="394.37" y="-390.17" font-family="JetBrains Mono" font-size="14.00" fill="#cdd6f4">(10,10)</text>
+</g>
+<!-- p_3_7 -->
+<g id="node14" class="node">
+<title>p_3_7</title>
+<ellipse fill="#45475a" stroke="#bac2de" cx="142.37" cy="-286.37" rx="29.54" ry="29.54"/>
+<text xml:space="preserve" text-anchor="middle" x="142.37" y="-282.17" font-family="JetBrains Mono" font-size="14.00" fill="#cdd6f4">(3,7)</text>
+</g>
+<!-- p_15_10 -->
+<g id="node15" class="node">
+<title>p_15_10</title>
+<ellipse fill="#45475a" stroke="#bac2de" cx="574.37" cy="-394.37" rx="39.2" ry="39.2"/>
+<text xml:space="preserve" text-anchor="middle" x="574.37" y="-390.17" font-family="JetBrains Mono" font-size="14.00" fill="#cdd6f4">(15,10)</text>
+</g>
+<!-- p_10_15 -->
+<g id="node16" class="node">
+<title>p_10_15</title>
+<ellipse fill="#45475a" stroke="#bac2de" cx="394.37" cy="-574.37" rx="39.2" ry="39.2"/>
+<text xml:space="preserve" text-anchor="middle" x="394.37" y="-570.17" font-family="JetBrains Mono" font-size="14.00" fill="#cdd6f4">(10,15)</text>
+</g>
+<!-- p_5_15 -->
+<g id="node17" class="node">
+<title>p_5_15</title>
+<ellipse fill="#45475a" stroke="#bac2de" cx="214.37" cy="-574.37" rx="34.37" ry="34.37"/>
+<text xml:space="preserve" text-anchor="middle" x="214.37" y="-570.17" font-family="JetBrains Mono" font-size="14.00" fill="#cdd6f4">(5,15)</text>
+</g>
+<!-- p_5_10 -->
+<g id="node18" class="node">
+<title>p_5_10</title>
+<ellipse fill="#45475a" stroke="#bac2de" cx="214.37" cy="-394.37" rx="34.37" ry="34.37"/>
+<text xml:space="preserve" text-anchor="middle" x="214.37" y="-390.17" font-family="JetBrains Mono" font-size="14.00" fill="#cdd6f4">(5,10)</text>
+</g>
+<!-- p_20_10 -->
+<g id="node19" class="node">
+<title>p_20_10</title>
+<ellipse fill="#f38ba8" stroke="#f38ba8" cx="754.37" cy="-394.37" rx="39.2" ry="39.2"/>
+<text xml:space="preserve" text-anchor="middle" x="754.37" y="-390.17" font-family="JetBrains Mono" font-size="14.00" fill="#1e1e2e">(20,10)</text>
+</g>
+<!-- p_10_5 -->
+<g id="node20" class="node">
+<title>p_10_5</title>
+<ellipse fill="#45475a" stroke="#bac2de" cx="394.37" cy="-214.37" rx="34.37" ry="34.37"/>
+<text xml:space="preserve" text-anchor="middle" x="394.37" y="-210.17" font-family="JetBrains Mono" font-size="14.00" fill="#cdd6f4">(10,5)</text>
+</g>
+</g>
+</svg>
