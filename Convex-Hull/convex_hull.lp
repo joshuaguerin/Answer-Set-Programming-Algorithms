@@ -61,6 +61,28 @@ cross_count(N, point(X,Y)) :-
   point(X,Y),
   N = {ray_cross(point(X,Y), line_segment(polygon(X1, Y1), polygon(X2, Y2))): line_segment(polygon(X1, Y1), polygon(X2,Y2))}.
 
+% Handle co-linearity
+colinear(point(X,Y), line_segment(polygon(X1,Y1), polygon(X2,Y2))) :-
+  point(X,Y), polygon(X1,Y1), polygon(X2,Y2), not polygon(X,Y),
+  line_segment(polygon(X1,Y1), polygon(X2,Y2)),
+  X1 < X2, X >= X1, X <= X2,
+  Cross_numer=((Y2-Y1) * (X - X1)) - (Y1 * (X2-X1)),
+  Cross_denom=(X2-X1),
+  Cross_numer = Y*Cross_denom.
+
+colinear(point(X,Y), line_segment(polygon(X1,Y1), polygon(X2,Y2))) :-
+  point(X,Y), polygon(X1,Y1), polygon(X2,Y2), not polygon(X,Y),
+  line_segment(polygon(X1,Y1), polygon(X2,Y2)),
+  X1 > X2, X <= X1, X >= X2,
+  Cross_numer=((Y2-Y1) * (X - X1)) - (Y1 * (X2-X1)),
+  Cross_denom=(X2-X1),
+  Cross_numer = Y*Cross_denom.
+
+% All colinear points should be considered inside the hull.
+inside(point(X,Y)) :-
+  point(X,Y), line_segment(polygon(X1, Y1), polygon(X2, Y2)),
+  colinear(point(X,Y), line_segment(polygon(X1, Y1), polygon(X2, Y2))).
+
 % Determine if the point is inside by whether or not it crosses an even number
 % of line segments.
 inside(point(X,Y)) :- point(X,Y), cross_count(N, point(X,Y)), N\2=1.
