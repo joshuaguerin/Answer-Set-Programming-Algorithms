@@ -9,10 +9,9 @@
  *      where dimension is the dimension of the hypercube.
  *%
 
-% Define hypercube verticies.
+% Define hypercube vertices.
 bits(0..n-1).
 vertex(0..(2**n - 1)).
-
 % Define the edges in the hypercube graph.
 pow2(X) :- X = (2**N), N = 0..n.
 edge(X,Y) :- vertex(X), vertex(Y), pow2(Z), Z=(X ^ Y), X < Y.
@@ -23,7 +22,7 @@ edge(Y,X) :- edge(X,Y).
 % We know there must be at least n-1 edges, and no more than 2^(n-1).
 (n-1) {path(X,Y): edge(X,Y), vertex(X), vertex(Y)} 2**(n-1).
 
-% Define which verticies are on the path.
+% Define which vertices are on the path.
 path(X) :- path(X,_).
 path(X) :- path(_,X).
 
@@ -55,7 +54,7 @@ path_reachable(A,B) :- path_reachable(A,C), path(C,B).
 :- stop(X), not path(_,X).
 % The path cannot contain a cycle.
 :- path_reachable(X,X), path(X).
-% Two (non-consecutive) verticies on the path share an edge in the hypercube.
+% Two (non-consecutive) vertices on the path share an edge in the hypercube.
 :- path(X), path(Y), edge(X,Y), not path(X,Y), not path(Y,X).
 
 % Maximize the number of edges in the path.
