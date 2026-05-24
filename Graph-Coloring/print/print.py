@@ -58,7 +58,7 @@ strict graph {
 if toks_next[0].startswith("OPT") or toks_next[0].startswith("SAT"):
     if toks_next[0].startswith("OPT"):
         toks = toks_last
-    
+
     # Setting up graph
     for line in instance_lines:
         if line.startswith("node"):
@@ -69,7 +69,7 @@ if toks_next[0].startswith("OPT") or toks_next[0].startswith("SAT"):
                 constraints = re.findall(r"\d+", line)
                 replacement = " ; ".join(str(i) for i in range(int(constraints[0]), int(constraints[1]) + 1))
                 line = re.sub(r"\d+..\d+", replacement, line)
-                
+
             output += line + "\n"
 
         elif line.startswith("edge"):
@@ -85,31 +85,31 @@ if toks_next[0].startswith("OPT") or toks_next[0].startswith("SAT"):
     output += "\n"
 
     nodeColoring = {}
-    
+
     for t in toks:
         if t.startswith("num"):
             pass
 
         elif t.startswith("color"):
             data = re.findall(r"\d+", t)
-            
+
             if data[1] in nodeColoring:
                 nodeColoring[data[1]].append(data[0])
 
             else:
                 nodeColoring[data[1]] = [data[0]]
-    
+
     colorIndex = 0
 
     for coloring in nodeColoring:
         for node in nodeColoring[coloring]:
 
             output += "    " + node + " [style=filled,fillcolor=" + color[colorIndex] + "];\n"
-            
+
         colorIndex = (colorIndex + 1) % len(color)
 
     output += "\n} // Coloring Number: " + str(len(nodeColoring))
-    
+
     print(output + "\n")
 
 # In case of unsatisfiability

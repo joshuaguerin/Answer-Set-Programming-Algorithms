@@ -10,6 +10,7 @@
  *%
 
 % Define hypercube vertices.
+dim(n). % Here for easier output.
 bits(0..n-1).
 vertex(0..(2**n - 1)).
 % Define the edges in the hypercube graph.
@@ -62,3 +63,4 @@ path_reachable(A,B) :- path_reachable(A,C), path(C,B).
 
 % Only display the edges on the path.
 #show path/2.
+#show dim/1.
