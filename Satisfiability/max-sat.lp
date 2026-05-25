@@ -28,5 +28,11 @@ clause(C) :- clause(C,_).
 sat_clause(C) :- clause(C,L), true(L), L > 0.
 sat_clause(C) :- clause(C,L), false(|L|), L < 0.
 
+:- true(L), false(L).
+
 % Max-SAT optimization statement.
-#maximize {1,sat_clause(C):clause(C)}.
+#maximize {1,sat_clause(C):sat_clause(C)}.
+
+#show true/1.
+#show false/1.
+#show sat_clause/1.

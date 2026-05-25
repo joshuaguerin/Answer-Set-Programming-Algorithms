@@ -29,4 +29,8 @@ sat_clause(C) :- clause(C,L), true(L), L > 0.
 sat_clause(C) :- clause(C,L), false(|L|), L < 0.
 
 % SAT constraints
+:- true(L), false(L).
 :- not sat_clause(C), clause(C).
+
+#show true/1.
+#show false/1.
