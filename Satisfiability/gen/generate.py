@@ -23,6 +23,8 @@ def main(args):
         # Select literals for the new clause.
         lits = random.randint(args.l, args.u)
         clause = random.sample(literals, lits)
+        # Sort clauses to detect duplicates
+        clause.sort()
         # Randomly negate literals.
         for idx in range(len(clause)):
             clause[idx] *= random.choice([-1, 1])
