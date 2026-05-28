@@ -34,7 +34,7 @@ The [Maximum Satisfiability problem](https://en.wikipedia.org/wiki/Maximum_satis
 
 ### Other SAT Forms
 
-Many other forms of SAT exist, like DNF-SAT, which switches the roles of `and` and `or` operations.
+Many other forms of SAT exist, like [Disjuntive Normal Form](https://en.wikipedia.org/wiki/Disjunctive_normal_form) (DNF-SAT), which switches the roles of `and` and `or` operations.
 
 ## Theoretical Significance
 
