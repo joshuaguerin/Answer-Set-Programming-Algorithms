@@ -19,7 +19,7 @@ Software designed to solve Satisfiability problems are know as [SAT solvers](htt
 ## Example
 
 Given the formula &phi; above, we can *satisfy* the formula:
-* a = True, b = False, c = True, and d = True.
+* `a = True`, `b = False`, `c = True`, and `d = True`.
 
 This is not the only satisfying assignment to &phi;.
 
