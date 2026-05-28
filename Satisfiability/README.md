@@ -9,7 +9,9 @@ One of the most common forms of the SAT problem is CNF satisfiability. In CNF sa
 A full formula, &phi;, in conjunctive normal form (CNF), is a *conjunction* (`and`) of clauses.
 
 E.g., 
+
 	&phi; = (a &or; b) &and; (&not;a &or; c &or; d) &and; (&not;b &or; &not;d)
+
 is a valid expression in CNF form.
 
 Software designed to solve Satisfiability problems are know as [SAT solvers](https://en.wikipedia.org/wiki/SAT_solver).
