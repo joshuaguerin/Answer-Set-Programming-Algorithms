@@ -4,7 +4,7 @@
 The [Boolean Satisfiability problem](https://en.wikipedia.org/wiki/Boolean_satisfiability_problem) (SAT) is an NP-Complete problem of deep theoretical importance to the world of Computer Science. The problem takes a Boolean expression (comprised of `and` (&and;), `or` (&or;), and `not` (&not;) operators and variables as input, and seeks to find an assignment to variables that makes the expression evaluate to `True`.
 
 ### CNF Satisfiability
-One of the most common forms of the SAT problem is CNF satisfiability. In CNF satisfiability a *clause* is a statement comprised of variables and `and` operators. E.g., (&not;a &or; c &or; d).
+One of the most common forms of the SAT problem is CNF satisfiability. In CNF satisfiability a *clause* is a statement comprised of variables and `and` operators. E.g., (&not;`a` &or; `c` &or; `d`).
 
 A full formula, &phi;, in conjunctive normal form (CNF), is a *conjunction* (`and`) of clauses.
 
