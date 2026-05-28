@@ -21,7 +21,11 @@ Given the formula &phi; above, we can *satisfy* the formula:
 
 This is not the only satisfying assignment to &phi;.
 
+Note that identifying a *satisfying valuation* to &phi; is fairly straight-forward. Due to the nature of the `or` operator, *any* assignment that is included in a clause satisfies the clause, and an assignment that satisfies each individual clause satisfies the entire expression.
+
 ## Problem Variants
+
+Satisfiability, logic, and logic programming are active areas of research with many possible problem variations.
 
 ### 2-SAT
 
