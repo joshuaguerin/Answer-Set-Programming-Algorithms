@@ -41,4 +41,8 @@ Many other forms of SAT exist, like [Disjuntive Normal Form](https://en.wikipedi
 
 ## Theoretical Significance
 
-While this repository explores many problems of historical and theoretical importance, Boolean Satisfiability serves an important 
+While this repository explores many problems of historical and theoretical importance, Boolean Satisfiability serves an important role in the history of theoretical and applied Computer Science.
+
+The [Cook–Levin theorem](https://en.wikipedia.org/wiki/Cook%E2%80%93Levin_theorem) established that Boolean Satisfiability is NP-Complete, the first such problem to be identified in the class. Not long after, Richard Karp used this result to locate the first 21 NP Complete problems (known as [Karp's 21 NP-Complete Problems](https://en.wikipedia.org/wiki/Karp%27s_21_NP-complete_problems)). This list included 3-SAT, which was used to demonstrate that a number of other problems were NP-Complete.
+
+While SAT solvers were an active area of research for decades prior, the late 1990s and early 2000s saw a significant advancement in the state of the art--technology that would later pave the way for modern [Answer Set Programming languages](https://en.wikipedia.org/wiki/Answer_set_programming) such as [Clingo](https://potassco.org/clingo/).
