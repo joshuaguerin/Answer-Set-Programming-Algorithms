@@ -20,7 +20,7 @@ Software designed to solve Satisfiability problems are know as [SAT solvers](htt
 Given the formula &phi; above, we can *satisfy* the formula:
 * `a = True`, `b = False`, `c = True`, and `d = True`.
 
-This is not the only satisfying assignment to &phi;.
+Note that this is not the only satisfying assignment to &phi;.
 
 Note that identifying a *satisfying valuation* to &phi; is fairly straight-forward. Due to the nature of the `or` operator, *any* assignment that is included in a clause satisfies the clause, and an assignment that satisfies each individual clause satisfies the entire expression.
 
