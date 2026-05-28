@@ -3,10 +3,7 @@
 ## Description
 Given a logical formula &phi; in conjunctive normal form (CNF), an AND of ORs, find an assignment to the literals in &phi; such that &phi; evaluates to true under that assignment.
 
-Problems related to boolean satisfiability:
-
-- SAT - Find a satisfying assignment.
-- Max-SAT - Find an assignment which maximizes the number of satisfied clauses.
+Software designed to solve Satisfiability problems are know as [SAT solvers](https://en.wikipedia.org/wiki/SAT_solver).
 
 ## Example
 
@@ -38,3 +35,4 @@ Many other forms of SAT exist, like [Disjuntive Normal Form](https://en.wikipedi
 
 ## Theoretical Significance
 
+While this repository explores many problems of historical and theoretical importance, Boolean Satisfiability serves an important 
