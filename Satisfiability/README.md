@@ -1,19 +1,25 @@
-# Problem: CNF Boolean Satisfiability
+# Problem: Boolean Satisfiability
 
 ## Description
-Given a logical formula &phi; in conjunctive normal form (CNF), an AND of ORs, find an assignment to the literals in &phi; such that &phi; evaluates to true under that assignment.
+The [Boolean Satisfiability problem](https://en.wikipedia.org/wiki/Boolean_satisfiability_problem) (SAT) is an NP-Complete problem of deep theoretical importance to the world of Computer Science. The problem takes a Boolean expression (comprised of `and` (&and;), `or` (&or;), and `not` (&not;) operators and variables as input, and seeks to find an assignment to variables that makes the expression evaluate to `True`.
+
+### CNF Satisfiability
+One of the most common forms of the SAT problem is CNF satisfiability. In CNF satisfiability a *clause* is a statement comprised of variables and `and` operators. E.g., (&not;a &or; c &or; d).
+
+A full formula, &phi;, in conjunctive normal form (CNF), is a *conjunction* (`and`) of clauses.
+
+E.g., 
+	&phi; = (a &or; b) &and; (&not;a &or; c &or; d) &and; (&not;b &or; &not;d)
+is a valid expression in CNF form.
 
 Software designed to solve Satisfiability problems are know as [SAT solvers](https://en.wikipedia.org/wiki/SAT_solver).
 
 ## Example
 
-Given the formula:
+Given the formula &phi; above, we can *satisfy* the formula:
+* a = True, b = False, c = True, and d = True.
 
-
-&phi; = (a &or; b) &and; (&not;a &or; c &or; d) &and; (&not;b &or; &not;d)
-
-
-A satisfying assignment is to set a = True, b = False, c = True, and d = True. This is not the only satisfying assignment to &phi;
+This is not the only satisfying assignment to &phi;.
 
 ## Problem Variants
 
