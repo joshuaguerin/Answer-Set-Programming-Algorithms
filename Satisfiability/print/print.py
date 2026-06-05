@@ -113,6 +113,7 @@ def main(args):
         print("    <p><p><h1> Instance CNF Formula </h1>")
         print("    <hr><p>")
         clause_strs = []
+        sat_count = 0
         # Render each clause
         for clause in sorted(instance.keys()):
             satisfied = False
@@ -131,12 +132,14 @@ def main(args):
                 literals.append(lit_str)
             clause_str = "(" + " &or; ".join(literals) + ")"
             if satisfied:
+                sat_count += 1
                 clause_str = "<span class=sat-highlight>" + \
                              clause_str + \
                              "</span>"
             clause_strs.append(clause_str)
         # Render full formula
         print("    ", " &and; ".join(clause_strs))
+        print(f"    <p>Clause SAT Count: {sat_count}")
 
     # HTML Document epilogue
     print(epilogue)

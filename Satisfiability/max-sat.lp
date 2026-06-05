@@ -16,22 +16,20 @@
 %   the clause. Thus, clause(0, -1) is read as clause 0 contains NOT x1.
 %   Clauses may have any number of literals, but are assumed to be in CNF form.
 
-% Simplification predicates
-
+% Extract and identify all literals and clauses that exist.
+% This makes referring to specific literals or clauses easier in the program.
 literal(L) :- L = |X|, clause(_,X).
 clause(C) :- clause(C,_).
 
 % Assign true/false values to literals
 1 {true(L); false(L)} 1 :- literal(L).
 
-% Clause satisfiability
+% Determine whether a clause is satisfied.
 sat_clause(C) :- clause(C,L), true(L), L > 0.
 sat_clause(C) :- clause(C,L), false(|L|), L < 0.
 
-:- true(L), false(L).
-
 % Max-SAT optimization statement.
-#maximize {1,sat_clause(C):sat_clause(C)}.
+#maximize { 1,sat_clause(C):sat_clause(C) }.
 
 #show true/1.
 #show false/1.
