@@ -36,7 +36,7 @@ The [2-Satisfiability problem](https://en.wikipedia.org/wiki/2-satisfiability) i
 
 ### 3-SAT
 
-The [3-Satisfiability problem](https://en.wikipedia.org/wiki/Boolean_satisfiability_problem#3-satisfiability) is a special case of CNF Satisfiabiliyt where clauses are limited to length 3. Unlike 2-SAT, and like unrestricted CNF Satisfiability, 3-SAT is NP-Complete, and the only known algorithms that solve it run in exponential time in the worst case.
+The [3-Satisfiability problem](https://en.wikipedia.org/wiki/Boolean_satisfiability_problem#3-satisfiability) is a special case of CNF SAT where clauses are limited to length 3. Unlike 2-SAT, and like unrestricted CNF Satisfiability, 3-SAT is NP-Complete, and the only known algorithms that solve it run in exponential time in the worst case.
 
 ### MAX-SAT
 
