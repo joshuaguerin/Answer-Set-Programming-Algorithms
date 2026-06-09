@@ -26,6 +26,8 @@ Note that identifying a *satisfying valuation* to &phi; is fairly straight-forwa
 
 E.g., The clause (`a` &or; `b`) is satisfied by `a = True`, (&not;`a` &or; `c` &or; `d`) is satisfied by either `c = True` or `d = True`, and (&not;`b` & or; &not;`d`) is satisfied by `b = False`.
 
+Note that since this example instance was designed to be satisfiable, both the sat.lp and max-sat.lp programs will generate satisfying instances, with the latter annotating that all clauses are satisfied, and displaying any relevant optimization information.
+
 ## Problem Variants
 
 Satisfiability, logic, and logic programming are active areas of research with many possible problem variations.
