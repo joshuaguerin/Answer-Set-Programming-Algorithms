@@ -32,7 +32,7 @@ Satisfiability, logic, and logic programming are active areas of research with m
 
 ### 2-SAT
 
-The [2-Satisfiability problem](https://en.wikipedia.org/wiki/2-satisfiability) is a special case of CNF Satsifiability where clauses are limited to length 2. Unlike more general versions of CNF-SAT, 2-SAT is NL-Complete, and can be solved in Polynomail time.
+The [2-Satisfiability problem](https://en.wikipedia.org/wiki/2-satisfiability) is a special case of CNF Satsifiability where clauses are limited to length 2. Unlike more general versions of CNF-SAT, 2-SAT is [NL-Complete](https://en.wikipedia.org/wiki/NL-complete), and can be solved in Polynomail time.
 
 ### 3-SAT
 
