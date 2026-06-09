@@ -38,6 +38,8 @@ The [2-Satisfiability problem](https://en.wikipedia.org/wiki/2-satisfiability) i
 
 The [3-Satisfiability problem](https://en.wikipedia.org/wiki/Boolean_satisfiability_problem#3-satisfiability) is a special case of CNF SAT where clauses are limited to length 3. Unlike 2-SAT, and like unrestricted CNF Satisfiability, 3-SAT is NP-Complete, and the only known algorithms that solve it run in exponential time in the worst case.
 
+3-SAT is also universal--given a propositional SAT instance comprised of any operators applied in a consistent manner we can convert the instance to an equivalent instance of 3-SAT.
+
 ### MAX-SAT
 
 The [Maximum Satisfiability problem](https://en.wikipedia.org/wiki/Maximum_satisfiability_problem) (MAX-SAT) is a *generalization* of the CNF Satisfiability problem. MAX-SAT allows unsolved clauses, and instead seeks to *maximize* the number of clauses that evaluate to True. This problem is in NP-Hard, making it more difficult to solve in practice than most other variants named here.
