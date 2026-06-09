@@ -42,7 +42,7 @@ The [3-Satisfiability problem](https://en.wikipedia.org/wiki/Boolean_satisfiabil
 
 ### MAX-SAT
 
-The [Maximum Satisfiability problem](https://en.wikipedia.org/wiki/Maximum_satisfiability_problem) (MAX-SAT) is a *generalization* of the CNF Satisfiability problem. MAX-SAT allows unsolved clauses, and instead seeks to *maximize* the number of clauses that evaluate to True. This problem is in NP-Hard, making it more difficult to solve in practice than most other variants named here.
+The [Maximum Satisfiability problem](https://en.wikipedia.org/wiki/Maximum_satisfiability_problem) (MAX-SAT) is a *generalization* of the CNF Satisfiability problem. MAX-SAT allows unsolved clauses, and instead seeks to *maximize* the number of clauses that evaluate to True. This problem is in [NP-Hard](https://en.wikipedia.org/wiki/Maximum_satisfiability_problem#Hardness), making it more difficult to solve in practice than most other variants named here.
 
 ### Other SAT Forms
 
