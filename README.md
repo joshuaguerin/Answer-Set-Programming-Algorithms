@@ -47,6 +47,7 @@ The repository  is designed around a "flat" organizational/directory structure f
 |  | [Numerical 3-Dimensional Matching](Numerical-3-Dimensional-Matching) |
 |  Combinatorial Optimization  |  [Knapsack](Knapsack)  |
 |  | [Bin-Packing](Bin-Packing) |
+|  | [Boolean Satisfiability](Satisfiability) |
 |  Puzzles/Games  | [I'm my own Grandpa!](Grandpa)  |
 |    | [N-Queens](N-Queens) |
 |    | [Sudoku](Sudoku) | 
