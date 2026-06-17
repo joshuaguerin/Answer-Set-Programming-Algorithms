@@ -10,17 +10,27 @@
 # Notes:
 
 
-def main():
+#def main():
+
+        
+if __name__ == '__main__':
     solution = {}
     clingo_out = []
+
+    # Retrieve Input
     clingo_out.append(input())
+    
     while not clingo_out[-1].startswith('UNSATISFIABLE') and \
           not clingo_out[-1].startswith('SATISFIABLE') and \
           not clingo_out[-1].startswith('OPTIMUM'):
         clingo_out.append(input().strip())
+
+
+    # Locate any special cases
     if clingo_out[-1].startswith('UNSATISFIABLE'):
         # Unsatisfiable formula
         solution = None
+        exit()
     elif clingo_out[-1].startswith('SATISFIABLE'):
         # SAT solution
         for assign in clingo_out[-2].split():
@@ -35,6 +45,7 @@ def main():
                 solution[int(assign[5:].strip(')'))] = True
             elif assign.startswith('false'):
                 solution[int(assign[6:].strip(')'))] = False
+            
 
 
     # Print True and False assigned literals.
@@ -62,7 +73,3 @@ def main():
         for literal in false_literals:
             print("x", literal, sep='', end=' ')
         print()
-
-        
-if __name__ == '__main__':
-    main() 
