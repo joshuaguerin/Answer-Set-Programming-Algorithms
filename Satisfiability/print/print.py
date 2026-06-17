@@ -1,16 +1,12 @@
 # File: print.py
-# Author: Michael Huelsman
+# Author: Michael Huelsman and Joshua T. Guerin
 # Created On: 04 Jun 2026
 # Purpose:
-#   A print function for viewing an instance and solution to a sat or max-sat problem
+#   A print utility for viewing an instance and solution to a
+#   sat or max-sat problem
 # Use:
-# clingo sat.lp instance.lp | python3 print/print.py instance.lp > sat.html
-# clingo sat.lp instance.lp | python3 print/print.py instance.lp > sat.html
-#      where instance.lp contains clause predicates.
-# Notes:
-
-
-#def main():
+# clingo sat.lp instance.lp | python3 print/print.py
+# clingo max-sat.lp instance.lp | python3 print/print.py
 
         
 if __name__ == '__main__':
