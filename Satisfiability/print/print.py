@@ -16,7 +16,8 @@
 if __name__ == '__main__':
     solution = {}
     clingo_out = []
-
+    count = -1
+    
     # Retrieve Input
     clingo_out.append(input())
     
@@ -45,8 +46,9 @@ if __name__ == '__main__':
                 solution[int(assign[5:].strip(')'))] = True
             elif assign.startswith('false'):
                 solution[int(assign[6:].strip(')'))] = False
-            
-
+            elif assign.startswith('sat_clause'):
+                current = int(assign[11:].strip(')'))
+                count = current if current > count else count
 
     # Print True and False assigned literals.
     if solution is None:
@@ -73,3 +75,6 @@ if __name__ == '__main__':
         for literal in false_literals:
             print("x", literal, sep='', end=' ')
         print()
+
+        if count != -1:
+            print("Clauses Satisfied: ", count)
