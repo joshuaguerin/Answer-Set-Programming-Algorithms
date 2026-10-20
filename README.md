@@ -130,8 +130,31 @@ Finally, additional utilities may be used where appropriate. While efforts have 
 This adds a small complication for graph problems, as graphical models lack a convenient, text-based form for display of results. Thus, for convenience, [graphviz/dot](https://graphviz.org/download/) may be used as an output format by printers. This particular format was selected because it is roughly as comprehensible as any other text-based format, but users also have the option of running these outputs through dot to produce graphical documents (e.g., pdfs) for final output.
 
 
-## Bugs and other issues
-We wish to present solutions that are correct, well-documented, and fairly robust (not to mention efficient, where possible!). We hope is that the solutions presented function under their defined parameters, however with a project of this size unintended behaviors are naturally going to be discovered. If any such problems, bugs, or or areas that require further documentation are discovered we welcome the reader to submit [issue](https://github.com/joshuaguerin/Answer-Set-Programming-Algorithms/issues) that clearly defines the unexpected behavior so it may be fixed or better documented. Where possible please try to provide inputs, outputs, and any relevant source to expedite our ability to review any suggestions.
+
+
+## Contributions
+While this effort started as one professor's class examples and code-based musings, getting the repository to a publishable state required expansion to a small team, and we are now we are starting to see contributions from multiple disciplines/institutions/continents.
+
+If you wish to add something, please feel free! A simple first step if you wanted to discuss an update would be to open an [issue](https://github.com/joshuaguerin/Answer-Set-Programming-Algorithms/issues) to discuss what you are thinking.
+
+For the workflow of how to make a contribution, we have tried to keep things fairly simple:
+1. [fork](https://github.com/joshuaguerin/Answer-Set-Programming-Algorithms/fork) a copy of the repository.
+1. Create a new branch with a descriptive name (e.g., name of a problem).
+1. Submit a pull request back upstream and we can get discussions rolling!
+
+In terms of content for a new entry, please see existing submissions for overall style/content. In particular, most submissions are organized fairly consistently with:
+ * A solution
+ * A problem instance (instance.lp).
+ * A problem generator (/gen/generate.py)
+ * A pretty printer (/print/print.py)
+ * README.md files narrating each directory, including gen and print.
+
+In general, please try to follow existing conventions (e.g., reliance on pipes and redirects for consistency), and please feel free to ask questions!
+
+### Bugs and other issues
+We wish to present solutions that are correct, well-documented, and fairly robust (not to mention efficient, where possible!). We hope is that the solutions presented function under their defined parameters, however with a project of this size unintended behaviors are naturally going to be discovered. If any problems, bugs, typos or other issues require discussion please feel free to let us know by opening an issue! Correcting these will follow the same, fork-based pattern as above.
+
+If a bug is caught in a code submission please try to be thorough in your description, and include clearly defined behaviors, a minimal example of input and output related, and any notions you may have regarding what needs to be fixed in order to expedite the ability to review suggestions.
 
 ## How to Cite
 We are excited to announce that we will be appearing at [FLAIRS-39](https://www.flairs-39.info/home)! If you wish to cite the repository, the easiest means would be our paper:
